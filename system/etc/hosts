@@ -127,8 +127,8 @@
 127.0.0.1 ac.mmstat.com
 127.0.0.1 a.cn.miaozhen.com
 127.0.0.1 a.cnzz.com
-127.0.0.1 acookie.alimama.com
-127.0.0.1 acookie.linezing.com
+#127.0.0.1 acookie.alimama.com
+#127.0.0.1 acookie.linezing.com
 127.0.0.1 act.commercial.shouji.360.cn
 127.0.0.1 activate.adobe.com
 127.0.0.1 activate-sea.adobe.com
@@ -760,7 +760,6 @@
 127.0.0.1 conversion.adpro.cn
 127.0.0.1 conversion.pro.cn
 127.0.0.1 conv.youdao.com
-127.0.0.1 cookiemapping.wrating.com
 127.0.0.1 corebug.adsame.com
 127.0.0.1 coro.benbaisteel.com
 127.0.0.1 couchcoaster.jp
@@ -1920,8 +1919,8 @@
 127.0.0.1 pcbrowser.dd.qq.com
 127.0.0.1 pcfg.wps.cn
 127.0.0.1 p.clkservice.youdao.com
-127.0.0.1 pcookie.cnzz.com
-127.0.0.1 pcookie.tanx.com
+#127.0.0.1 pcookie.cnzz.com
+#127.0.0.1 pcookie.tanx.com
 127.0.0.1 pc.quansj.cn
 127.0.0.1 pc.videoclick.baidu.com
 127.0.0.1 pcxzo.pluto.sogou.com
@@ -3374,8 +3373,8 @@
 127.0.0.1 ac.mmstat.com
 127.0.0.1 a.cn.miaozhen.com
 127.0.0.1 a.cnzz.com
-127.0.0.1 acookie.alimama.com
-127.0.0.1 acookie.linezing.com
+#127.0.0.1 acookie.alimama.com
+#127.0.0.1 acookie.linezing.com
 127.0.0.1 acs4baichuan.m.taobao.com
 127.0.0.1 act.commercial.shouji.360.cn
 127.0.0.1 activate.adobe.com
@@ -4022,7 +4021,7 @@
 127.0.0.1 conversion.adpro.cn
 127.0.0.1 conversion.pro.cn
 127.0.0.1 conv.youdao.com
-127.0.0.1 cookiemapping.wrating.com
+#127.0.0.1 cookiemapping.wrating.com
 127.0.0.1 corebug.adsame.com
 127.0.0.1 coro.benbaisteel.com
 127.0.0.1 couchcoaster.jp
@@ -5183,8 +5182,8 @@
 127.0.0.1 pcbrowser.dd.qq.com
 127.0.0.1 pcfg.wps.cn
 127.0.0.1 p.clkservice.youdao.com
-127.0.0.1 pcookie.cnzz.com
-127.0.0.1 pcookie.tanx.com
+#127.0.0.1 pcookie.cnzz.com
+#127.0.0.1 pcookie.tanx.com
 127.0.0.1 pc.quansj.cn
 127.0.0.1 pc.videoclick.baidu.com
 127.0.0.1 pcxzo.pluto.sogou.com
@@ -8251,7 +8250,6 @@
 127.0.0.1 ns1.cnzz.com
 127.0.0.1 ns2.cnzz.com
 127.0.0.1 online.cnzz.com
-127.0.0.1 pcookie.cnzz.com
 127.0.0.1 pw.cnzz.com
 127.0.0.1 q1.cnzz.com
 127.0.0.1 q12.cnzz.com
@@ -24578,7 +24576,7 @@
 127.0.0.1 bypush.com
 127.0.0.1 bytecenter.com
 127.0.0.1 byubroadcast.112.2o7.net
-127.0.0.1 bzclk.baidu.com
+##127.0.0.1 bzclk.baidu.com
 127.0.0.1 c.235123.net
 127.0.0.1 c.37cs.com
 127.0.0.1 c.91wan.com
@@ -26788,9 +26786,9 @@
 127.0.0.1 convoad.technoratimedia.com.24236.9068.302br.net
 127.0.0.1 convusmp.admailtiser.com
 127.0.0.1 cookex.amp.yahoo.com
-127.0.0.1 cookie.disneylandparis.com
-127.0.0.1 cookie.monster.com
-127.0.0.1 cookiemapping.wrating.com
+#127.0.0.1 cookie.disneylandparis.com
+#127.0.0.1 cookie.monster.com
+#127.0.0.1 cookiemapping.wrating.com
 127.0.0.1 cookies.cmpnet.com
 127.0.0.1 cookiex.ngd.yahoo.com
 127.0.0.1 cookingcom.112.2o7.net
