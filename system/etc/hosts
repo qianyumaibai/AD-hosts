@@ -127,8 +127,8 @@
 127.0.0.1 ac.mmstat.com
 127.0.0.1 a.cn.miaozhen.com
 127.0.0.1 a.cnzz.com
-#127.0.0.1 acookie.alimama.com
-#127.0.0.1 acookie.linezing.com
+127.0.0.1 acookie.alimama.com
+127.0.0.1 acookie.linezing.com
 127.0.0.1 act.commercial.shouji.360.cn
 127.0.0.1 activate.adobe.com
 127.0.0.1 activate-sea.adobe.com
@@ -1768,8 +1768,6 @@
 127.0.0.1 mti.35kds.com
 127.0.0.1 m.tixing51.net
 127.0.0.1 mtty-cdn.mtty.xin
-127.0.0.1 m.uc123.com
-127.0.0.1 m.uczzd.cn
 127.0.0.1 music.adcome.cn
 127.0.0.1 musik-mp3.info
 127.0.0.1 mvads.kugou.com
@@ -2006,7 +2004,6 @@
 127.0.0.1 pushapi.lenovomm.com
 127.0.0.1 push.mobile.kugou.com
 127.0.0.1 push.res.meizu.com
-127.0.0.1 push.wandoujia.com
 127.0.0.1 push.yuedu.163.com
 127.0.0.1 push.zhangyue.com
 127.0.0.1 push.zhanzhang.baidu.com
@@ -2515,7 +2512,6 @@
 127.0.0.1 ss.cnnic.cn
 127.0.0.1 ssdk.adkmob.com
 127.0.0.1 ss.he9630.com
-127.0.0.1 ssl-cdn.static.browser.mi-img.com
 127.0.0.1 ssl.google-analytics.com
 127.0.0.1 ssl.ymapp.com
 127.0.0.1 ss.missyouxi.com
@@ -2815,7 +2811,6 @@
 127.0.0.1 utility.baidu.com
 127.0.0.1 utk.baidu.com
 127.0.0.1 utop.umengcloud.com
-127.0.0.1 u.uc123.com
 127.0.0.1 u.ucfly.com
 127.0.0.1 uuidapi.yunos.com
 127.0.0.1 uusee.adsame.com
@@ -2936,7 +2931,6 @@
 127.0.0.1 wn.x.jd.com
 127.0.0.1 wo.iuni.com.cn
 127.0.0.1 woocall.sina.com.cn
-127.0.0.1 woodpecker.uc.cn
 127.0.0.1 wr.da.netease.com
 127.0.0.1 ws001.authedmine.com
 127.0.0.1 ws001.coin-hive.com
@@ -3373,8 +3367,6 @@
 127.0.0.1 ac.mmstat.com
 127.0.0.1 a.cn.miaozhen.com
 127.0.0.1 a.cnzz.com
-#127.0.0.1 acookie.alimama.com
-#127.0.0.1 acookie.linezing.com
 127.0.0.1 acs4baichuan.m.taobao.com
 127.0.0.1 act.commercial.shouji.360.cn
 127.0.0.1 activate.adobe.com
@@ -4142,7 +4134,7 @@
 127.0.0.1 d3v1lb83psg9di.cloudfront.net
 127.0.0.1 d4.sina.com.cn
 127.0.0.1 d4.sinaimg.cn
-127.0.0.1 d5nxst8fruw4z.cloudfront.net
+127.0.0.1 d5nxst8fruw4z.front.net
 127.0.0.1 d5p.de17a.com
 127.0.0.1 d5.sina.com.cn
 127.0.0.1 d5.sinaimg.cn
@@ -4861,7 +4853,7 @@
 127.0.0.1 log.umsns.com
 127.0.0.1 log.umtrack.com
 127.0.0.1 log.vcgame.cn
-127.0.0.1 log.voicecloud.cn
+127.0.0.1 log.voice.cn
 127.0.0.1 log.web.kugou.com
 127.0.0.1 l.qq.com
 127.0.0.1 ls.l.qq.com
@@ -5182,8 +5174,6 @@
 127.0.0.1 pcbrowser.dd.qq.com
 127.0.0.1 pcfg.wps.cn
 127.0.0.1 p.clkservice.youdao.com
-#127.0.0.1 pcookie.cnzz.com
-#127.0.0.1 pcookie.tanx.com
 127.0.0.1 pc.quansj.cn
 127.0.0.1 pc.videoclick.baidu.com
 127.0.0.1 pcxzo.pluto.sogou.com
@@ -5269,7 +5259,6 @@
 127.0.0.1 pushapi.lenovomm.com
 127.0.0.1 push.mobile.kugou.com
 127.0.0.1 push.res.meizu.com
-127.0.0.1 push.wandoujia.com
 127.0.0.1 push.yuedu.163.com
 127.0.0.1 push.zhangyue.com
 127.0.0.1 push.zhanzhang.baidu.com
@@ -6026,7 +6015,6 @@
 127.0.0.1 ucstat.baidu.com
 127.0.0.1 ucus.ucweb.com
 127.0.0.1 uc.xiansuper.com
-127.0.0.1 udash.umengcloud.com
 127.0.0.1 udc.msn.com
 127.0.0.1 u.domob.cn
 127.0.0.1 udpolimenew.baidu.com
@@ -6079,8 +6067,6 @@
 127.0.0.1 ut.gtags.net
 127.0.0.1 utility.baidu.com
 127.0.0.1 utk.baidu.com
-127.0.0.1 utop.umengcloud.com
-127.0.0.1 utp.ucweb.com
 127.0.0.1 u.uc123.com
 127.0.0.1 u.ucfly.com
 127.0.0.1 uuidapi.yunos.com
@@ -8143,7 +8129,6 @@
 127.0.0.1 ex.puata.info
 127.0.0.1 log.umsns.com
 127.0.0.1 www.uyunad.com
-127.0.0.1 push.wandoujia.com
 127.0.0.1 163.wrating.com
 127.0.0.1 click.wrating.com
 127.0.0.1 g.wrating.com
@@ -9784,7 +9769,6 @@
 127.0.0.1 downloada.dewmobile.net
 127.0.0.1 downloadb.dewmobile.net
 127.0.0.1 marketing.etouch.cn
-127.0.0.1 pclog.suishenyun.net
 127.0.0.1 client-dmp.suishenyun.cn
 127.0.0.1 log-dmp.suishenyun.cn
 127.0.0.1 cds.51y5.net
@@ -10352,8 +10336,6 @@
 127.0.0.1 img.cmm.xmfish.com
 127.0.0.1 gg.ptfish.com
 127.0.0.1 adimgs.xici.net
-#127.0.0.1 sugar.zhihu.com
-#127.0.0.1 zhihu-web-analytics.zhihu.com
 127.0.0.1 a.77shw.com
 127.0.0.1 b.77shw.com
 127.0.0.1 zhggw.dre8.com
@@ -10524,7 +10506,6 @@
 127.0.0.1 09_19.supfree.net
 127.0.0.1 1.1010pic.com
 127.0.0.1 1.21shebao.com
-127.0.0.1 1.bashenghuo.com
 127.0.0.1 1.chcx.cn
 127.0.0.1 1.hslyqs.com
 127.0.0.1 1.xiaozhizhijia.com
@@ -10535,7 +10516,6 @@
 127.0.0.1 1e2hyl3b.wq42211.com
 127.0.0.1 2.1010pic.com
 127.0.0.1 2.21shebao.com
-127.0.0.1 2.bashenghuo.com
 127.0.0.1 2017img.myxh999.com
 127.0.0.1 272829.cc
 127.0.0.1 35baba.cn
@@ -12309,7 +12289,6 @@
 127.0.0.1 u291014.nr1234.com
 127.0.0.1 u349036.ff112222.com
 127.0.0.1 uc.haoyunyuan.cc
-127.0.0.1 ucan.25pp.com
 127.0.0.1 ucqq.cnsptv.com.cn
 127.0.0.1 ugg.keefung-zs.com
 127.0.0.1 uimg.123hala.com
@@ -14013,7 +13992,6 @@
 127.0.0.1 www.talkingdata.com
 127.0.0.1 a.appcpa.net
 127.0.0.1 client.tenddata.com
-127.0.0.1 lnk0.com
 127.0.0.1 baidu.dsp.tansuotv.com
 127.0.0.1 i.tansuotv.com
 127.0.0.1 m.tansuotv.com
@@ -15263,7 +15241,6 @@
 127.0.0.1  download-archiver.ru
 127.0.0.1  download.56.com
 127.0.0.1  download.grandcloud.cn
-127.0.0.1  download.ttrili.com
 127.0.0.1  download207.mediafire.com
 127.0.0.1  downloads-finereader.ru
 127.0.0.1  downloads-whatsapp.com
@@ -16207,9 +16184,7 @@
 127.0.0.1  zous.szm.sk
 127.0.0.1  zt.tim-taxi.com
 127.0.0.1  zyrdu.cruisingsmallship.com
-#20160316 更换hosts默认源为@sy619维护的广告源
 
-127.0.0.1 localhost
 127.0.0.1 0.r.msn.com
 127.0.0.1 006.free-adult-counters.x-xtra.com
 127.0.0.1 007.go2cloud.org
@@ -22110,7 +22085,6 @@
 127.0.0.1 analytics.yola.net
 127.0.0.1 analytics.yolacdn.net
 127.0.0.1 analytics.youramigo.com
-#127.0.0.1 analytics.zhihu.com
 127.0.0.1 analytics-api-samples.googlecode.com
 127.0.0.1 analyticsengine.s3.amazonaws.com
 127.0.0.1 analytics-news.seevolution.com
@@ -22510,7 +22484,6 @@
 127.0.0.1 app.mlcampaignru.com
 127.0.0.1 app.mlnewsletterru.com
 127.0.0.1 app.news.baidu.com
-127.0.0.1 app.pp.cn
 127.0.0.1 app.pubserver.adhood.com
 127.0.0.1 app.qualaroo.com
 127.0.0.1 app.salecycle.com
@@ -37088,7 +37061,6 @@
 127.0.0.1 ppc-parked.domainsite.com
 127.0.0.1 ppctracking.net
 127.0.0.1 ppctrck.com
-127.0.0.1 ppdemo.pp.cn
 127.0.0.1 pplive-ppva.datamaster.com.cn
 127.0.0.1 pplive-probe.datamaster.com.cn
 127.0.0.1 ppp.voice2page.com
@@ -45948,7 +45920,6 @@
 127.0.0.1 www.port-advertising.biz
 127.0.0.1 www.postads24.com
 127.0.0.1 www.powerlinks.com
-127.0.0.1 www.pp.cn
 127.0.0.1 www.ppcindo.com
 127.0.0.1 www.ppctracking.net
 127.0.0.1 www.pppads.com
@@ -47521,7 +47492,6 @@
 127.0.0.1 sinastorage.com
 127.0.0.1 s.img.mix.sina.com.cn
 127.0.0.1 m.oil800.cn
-127.0.0.1 lnk0.com
 127.0.0.1 sina.yinstar.org
 127.0.0.1 d1.sina.com.cn
 127.0.0.1 r.dmp.sina.cn
@@ -47569,7 +47539,6 @@
 127.0.0.1 www.2f.com
 127.0.0.1 m.pciiss.com
 127.0.0.1 lansha.tv
-127.0.0.1 static.tieba.baidu.com
 127.0.0.1 s.jandan.com
 127.0.0.1 www.jiukan1.com
 127.0.0.1 www.nextcps.com
@@ -56569,3 +56538,6 @@
 127.0.0.1 starc.bigdata.koznak.tv
 127.0.0.1 starc.adv.koznak.tv
 127.0.0.1 stat.koznak.tv
+
+#最右
+127.0.0.1 sf3-ttcdn-tos.pstatp.com
