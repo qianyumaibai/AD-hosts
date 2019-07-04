@@ -345,7 +345,6 @@
 127.0.0.1 alpha.brand.sogou.com
 127.0.0.1 als.baidu.com
 127.0.0.1 ama.adwo.com
-127.0.0.1 amdc.m.taobao.com
 127.0.0.1 am.g.ireader.com
 127.0.0.1 amps.yoyi.com.cn
 127.0.0.1 a.m.shuhuangge.org
@@ -415,7 +414,6 @@
 127.0.0.1 api.newad.ifeng.com
 127.0.0.1 api.primecaster.net
 127.0.0.1 api-push.meizu.com
-127.0.0.1 api.ra2.xlmc.sec.miui.com
 127.0.0.1 api.share.baidu.com
 127.0.0.1 api.shuaji.360.cn
 127.0.0.1 api.so.lianmeng.360.cn
@@ -581,7 +579,6 @@
 127.0.0.1 cacaca.0571yy.com
 127.0.0.1 cache.cnzz.com
 127.0.0.1 cache.soloth.com
-127.0.0.1 c-adash.m.taobao.com
 127.0.0.1 c.admaster.com.cn
 127.0.0.1 c.admob.com
 127.0.0.1 c.adsco.re
@@ -3433,7 +3430,6 @@
 127.0.0.1 adimg.mobile.sina.cn
 127.0.0.1 adimg.qxlsjw.com
 127.0.0.1 adimg.uve.weibo.com
-127.0.0.1 adinfo.ra1.xlmc.sec.miui.com
 127.0.0.1 adirects.com
 127.0.0.1 ad.jp.doubleclick.net
 127.0.0.1 ad.jsnbrynb.com
@@ -45629,8 +45625,6 @@
 127.0.0.1 www.memopumpkin.com
 127.0.0.1 www.mercuras.com
 127.0.0.1 www.meshbean.com
-127.0.0.1 www.messagetag.com
-127.0.0.1 www.metacount.com
 127.0.0.1 www.metavertising.com
 127.0.0.1 www.metricsimage.com
 127.0.0.1 www.mfsuite.com
@@ -47295,7 +47289,6 @@
 127.0.0.1 zh28.adsame.com
 127.0.0.1 zhanzhang.net
 127.0.0.1 zhcn.admob.com
-127.0.0.1 zhentan.uz.taobao.com
 127.0.0.1 zhidian3g.cn
 127.0.0.1 zhirok.com
 127.0.0.1 zhuamob.com
@@ -47555,7 +47548,6 @@
 127.0.0.1 video-analytics.l.google.com
 127.0.0.1 www.wzajs.com
 127.0.0.1 fans.bestvogue.com
-127.0.0.1 xlmc.sec.miui.com
 127.0.0.1 cdn.read.html5.qq.com
 127.0.0.1 bcscdn.baidu.com
 127.0.0.1 v.6dvip.com
@@ -49502,7 +49494,6 @@
 127.0.0.1 banners.ixitools.com
 127.0.0.1 mfas.safesslredirect.com
 127.0.0.1 www.poker.cm
-127.0.0.1 ai.taobao.com
 127.0.0.1 nmmississauga.112.2o7.net
 127.0.0.1 quarter.adbureau.net
 127.0.0.1 bank64.mi.ads.mp.mydas.mobi
@@ -55832,7 +55823,6 @@
 127.0.0.1 casino.vernons.com
 127.0.0.1 bingo.vernons.com
 127.0.0.1 www.bethard.com
-
 127.0.0.1 21bet.com
 127.0.0.1 21casino.com
 127.0.0.1 21prive.com
