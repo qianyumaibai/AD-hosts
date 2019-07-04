@@ -1407,7 +1407,6 @@
 127.0.0.1 inte.sogou.com
 127.0.0.1 intf.cnzz.com
 127.0.0.1 ipinyou.com
-127.0.0.1 iqiyi.m.cn.miaozhen.com
 127.0.0.1 ir.mail.163.com
 127.0.0.1 irnvf.lu.sogou.com
 127.0.0.1 irpmt.mail.163.com
@@ -4644,7 +4643,6 @@
 127.0.0.1 inte.theta.sogoucdn.com
 127.0.0.1 intf.cnzz.com
 127.0.0.1 ipinyou.com
-127.0.0.1 iqiyi.m.cn.miaozhen.com
 127.0.0.1 ir.mail.163.com
 127.0.0.1 irnvf.lu.sogou.com
 127.0.0.1 irpmt.mail.163.com
@@ -6014,7 +6012,6 @@
 127.0.0.1 vip.media8.cn
 127.0.0.1 vip.yoyozz.net
 127.0.0.1 vip.zhuba8.com
-127.0.0.1 viqiyi.admaster.com.cn
 127.0.0.1 vjcyehtqm9.me
 127.0.0.1 vjoz.lu.sogou.com
 127.0.0.1 vl8c4g7tmo.me
@@ -7502,7 +7499,6 @@
 127.0.0.1 vbaof.admaster.com.cn
 127.0.0.1 vhunantv.admaster.com.cn
 127.0.0.1 view.admaster.com.cn
-127.0.0.1 viqiyi.admaster.com.cn
 127.0.0.1 vletv.admaster.com.cn
 127.0.0.1 vqq.admaster.com.cn
 127.0.0.1 vsohu.admaster.com.cn
@@ -7657,7 +7653,6 @@
 127.0.0.1 a.irs01.com
 127.0.0.1 bitauto.irs01.com
 127.0.0.1 h.irs01.com
-127.0.0.1 iqiyi.irs01.com
 127.0.0.1 letv.irs01.com
 127.0.0.1 m.irs01.com
 127.0.0.1 pcauto.irs01.com
@@ -7693,7 +7688,6 @@
 127.0.0.1 g.x.cn.miaozhen.com
 127.0.0.1 gs.m.cn.miaozhen.com
 127.0.0.1 hunantv.m.cn.miaozhen.com
-127.0.0.1 iqiyi.m.cn.miaozhen.com
 127.0.0.1 js.miaozhen.com
 127.0.0.1 letv.m.cn.miaozhen.com
 127.0.0.1 miaozhen.com
@@ -22252,7 +22246,6 @@
 127.0.0.1 api.cp.guiji.com
 127.0.0.1 api.crispwireless.com
 127.0.0.1 api.crittercism.com
-127.0.0.1 api.cupid.iqiyi.com
 127.0.0.1 api.demandbase.com
 127.0.0.1 api.dianru.com
 127.0.0.1 api.domob.cn
@@ -24599,7 +24592,6 @@
 127.0.0.1 c.thestat.net
 127.0.0.1 c.total-media.net
 127.0.0.1 c.tracking.gamigoads.com
-127.0.0.1 c.uaa.iqiyi.com
 127.0.0.1 c.uarating.com
 127.0.0.1 c.union.ijinshan.com
 127.0.0.1 c.usatoday.com
@@ -26192,7 +26184,6 @@
 127.0.0.1 cloudhot.net
 127.0.0.1 cloudixconnection.com
 127.0.0.1 cloud-observer.ip-label.net
-127.0.0.1 cloudpush.iqiyi.com
 127.0.0.1 cloud-q.duba.net
 127.0.0.1 cloud-us.analytics-egain.com
 127.0.0.1 cloveads.go2cloud.org
@@ -29383,7 +29374,6 @@
 127.0.0.1 feed3.hype-ads.com
 127.0.0.1 feedads.g.doubleclick.net
 127.0.0.1 feedback.camera360.com
-127.0.0.1 feedback.iqiyi.com
 127.0.0.1 feedback.m.360.cn
 127.0.0.1 feedback.ttpod.itlily.com
 127.0.0.1 feedback.whalecloud.com
@@ -33637,7 +33627,6 @@
 127.0.0.1 mb.zam.com
 127.0.0.1 mb01.com
 127.0.0.1 mb104.com
-127.0.0.1 mbdlog.iqiyi.com
 127.0.0.1 mbfile.ppstream.com
 127.0.0.1 mbl.flash.jiehunmishu.com
 127.0.0.1 mbotvisit.com
@@ -47457,7 +47446,6 @@
 127.0.0.1 static.g.ppstream.com
 127.0.0.1 nl.notice.iqiyi.com
 127.0.0.1 subscription.iqiyi.com
-127.0.0.1 score.video.iqiyi.com
 127.0.0.1 t7z.cupid.iqiyi.com
 127.0.0.1 static1.bfdcdn.com
 127.0.0.1 ffwap.com
