@@ -959,7 +959,6 @@
 127.0.0.1 dsp.simba.taobao.com
 127.0.0.1 dsp.youdao.com
 127.0.0.1 dt.adsafeprotected.com
-127.0.0.1 dualstack.adsame-1421766300.ap-southeast-1.elb.amazonaws.com
 127.0.0.1 d.union.ijinshan.com
 127.0.0.1 dup.baidustatic.com
 127.0.0.1 dvb.pandora.xiaomi.com
@@ -2270,7 +2269,6 @@
 127.0.0.1 scdown.qq.com
 127.0.0.1 sc.ggdoubi.com
 127.0.0.1 sc.ggfeng.com
-127.0.0.1 schemas.android.com
 127.0.0.1 sc.iasds01.com
 127.0.0.1 scimg.27admin.com
 127.0.0.1 sc.jxhcyc.com
@@ -4107,7 +4105,6 @@
 127.0.0.1 dsp.simba.taobao.com
 127.0.0.1 dsp.youdao.com
 127.0.0.1 dt.adsafeprotected.com
-127.0.0.1 dualstack.adsame-1421766300.ap-southeast-1.elb.amazonaws.com
 127.0.0.1 d.union.ijinshan.com
 127.0.0.1 dvb.pandora.xiaomi.com
 127.0.0.1 dvsend.china.com
@@ -5373,7 +5370,6 @@
 127.0.0.1 scdown.qq.com
 127.0.0.1 sc.ggdoubi.com
 127.0.0.1 sc.ggfeng.com
-127.0.0.1 schemas.android.com
 127.0.0.1 sc.iasds01.com
 127.0.0.1 scimg.27admin.com
 127.0.0.1 sc.jxhcyc.com
@@ -38753,7 +38749,6 @@
 127.0.0.1 scdown.qq.com
 127.0.0.1 sc-forbes.forbes.com
 127.0.0.1 schaeffers.112.2o7.net
-127.0.0.1 schemas.android.com
 127.0.0.1 schemas.applovin.com
 127.0.0.1 scholasticinc.tt.omtrdc.net
 127.0.0.1 sciamcom.112.2o7.net
