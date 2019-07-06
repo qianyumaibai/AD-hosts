@@ -2,7 +2,7 @@
 ### 依然的爱
 *替换hosts来屏蔽广告*
 
-### Links
+### 链接
 * [GitHub](https://github.com/E7KMbb/AD-hosts)
 * [赞助](https://azz.net/aisauce)
 
