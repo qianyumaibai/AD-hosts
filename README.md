@@ -4,7 +4,8 @@
 
 ### 链接
 * [GitHub](https://github.com/E7KMbb/AD-hosts)
-* [赞助](https://azz.net/aisauce)
+* [支付宝](https://qr.alipay.com/tsx040682i5spldz69pnee4)
+* [爱赞助](https://azz.net/aisauce)
 
 ### 介绍
 本模块会以Systemless的形式替换hosts进行广告屏蔽。
