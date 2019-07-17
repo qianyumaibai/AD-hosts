@@ -9261,7 +9261,6 @@
 127.0.0.1 setting.rayjump.com
 127.0.0.1 ads.cdn.rovio.com
 127.0.0.1 cloud.rovio.com
-127.0.0.1 rovio-news-app.angrybirdsgame.com
 127.0.0.1 apps.outfit7.com
 127.0.0.1 apps2.outfit7.com
 127.0.0.1 cdn-gcs.outfit7.com
@@ -9979,7 +9978,6 @@
 127.0.0.1 a.jyeoo.com
 127.0.0.1 bu01.zybang.com
 127.0.0.1 bu02.zybang.com
-127.0.0.1 img.zuoyebang.cc
 127.0.0.1 xmindchina.net
 127.0.0.1 www.xmindchina.net
 127.0.0.1 xia.xmindchina.net
@@ -29124,7 +29122,6 @@
 127.0.0.1 f72a-d3a4-0314-7b97.reporo.net
 127.0.0.1 f935-2e8e-c7df-392d.reporo.net
 127.0.0.1 fabar.outwar.com
-127.0.0.1 facebookinc.122.2o7.net
 127.0.0.1 faceoff.112.2o7.net
 127.0.0.1 factiva.122.2o7.net
 127.0.0.1 fad-1104.nyc1.targetnet.com
@@ -36580,7 +36577,6 @@
 127.0.0.1 pixel.crosspixel.net
 127.0.0.1 pixel.despegar.com
 127.0.0.1 pixel.everesttech.net
-127.0.0.1 pixel.facebook.com
 127.0.0.1 pixel.fanbridge.com
 127.0.0.1 pixel.fetchback.com
 127.0.0.1 pixel.getpaidfordata.com
@@ -48429,7 +48425,6 @@
 127.0.0.1 wwweastbay.com
 127.0.0.1 rootkit.net.cn
 127.0.0.1 count128.51yes.com
-127.0.0.1 www.facebookoxy.com
 127.0.0.1 tour.ihookup.com
 127.0.0.1 www.hardasses.com
 127.0.0.1 ad-apac.doubleclick.net
@@ -50462,7 +50457,6 @@
 127.0.0.1 www.advaction.ru
 127.0.0.1 bs.serving-sys.com.49389.9354.302br.net
 127.0.0.1 u.114.com.cn
-127.0.0.1 launchfacebook.com
 127.0.0.1 shallownation.us.intellitxt.com
 127.0.0.1 ad.doubleclick.net.13632.9005.302br.net
 127.0.0.1 ads.sun-herald.com
@@ -56307,6 +56301,8 @@
 127.0.0.1 av1.xdrig.com
 
 #以下是我在上网时弹出的广告.js所在域名
+127.0.0.1 m.bdodor.top
+127.0.0.1 mob.sqkcjg.com
 127.0.0.1 www.12l22.net
 127.0.0.1 js.12l22.net
 127.0.0.1 www.zzdengshan.com
