@@ -411,7 +411,6 @@
 127.0.0.1 app01.nodes.gslb.mi-idc.com
 127.0.0.1 app02.nodes.gslb.mi-idc.com
 127.0.0.1 app.50bang.org
-127.0.0.1 appdownload.alicdn.com
 127.0.0.1 appgift.sinaapp.com
 127.0.0.1 apppic.yingyongbei.com
 127.0.0.1 appsupdate.sinaapp.com
@@ -1541,7 +1540,6 @@
 127.0.0.1 log.spotify.com
 127.0.0.1 log.stat.kugou.com
 127.0.0.1 log.tagtic.cn
-127.0.0.1 log.tbs.qq.com
 127.0.0.1 log.umsns.com
 127.0.0.1 log.umtrack.com
 127.0.0.1 log.vcgame.cn
@@ -3566,7 +3564,6 @@
 127.0.0.1 app01.nodes.gslb.mi-idc.com
 127.0.0.1 app02.nodes.gslb.mi-idc.com
 127.0.0.1 app.50bang.org
-127.0.0.1 appdownload.alicdn.com
 127.0.0.1 appgift.sinaapp.com
 127.0.0.1 apppic.yingyongbei.com
 127.0.0.1 appsupdate.sinaapp.com
@@ -5677,8 +5674,6 @@
 127.0.0.1 ta.qq.com
 127.0.0.1 t.atdmt.com
 127.0.0.1 t.atpanel.com
-127.0.0.1 tb060x.corp.youdao.com
-127.0.0.1 tb104x.corp.youdao.com
 127.0.0.1 tc.51la.net
 127.0.0.1 t.collect.yinyuetai.com
 127.0.0.1 tcss.qq.com
