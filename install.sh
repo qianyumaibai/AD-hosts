@@ -69,6 +69,7 @@ print_modname() {
 
 set_permissions() {
 set_perm $MODPATH/system/etc/hosts 0 0 0600
+chmod 600 $MODPATH/./system/etc/hosts
   : # Remove this if adding to this function
 
   # Note that all files/folders have the $UNITY prefix - keep this prefix on all of your files/folders
