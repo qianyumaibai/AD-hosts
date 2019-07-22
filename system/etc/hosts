@@ -1,6 +1,5 @@
 #********************************************************************
 # 本hosts由多个hosts整合而来hosts源均来自于github，及网络搜索
-#update[hosts]: 2019-02-23
 # https://github.com/E7KMbb/AD-hosts
 #********************************************************************
 127.0.0.1 localhost
@@ -4824,7 +4823,6 @@
 127.0.0.1 m.tixing51.net
 127.0.0.1 mtty-cdn.mtty.xin
 127.0.0.1 m.uc123.com
-127.0.0.1 m.uczzd.cn
 127.0.0.1 music.adcome.cn
 127.0.0.1 musik-mp3.info
 127.0.0.1 mvads.kugou.com
@@ -7855,14 +7853,12 @@
 127.0.0.1 up4.ucweb.com
 127.0.0.1 vs2.gzcu.u3.ucweb.com
 127.0.0.1 wap3.ucweb.com
-127.0.0.1 m.uczzd.cn
 127.0.0.1 m.uc123.com
 127.0.0.1 alissl.ucdl.pp.uc.cn
 127.0.0.1 api.mp.uc.cn
 127.0.0.1 applog.uc.cn
 127.0.0.1 hao.uc.cn
 127.0.0.1 puds.test.uae.uc.cn
-127.0.0.1 track.uc.cn
 127.0.0.1 woodpecker.uc.cn
 127.0.0.1 log.cs.pp.cn
 127.0.0.1 patriot.cs.pp.cn
@@ -12137,7 +12133,6 @@
 127.0.0.1 url.222bz.com
 127.0.0.1 usao.77gog.com
 127.0.0.1 user.tiankongzudui.com
-127.0.0.1 utp.ucweb.com
 127.0.0.1 uu.85655095.com
 127.0.0.1 uu.zeverdg.com
 127.0.0.1 uun.1uandun.com
