@@ -2,6 +2,8 @@
 ### 依然的爱
 *替换hosts来屏蔽广告*
 
+<img src="https://github.com/E7KMbb/Gallery/blob/master/628183134.png">
+
 ### 链接
 * [GitHub](https://github.com/E7KMbb/AD-hosts)
 * [支付宝](https://qr.alipay.com/tsx040682i5spldz69pnee4)
