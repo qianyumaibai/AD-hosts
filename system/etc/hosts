@@ -50,8 +50,6 @@
 127.0.0.1 2016.sina.cn
 127.0.0.1 2.21shebao.com
 127.0.0.1 2311.oadz.com
-127.0.0.1 2345apicode.dftoutiao.com
-127.0.0.1 2345api.dftoutiao.com
 127.0.0.1 268mob.cn
 127.0.0.1 312036.com
 127.0.0.1 3dns-2.adobe.com
@@ -282,7 +280,6 @@
 127.0.0.1 adsyndication.msn.com
 127.0.0.1 ads.youtube.com
 127.0.0.1 adtest.adwo.com
-127.0.0.1 ad.toutiao.com
 127.0.0.1 ad.turn.com
 127.0.0.1 adui.tg.meitu.com
 127.0.0.1 aduu.cn
@@ -906,10 +903,8 @@
 127.0.0.1 dl-vip.bav.baidu.com
 127.0.0.1 dl-vip.pcfaster.baidu.co.th
 127.0.0.1 dl.youjia2016.com
-127.0.0.1 dm.bytedance.com
 127.0.0.1 dmp.adpush.cn
 127.0.0.1 dmpclick.deliver.ifeng.com
-127.0.0.1 dm.pstatp.com
 127.0.0.1 dmtracking2.alibaba.com
 127.0.0.1 dmtracking.alibaba.com
 127.0.0.1 dns1.oadz.com
@@ -1335,7 +1330,6 @@
 127.0.0.1 img.jgchq.com
 127.0.0.1 img.jizzads.com
 127.0.0.1 img.shouji.sogou.com
-127.0.0.1 imgsreview.dftoutiao.com
 127.0.0.1 img.taotaosou.cn
 127.0.0.1 img.toppr.com.cn
 127.0.0.1 img.twcczhu.com
@@ -1735,7 +1729,6 @@
 127.0.0.1 nai.cpxkvc.com
 127.0.0.1 n.a.mosenni.com
 127.0.0.1 navi.gd.chinamobile.com
-127.0.0.1 nbsdk-baichuan.alicdn.com
 127.0.0.1 nbsdk-baichuan.taobao.com
 127.0.0.1 nc004x.corp.youdao.com
 127.0.0.1 nc045x.corp.youdao.com
@@ -1853,7 +1846,6 @@
 127.0.0.1 pat.farvd.com
 127.0.0.1 patriot.cs.pp.cn
 127.0.0.1 pay.holaq.com
-127.0.0.1 pb3.pstatp.com
 127.0.0.1 pbd.sogou.com
 127.0.0.1 pb.sogou.com
 127.0.0.1 pb.wang502.com
@@ -2126,7 +2118,6 @@
 127.0.0.1 s137.cnzz.com
 127.0.0.1 s138.cnzz.com
 127.0.0.1 s139.cnzz.com
-127.0.0.1 s13.cnzz.com
 127.0.0.1 s140.cnzz.com
 127.0.0.1 s141.cnzz.com
 127.0.0.1 s142.cnzz.com
@@ -2460,7 +2451,6 @@
 127.0.0.1 ssp.youxiaoad.com
 127.0.0.1 sssvd.china.com
 127.0.0.1 stadig0.ifeng.com
-127.0.0.1 stadig.ifeng.com
 127.0.0.1 staging.admin.e.mi.com
 127.0.0.1 stags.bluekai.com
 127.0.0.1 sta.haloall.com
@@ -3189,8 +3179,6 @@
 127.0.0.1 2052.flash2-http.qq.com
 127.0.0.1 2.21shebao.com
 127.0.0.1 2311.oadz.com
-127.0.0.1 2345apicode.dftoutiao.com
-127.0.0.1 2345api.dftoutiao.com
 127.0.0.1 268mob.cn
 127.0.0.1 312036.com
 127.0.0.1 3dns-2.adobe.com
@@ -3425,7 +3413,6 @@
 127.0.0.1 adsyndication.msn.com
 127.0.0.1 ads.youtube.com
 127.0.0.1 adtest.adwo.com
-127.0.0.1 ad.toutiao.com
 127.0.0.1 adtrack.ucweb.com
 127.0.0.1 ad.turn.com
 127.0.0.1 adui.tg.meitu.com
@@ -4049,10 +4036,8 @@
 127.0.0.1 dl.union.ijinshan.com
 127.0.0.1 dl.uu.cc
 127.0.0.1 dl.youjia2016.com
-127.0.0.1 dm.bytedance.com
 127.0.0.1 dmp.adpush.cn
 127.0.0.1 dmpclick.deliver.ifeng.com
-127.0.0.1 dm.pstatp.com
 127.0.0.1 dmtracking2.alibaba.com
 127.0.0.1 dmtracking.alibaba.com
 127.0.0.1 dns1.oadz.com
@@ -4452,7 +4437,6 @@
 127.0.0.1 img.jgchq.com
 127.0.0.1 img.jizzads.com
 127.0.0.1 img.shouji.sogou.com
-127.0.0.1 imgsreview.dftoutiao.com
 127.0.0.1 img.taotaosou.cn
 127.0.0.1 img.toppr.com.cn
 127.0.0.1 img.twcczhu.com
@@ -4847,7 +4831,6 @@
 127.0.0.1 nai.cpxkvc.com
 127.0.0.1 n.a.mosenni.com
 127.0.0.1 navi.gd.chinamobile.com
-127.0.0.1 nbsdk-baichuan.alicdn.com
 127.0.0.1 nbsdk-baichuan.taobao.com
 127.0.0.1 nc004x.corp.youdao.com
 127.0.0.1 nc045x.corp.youdao.com
@@ -4962,7 +4945,6 @@
 127.0.0.1 pat.farvd.com
 127.0.0.1 patriot.cs.pp.cn
 127.0.0.1 pay.holaq.com
-127.0.0.1 pb3.pstatp.com
 127.0.0.1 pbd.sogou.com
 127.0.0.1 pb.sogou.com
 127.0.0.1 pb.wang502.com
@@ -5555,7 +5537,6 @@
 127.0.0.1 ssp.youxiaoad.com
 127.0.0.1 sssvd.china.com
 127.0.0.1 stadig0.ifeng.com
-127.0.0.1 stadig.ifeng.com
 127.0.0.1 staging.admin.e.mi.com
 127.0.0.1 stags.bluekai.com
 127.0.0.1 sta.haloall.com
@@ -6538,8 +6519,6 @@
 127.0.0.1 bid.adview.cn
 127.0.0.1 shuttle.bayescom.com
 127.0.0.1 ad.bayescom.com
-127.0.0.1 sf1-ttcdn-tos.pstatp.com
-127.0.0.1 sf6-ttcdn-tos.pstatp.com
 127.0.0.1 adsdk.dmzj.com
 127.0.0.1 ad.qingting.fm
 127.0.0.1 s.qtad.qingting.fm
@@ -7223,7 +7202,6 @@
 127.0.0.1 api.newad.ifeng.com
 127.0.0.1 exp.3g.ifeng.com
 127.0.0.1 ifengad.3g.ifeng.com
-127.0.0.1 stadig.ifeng.com
 127.0.0.1 stadig0.ifeng.com
 127.0.0.1 dmpclick.deliver.ifeng.com
 127.0.0.1 dol.deliver.ifeng.com
@@ -7789,7 +7767,6 @@
 127.0.0.1 asearch.alicdn.com
 127.0.0.1 atanx.alicdn.com
 127.0.0.1 atanx2.alicdn.com
-127.0.0.1 nbsdk-baichuan.alicdn.com
 127.0.0.1 a.alimama.cn
 127.0.0.1 afpeng.alimama.com
 127.0.0.1 afpssp.alimama.com
@@ -9182,7 +9159,6 @@
 127.0.0.1 2345api.dftoutiao.com
 127.0.0.1 2345apicode.dftoutiao.com
 127.0.0.1 actlog.dftoutiao.com
-127.0.0.1 imgsreview.dftoutiao.com
 127.0.0.1 pclog.dftoutiao.com
 127.0.0.1 pcsoftwords.dftoutiao.com
 127.0.0.1 houtai.2345.com
@@ -9497,7 +9473,6 @@
 127.0.0.1 api.newad.ifeng.com
 127.0.0.1 exp.3g.ifeng.com
 127.0.0.1 ifengad.3g.ifeng.com
-127.0.0.1 stadig.ifeng.com
 127.0.0.1 stadig0.ifeng.com
 127.0.0.1 dmpclick.deliver.ifeng.com
 127.0.0.1 dol.deliver.ifeng.com
@@ -9525,12 +9500,8 @@
 127.0.0.1 imgad.thepaper.cn
 127.0.0.1 imgadpai.thepaper.cn
 127.0.0.1 ad.toutiao.com
-127.0.0.1 dm.toutiao.com
 127.0.0.1 analytics.snssdk.com
 127.0.0.1 temai.snssdk.com
-127.0.0.1 dm.bytedance.com
-127.0.0.1 dm.pstatp.com
-127.0.0.1 pb3.pstatp.com
 127.0.0.1 wr.da.netease.com
 127.0.0.1 push.yuedu.163.com
 127.0.0.1 n.3g.163.com
@@ -39893,7 +39864,6 @@
 127.0.0.1 stabx.net
 127.0.0.1 stack7.collect.igodigital.com
 127.0.0.1 stack9.collect.igodigital.com
-127.0.0.1 stadig.ifeng.com
 127.0.0.1 stadtbremerhaven.digidip.net
 127.0.0.1 staffpicks.outbrain.com
 127.0.0.1 stag.tivinci.com
@@ -53920,7 +53890,6 @@
 127.0.0.1 ad.doubleclick.net.12731.9046.302br.net
 127.0.0.1 t.mookie1.com
 127.0.0.1 ads.filecloud.com
-127.0.0.1 dsp.toutiao.com
 127.0.0.1 www.buy-onlinecialis.net
 127.0.0.1 view.atdmt.com.78205.9623.302br.net
 127.0.0.1 creview-images.adbureau.net
@@ -56258,14 +56227,10 @@
 #新的血液
 127.0.0.1 interface.m.sjzhushou.com 
 127.0.0.1 7xnvqo.com1.z0.glb.clouddn.com 
-127.0.0.1 p1.pstatp.com 
-127.0.0.1 p2.pstatp.com 
-127.0.0.1 p3.pstatp.com 
 127.0.0.1 static.m.sjzhushou.com 
 127.0.0.1 home.m.sjzhushou.com127.0.0.1 xl-shoulei2.rcv.sandai.net
 127.0.0.1 wimg.spriteapp.cn
 127.0.0.1 stats.jpush.cn
-127.0.0.1 p8.pstatp.com
 127.0.0.1 login.mobile.reg2t.sandai.net
 127.0.0.1 jifenshangcheng.m.xunlei.com
 127.0.0.1 img.vip.kanimg.com
@@ -56338,9 +56303,6 @@
 127.0.0.1 starc.bigdata.koznak.tv
 127.0.0.1 starc.adv.koznak.tv
 127.0.0.1 stat.koznak.tv
-
-#最右
-127.0.0.1 sf3-ttcdn-tos.pstatp.com
 
 #微信
 127.0.0.1 badjs.weixinbridge.com
