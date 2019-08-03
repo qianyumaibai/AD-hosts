@@ -7,6 +7,9 @@
 127.0.0.11 ip6-localhost
 127.0.0.11 ip6-loopback
 
+#移动运营商劫持
+127.0.0.1 m.r5ozdv.top
+
 #联通运管商劫持（有概率会影响联通用户的网络，默认开启）
 127.0.0.1 ab.sspsky.com
 127.0.0.1 cp.drmfslx.cn
