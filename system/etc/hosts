@@ -9,6 +9,7 @@
 
 #移动运营商劫持
 127.0.0.1 m.r5ozdv.top
+127.0.0.1 ru.k335k6.com
 
 #联通运管商劫持（有概率会影响联通用户的网络，默认开启）
 127.0.0.1 ab.sspsky.com
@@ -56240,9 +56241,9 @@
 127.0.0.1 bubble.vip.xunlei.com
 127.0.0.1 kanimg.com
 127.0.0.1 dm.xiazaibao.xunlei.com
-127.0.0.1 api.comm.miui.com
 127.0.0.1 alog.umengcloud.com
 127.0.0.1 av1.xdrig.com
+127.0.0.1 api.dmzj.com
 
 #以下是我在上网时弹出的广告.js所在域名
 127.0.0.1 m.bdodor.top
@@ -56290,6 +56291,7 @@
 127.0.0.1 s.w.org
 
 #某安全网络弹窗广告，一打开关不掉的那种
+127.0.0.1 gers.bzgxqj.com
 127.0.0.1 sll.16881616.com:8905
 127.0.0.1 sll.16881616.com
 
