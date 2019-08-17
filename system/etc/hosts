@@ -3752,7 +3752,6 @@
 127.0.0.1 cf8d.stat.gw.youmi.net
 127.0.0.1 cf.cdn.inmobi.com
 127.0.0.1 c.gdt.qq.com
-127.0.0.1 cgi.connect.qq.com
 127.0.0.1 c.gj.qq.com
 127.0.0.1 chance.adsensor.org
 127.0.0.1 channel.fanxing.kugou.com
@@ -6828,7 +6827,6 @@
 127.0.0.1 tuijian.baidu.com
 127.0.0.1 ubmcmm.baidustatic.com
 127.0.0.1 ucstat.baidu.com
-127.0.0.1 udpolimenew.baidu.com
 127.0.0.1 ulic.baidu.com
 127.0.0.1 w.gdown.baidu.com
 127.0.0.1 union.baidu.com
@@ -7724,7 +7722,6 @@
 127.0.0.1 service.jiagu.360.cn
 127.0.0.1 cpull.360.cn
 127.0.0.1 s.360.cn
-127.0.0.1 p.s.360.cn
 127.0.0.1 a.appjiagu.com
 127.0.0.1 api.appjiagu.com
 127.0.0.1 b.appjiagu.com
@@ -7833,7 +7830,6 @@
 127.0.0.1 vs2.gzcu.u3.ucweb.com
 127.0.0.1 wap3.ucweb.com
 127.0.0.1 m.uc123.com
-127.0.0.1 alissl.ucdl.pp.uc.cn
 127.0.0.1 api.mp.uc.cn
 127.0.0.1 applog.uc.cn
 127.0.0.1 hao.uc.cn
@@ -8607,7 +8603,6 @@
 127.0.0.1 txt.go.sohu.com
 127.0.0.1 x1.go.sohu.com
 127.0.0.1 xls.go.sohu.com
-127.0.0.1 pv.sohu.com
 127.0.0.1 adsence.sogou.com
 127.0.0.1 fair.sogou.com
 127.0.0.1 files2.sogou.com
@@ -37240,7 +37235,6 @@
 127.0.0.1 pv.kankan.stat.xunlei.com
 127.0.0.1 pv.ra.icast.cn
 127.0.0.1 pv.sogou.com
-127.0.0.1 pv.sohu.com
 127.0.0.1 pv.tianjimedia.com
 127.0.0.1 pvlog.moviebox.baofeng.net
 127.0.0.1 pvstat.baomihua.com
@@ -56226,6 +56220,7 @@
 127.0.0.1 xyxshop.com
 
 #新的血液
+127.0.0.1 api.ad.yipinread.com
 127.0.0.1 interface.m.sjzhushou.com 
 127.0.0.1 7xnvqo.com1.z0.glb.clouddn.com 
 127.0.0.1 static.m.sjzhushou.com 
@@ -56294,6 +56289,8 @@
 127.0.0.1 gers.bzgxqj.com
 127.0.0.1 sll.16881616.com:8905
 127.0.0.1 sll.16881616.com
+
+111.230.82.224 steamcommunity.com
 
 #破解迅雷下载版权限制(破解后下载加速失效)
 #127.0.0.1 hub5btmain.sandai.net
