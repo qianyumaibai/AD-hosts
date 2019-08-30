@@ -1330,7 +1330,6 @@
 127.0.0.1 img.fd7c.com
 127.0.0.1 img.jgchq.com
 127.0.0.1 img.jizzads.com
-127.0.0.1 img.shouji.sogou.com
 127.0.0.1 img.taotaosou.cn
 127.0.0.1 img.toppr.com.cn
 127.0.0.1 img.twcczhu.com
@@ -4436,7 +4435,6 @@
 127.0.0.1 img.fd7c.com
 127.0.0.1 img.jgchq.com
 127.0.0.1 img.jizzads.com
-127.0.0.1 img.shouji.sogou.com
 127.0.0.1 img.taotaosou.cn
 127.0.0.1 img.toppr.com.cn
 127.0.0.1 img.twcczhu.com
@@ -6274,7 +6272,6 @@
 127.0.0.1 gamecenter.iqiyi.com
 127.0.0.1 ifacelog.iqiyi.com
 127.0.0.1 mbdlog.iqiyi.com
-127.0.0.1 msg.iqiyi.com
 127.0.0.1 msga.cupid.iqiyi.com
 127.0.0.1 nl.notice.iqiyi.com
 127.0.0.1 notice.iqiyi.com
@@ -6828,7 +6825,6 @@
 127.0.0.1 ubmcmm.baidustatic.com
 127.0.0.1 ucstat.baidu.com
 127.0.0.1 ulic.baidu.com
-127.0.0.1 w.gdown.baidu.com
 127.0.0.1 union.baidu.com
 127.0.0.1 unionimage.baidu.com
 127.0.0.1 utility.baidu.com
@@ -6865,7 +6861,6 @@
 127.0.0.1 api.cpu.baidu.com
 127.0.0.1 api.share.baidu.com
 127.0.0.1 api.tuisong.baidu.com
-127.0.0.1 appc.baidu.com
 127.0.0.1 baidu.greenxf.cn
 127.0.0.1 baichuan.baidu.com
 127.0.0.1 baidutv.baidu.com
@@ -34370,7 +34365,6 @@
 127.0.0.1 msfn.us.intellitxt.com
 127.0.0.1 msft.demdex.net
 127.0.0.1 msg.cn.miaozhen.com
-127.0.0.1 msg.iqiyi.com
 127.0.0.1 msg.mbm.cn.miaozhen.com
 127.0.0.1 msg.shouji.360.cn
 127.0.0.1 msg.ua.56.com
@@ -35987,7 +35981,6 @@
 127.0.0.1 p.emaradx.com
 127.0.0.1 p.errorception.com
 127.0.0.1 p.g1d.net
-127.0.0.1 p.gdown.baidu.com
 127.0.0.1 p.imtt.qq.com
 127.0.0.1 p.inte.sogou.com
 127.0.0.1 p.kugou.com
@@ -56289,6 +56282,7 @@
 127.0.0.1 gers.bzgxqj.com
 127.0.0.1 sll.16881616.com:8905
 127.0.0.1 sll.16881616.com
+127.0.0.1 ulogs.umengcloud.com
 
 111.230.82.224 steamcommunity.com
 
