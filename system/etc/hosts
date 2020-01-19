@@ -330,7 +330,6 @@
 127.0.0.1 aka-cdn-ns.adtechus.com
 127.0.0.1 alicdnv2.sitemonitor.cn.miaozhen.com
 127.0.0.1 alimama.alicdn.com
-127.0.0.1 alipay.dajiadou6.com
 127.0.0.1 alitui.weibo.com
 127.0.0.1 aliunion.cn.yahoo.com
 127.0.0.1 allnews.uodoo.com
@@ -850,7 +849,6 @@
 127.0.0.1 databank.yoyi.com.cn
 127.0.0.1 data.flurry.com
 127.0.0.1 data.haoma.sogou.com
-127.0.0.1 data.mistat.xiaomi.com
 127.0.0.1 datax.baidu.com
 127.0.0.1 dat.gtags.net
 127.0.0.1 db1.fuz.cc
@@ -1599,7 +1597,6 @@
 127.0.0.1 mc.yandex.ru
 127.0.0.1 md.1drj.com
 127.0.0.1 m.dante2007.com
-127.0.0.1 mdap.alipaylog.com
 127.0.0.1 mdc.meitustat.com
 127.0.0.1 md.he9630.com
 127.0.0.1 m.domob.cn
@@ -1799,7 +1796,6 @@
 127.0.0.1 opehs.tanx.com
 127.0.0.1 openapi.guanjia.qq.com
 127.0.0.1 openapi-news.meizu.com
-127.0.0.1 openbox.mobilem.360.cn
 127.0.0.1 open.play.cn
 127.0.0.1 openrcv.baidu.com
 127.0.0.1 ope.tanx.com
@@ -3463,7 +3459,6 @@
 127.0.0.1 aka-cdn-ns.adtechus.com
 127.0.0.1 alicdnv2.sitemonitor.cn.miaozhen.com
 127.0.0.1 alimama.alicdn.com
-127.0.0.1 alipay.dajiadou6.com
 127.0.0.1 alitui.weibo.com
 127.0.0.1 aliunion.cn.yahoo.com
 127.0.0.1 allnews.uodoo.com
@@ -3990,7 +3985,6 @@
 127.0.0.1 databank.yoyi.com.cn
 127.0.0.1 data.flurry.com
 127.0.0.1 data.haoma.sogou.com
-127.0.0.1 data.mistat.xiaomi.com
 127.0.0.1 dat.gtags.net
 127.0.0.1 db1.fuz.cc
 127.0.0.1 db2.fuz.cc
@@ -4700,7 +4694,6 @@
 127.0.0.1 mc.yandex.ru
 127.0.0.1 md.1drj.com
 127.0.0.1 m.dante2007.com
-127.0.0.1 mdap.alipaylog.com
 127.0.0.1 mdc.meitustat.com
 127.0.0.1 md.he9630.com
 127.0.0.1 m.domob.cn
@@ -4897,7 +4890,6 @@
 127.0.0.1 opehs.tanx.com
 127.0.0.1 openapi.guanjia.qq.com
 127.0.0.1 openapi-news.meizu.com
-127.0.0.1 openbox.mobilem.360.cn
 127.0.0.1 open.play.cn
 127.0.0.1 ope.tanx.com
 127.0.0.1 oppo.yidianzixun.com
@@ -9027,7 +9019,6 @@
 127.0.0.1 cal.meizu.com
 127.0.0.1 aries.mzres.com
 127.0.0.1 ebook.res.meizu.com
-127.0.0.1 api-game.meizu.com
 127.0.0.1 game.res.meizu.com
 127.0.0.1 game-res.meizu.com
 127.0.0.1 umid.orion.meizu.com
@@ -9073,7 +9064,6 @@
 127.0.0.1 zeus.ad.xiaomi.com
 127.0.0.1 a.stat.xiaomi.com
 127.0.0.1 abtest.mistat.xiaomi.com
-127.0.0.1 data.mistat.xiaomi.com
 127.0.0.1 storeconfig.mistat.xiaomi.com
 127.0.0.1 r.browser.miui.com
 127.0.0.1 etl.xlmc.sandai.net
@@ -9925,8 +9915,6 @@
 127.0.0.1 www.s3d4.cn
 127.0.0.1 www.srhuafeng.com
 127.0.0.1 a.jyeoo.com
-127.0.0.1 bu01.zybang.com
-127.0.0.1 bu02.zybang.com
 127.0.0.1 xmindchina.net
 127.0.0.1 www.xmindchina.net
 127.0.0.1 xia.xmindchina.net
@@ -10399,7 +10387,6 @@
 127.0.0.1 aibangzs.com
 127.0.0.1 ajialive.com
 127.0.0.1 alifixed.cn
-127.0.0.1 alipay.dajiadou6.com
 127.0.0.1 alistatic.cn
 127.0.0.1 amae.zjcapital.cn
 127.0.0.1 amiok.org
@@ -23510,7 +23497,6 @@
 127.0.0.1 banners.dollarmachine.com
 127.0.0.1 banners.driving4dollars.com
 127.0.0.1 banners.easydns.com
-127.0.0.1 banners.ebay.com
 127.0.0.1 banners.emol.com
 127.0.0.1 banners.eroadvertising.com
 127.0.0.1 banners.ero-advertising.com
@@ -28233,7 +28219,7 @@
 127.0.0.1 ebao.duba.net
 127.0.0.1 ebaumsworld.us.intellitxt.com
 127.0.0.1 ebay.northernhost.com
-127.0.0.1 ebayadvertising.com
+127.0.0.1 ebayadvertising.com 
 127.0.0.1 ebayit-dp.nuggad.net
 127.0.0.1 ebayrelevancead.webmasterplan.com
 127.0.0.1 ebdr2.com
@@ -39747,24 +39733,6 @@
 127.0.0.1 srvpub.com
 127.0.0.1 srv-us.znaptag.com
 127.0.0.1 srwww1.com
-127.0.0.1 srx.at.ebayrtm.com
-127.0.0.1 srx.au.ebayrtm.com
-127.0.0.1 srx.befr.ebayrtm.com
-127.0.0.1 srx.benl.ebayrtm.com
-127.0.0.1 srx.ca.ebayrtm.com
-127.0.0.1 srx.cafr.ebayrtm.com
-127.0.0.1 srx.ch.ebayrtm.com
-127.0.0.1 srx.de.ebayrtm.com
-127.0.0.1 srx.es.ebayrtm.com
-127.0.0.1 srx.fr.ebayrtm.com
-127.0.0.1 srx.ie.ebayrtm.com
-127.0.0.1 srx.in.ebayrtm.com
-127.0.0.1 srx.it.ebayrtm.com
-127.0.0.1 srx.main.ebayrtm.com
-127.0.0.1 srx.nl.ebayrtm.com
-127.0.0.1 srx.pl.ebayrtm.com
-127.0.0.1 srx.sg.ebayrtm.com
-127.0.0.1 srx.uk.ebayrtm.com
 127.0.0.1 ss.cnnic.cn
 127.0.0.1 ss.crowdprocess.com
 127.0.0.1 ss.knet.cn
@@ -40274,7 +40242,6 @@
 127.0.0.1 stats.dnparking.com
 127.0.0.1 stats.dominoplaza.com
 127.0.0.1 stats.drugstore.com
-127.0.0.1 stats.ebay.com
 127.0.0.1 stats.economist.com
 127.0.0.1 stats.empowher.com
 127.0.0.1 stats.epicurious.com
@@ -49524,7 +49491,6 @@
 127.0.0.1 ad.doubleclick.net.67281.9336.302br.net
 127.0.0.1 lvs.truehits.in.th
 127.0.0.1 advicead.hit.gemius.pl
-127.0.0.1 rover.ebay.com
 127.0.0.1 ns1.oix.net
 127.0.0.1 adserver.click4cash.de
 127.0.0.1 ad.doubleclick.net.33568.9212.302br.net
@@ -50065,7 +50031,6 @@
 127.0.0.1 ad.doubleclick.net.60846.9336.302br.net
 127.0.0.1 adpost.com
 127.0.0.1 l.deals.ebay.com
-127.0.0.1 www.iboard.com
 127.0.0.1 radiode.ivwbox.de
 127.0.0.1 ad71m.adk2.co
 127.0.0.1 intellicampaign.com
