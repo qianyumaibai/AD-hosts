@@ -6359,6 +6359,7 @@
 127.0.0.1 jp.as.pptv.com
 127.0.0.1 static.g.pptv.com
 127.0.0.1 tj.g.pptv.com
+127.0.0.1 cldctrl.mobile.pptv.com
 127.0.0.1 asimgs.pplive.cn
 127.0.0.1 ads.data.pplive.com
 127.0.0.1 gas.data.pplive.com
@@ -9333,7 +9334,6 @@
 127.0.0.1 static.g.pptv.com
 127.0.0.1 tj.g.pptv.com
 127.0.0.1 asimgs.pplive.cn
-127.0.0.1 ads.data.pplive.com
 127.0.0.1 gas.data.pplive.com
 127.0.0.1 plt.data.pplive.com
 127.0.0.1 web.data.pplive.com
@@ -56197,7 +56197,17 @@
 127.0.0.1 alog.umengcloud.com
 127.0.0.1 av1.xdrig.com
 127.0.0.1 api.dmzj.com
-
+#抖音
+127.0.0.1 v3-ad.ixigua.com
+#蜗牛阅读
+127.0.0.1 du.163.com
+127.0.0.1 yaolu.mh.163.com
+127.0.0.1 yaolu.yuedu.163.com
+#知乎
+127.0.0.1 zhihu-web-analytics.zhihu.com
+127.0.0.1 sugar.zhihu.com
+#防蹭网大师
+127.0.0.1 newswifiapi.dftoutiao.com
 #以下是我在上网时弹出的广告.js所在域名
 127.0.0.1 m.bdodor.top
 127.0.0.1 mob.sqkcjg.com
@@ -56417,3 +56427,36 @@
 127.0.0.1 vs23.szcm.u3.ucweb.com
 127.0.0.1 vs24.szcm.u3.ucweb.com
 127.0.0.1 vs25.szcm.u3.ucweb.com
+
+127.0.0.1 eco.chng5.xyz
+127.0.0.1 eco.vng25.xyz
+127.0.0.1 ee.f2z4d.cn
+127.0.0.1 ee.j06kc.cn
+127.0.0.1 ee.wh723.cn
+127.0.0.1 ee.xq375.cn
+127.0.0.1 img.kukudm.com
+127.0.0.1 m.f2z4d.cn
+127.0.0.1 m.j06kc.cn
+127.0.0.1 m.wh723.cn
+127.0.0.1 m.xq375.cn
+127.0.0.1 mvo.chng5.xyz
+127.0.0.1 n.qudwrj.cn
+127.0.0.1 v.qudwrj.cn
+127.0.0.1 vpn.celueziben.com
+127.0.0.1 www.afj0.com
+127.0.0.1 yfzcuw.cn
+127.0.0.1 yxyhtea.com
+127.0.0.1 eco.myt7th.xyz
+127.0.0.1 ee.1s8pj.cn
+127.0.0.1 ee.8i1xc.cn
+127.0.0.1 ee.9e6zb.cn
+127.0.0.1 m.1s8pj.cn
+127.0.0.1 m.8i1xc.cn
+127.0.0.1 m.9e6zb.cn
+127.0.0.1 m.m5z3e.cn
+127.0.0.1 mvo.myt7th.xyz
+127.0.0.1 s.xiang7.vip
+127.0.0.1 vpn.yike0515.com
+127.0.0.1 www.hengshui1.com
+127.0.0.1 xn--fjqz50cv5q3so.ltd
+127.0.0.1 xn--wxtr9fwyxk9c.top
