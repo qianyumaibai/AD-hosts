@@ -6262,6 +6262,7 @@
 127.0.0.1 gamecenter.iqiyi.com
 127.0.0.1 ifacelog.iqiyi.com
 127.0.0.1 mbdlog.iqiyi.com
+127.0.0.1 msg.iqiyi.com
 127.0.0.1 msga.cupid.iqiyi.com
 127.0.0.1 nl.notice.iqiyi.com
 127.0.0.1 notice.iqiyi.com
@@ -6287,6 +6288,12 @@
 127.0.0.1 api.cupid.qiyi.com
 127.0.0.1 msg.video.qiyi.com
 127.0.0.1 msg2.video.qiyi.com
+127.0.0.1 rlog-video.conn.aiseet.atianqi.com
+127.0.0.1 t7z.cupid.ptqy.gitv.tv
+127.0.0.1 g.dtv.cn.miaozhen.com
+127.0.0.1 baiducdncmn.inter.iqiyi.com
+127.0.0.1 msgv6.qy.net
+127.0.0.1 api.ts.feedback.qy.net
 
 #pkg=tv.qq.com;（腾讯视频）Tencent
 127.0.0.1 aiseet.aa.atianqi.com
@@ -6316,6 +6323,10 @@
 127.0.0.1 t.l.qq.com
 127.0.0.1 vd.l.qq.com
 127.0.0.1 w.l.qq.com
+127.0.0.1 news.l.qq.com
+127.0.0.1 mcgi.v.qq.com
+127.0.0.1 soup.v.qq.com
+127.0.0.1 bksoup.v.qq.com
 
 #pkg=tv.sohu.com;（搜狐视频）Sohu
 127.0.0.1 agn.aty.sohu.com
@@ -56205,6 +56216,12 @@
 127.0.0.1 sugar.zhihu.com
 #防蹭网大师
 127.0.0.1 newswifiapi.dftoutiao.com
+#微信
+wxsnsdythumb.wxs.qq.com
+wxsnsdy.wxs.qq.com
+ad.wx.com
+oth.eve.mdt.qq.com
+report.huatuo.qq.com
 #以下是我在上网时弹出的广告.js所在域名
 127.0.0.1 m.bdodor.top
 127.0.0.1 mob.sqkcjg.com
