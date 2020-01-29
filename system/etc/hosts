@@ -608,8 +608,7 @@
 127.0.0.1 c.effectivemeasure.net
 127.0.0.1 cf8d.stat.gw.youmi.net
 127.0.0.1 cf.cdn.inmobi.com
-127.0.0.1 c.gdt.qq.com
-127.0.0.1 cgi.connect.qq.com
+127.0.0.1 c.gdt.qq.com 
 127.0.0.1 c.gj.qq.com
 127.0.0.1 chance.adsensor.org
 127.0.0.1 channel.fanxing.kugou.com
@@ -6383,7 +6382,6 @@
 127.0.0.1 as.mgtv.com
 127.0.0.1 cdn.cmop.mgtv.com
 127.0.0.1 cmop.mgtv.com
-127.0.0.1 imgaliyun.res.mgtv.com
 127.0.0.1 mobaliyun.res.mgtv.com
 127.0.0.1 mobile.da.mgtv.com
 127.0.0.1 pc.da.mgtv.com
@@ -6399,7 +6397,6 @@
 127.0.0.1 web.da.mgtv.com
 127.0.0.1 x.da.mgtv.com
 127.0.0.1 y.da.mgtv.com
-127.0.0.1 imgaliyun.da.mgtv.com
 
 #pkg=tv.cntv.cn;（央视影音）CNTV
 127.0.0.1 mdrecv.app.cntvwb.cn
@@ -6963,19 +6960,8 @@
 127.0.0.1 img.taotaosou.cn
 127.0.0.1 img01.taotaosou.cn
 
+
 #pkg=qq.com;腾讯广告服务
-127.0.0.1 aeventlog.beacon.qq.com
-127.0.0.1 astrategy.beacon.qq.com
-127.0.0.1 eventlog.beacon.qq.com
-127.0.0.1 monitor.uu.qq.com
-127.0.0.1 omgmta.qq.com
-127.0.0.1 omgmta1.qq.com
-127.0.0.1 oth.str.mdt.qq.com
-127.0.0.1 oth.update.mdt.qq.com
-127.0.0.1 pingma.qq.com
-127.0.0.1 sngmta.qq.com
-127.0.0.1 strategy.beacon.qq.com
-127.0.0.1 ad.qq.com
 127.0.0.1 ad.qun.qq.com
 127.0.0.1 adping.qq.com
 127.0.0.1 adpm.app.qq.com
@@ -6993,18 +6979,10 @@
 127.0.0.1 adsview2.qq.com
 127.0.0.1 adv.app.qq.com
 127.0.0.1 adver.qq.com
-127.0.0.1 analy.qq.com
-127.0.0.1 j.wit.qq.com
+127.0.0.1 d3g.qq.com
 127.0.0.1 jqmt.qq.com
 127.0.0.1 jsqmt.qq.com
-127.0.0.1 mini2015.qq.com
-127.0.0.1 qqshow2-item.qq.com
-127.0.0.1 setting.snswin.qq.com
-127.0.0.1 tj.video.qq.com
-127.0.0.1 updatecenter.qq.com
-127.0.0.1 video.ureport.push.qq.com
-127.0.0.1 video.wap.mpush.qq.com
-127.0.0.1 wap.mpush.qq.com
+127.0.0.1 vr.gdt.qq.com
 127.0.0.1 ta.qq.com
 127.0.0.1 tajs.qq.com
 127.0.0.1 tcss.qq.com
@@ -7015,16 +6993,26 @@
 127.0.0.1 c.gdt.qq.com
 127.0.0.1 d.gdt.qq.com
 127.0.0.1 i.gdt.qq.com
+127.0.0.1 mi.gdt.qq.com
 127.0.0.1 q.i.gdt.qq.com
 127.0.0.1 rm.gdt.qq.com
 127.0.0.1 t.gdt.qq.com
 127.0.0.1 v.gdt.qq.com
 127.0.0.1 win.gdt.qq.com
-127.0.0.1 scdown.qq.com
-127.0.0.1 download.sj.qq.com
-127.0.0.1 c.gj.qq.com
-127.0.0.1 t.sj.qq.com
-127.0.0.1 ws.sj.qq.com
+127.0.0.1 api.poll.aiseet.atianqi.com
+127.0.0.1 btrace.qq.com
+127.0.0.1 otheve.beacon.qq.com
+127.0.0.1 log.tbs.qq.com
+127.0.0.1 tools.3g.qq.com
+127.0.0.1 m.gdt.qq.com
+127.0.0.1 ii.gdt.qq.com
+127.0.0.1 adsmind.gdtimg.com
+127.0.0.1 c.gdt.qq.com
+127.0.0.1 t.gdt.qq.com
+127.0.0.1 nc.gdt.qq.com
+127.0.0.1 v.gdt.qq.com
+127.0.0.1 rpt.gdt.qq.com
+127.0.0.1 x.adnet.qq.com 
 
 #pkg=alibaba.com;阿里广告服务
 127.0.0.1 afp.alicdn.com
@@ -7121,14 +7109,14 @@
 127.0.0.1 www.googletagmanager.com
 127.0.0.1 www.google-analytics.com
 127.0.0.1 bdsp.x.jd.com
-127.0.0.1 ccc-x.jd.com
-127.0.0.1 cm.jd.com
-127.0.0.1 d.jd.com
-127.0.0.1 gia.jd.com
-127.0.0.1 im-x.jd.com
-127.0.0.1 img-x.jd.com
-127.0.0.1 u.x.jd.com
-127.0.0.1 wn.x.jd.com
+#127.0.0.1 ccc-x.jd.com
+#127.0.0.1 cm.jd.com
+#127.0.0.1 d.jd.com
+#127.0.0.1 gia.jd.com
+#127.0.0.1 im-x.jd.com
+#127.0.0.1 img-x.jd.com
+#127.0.0.1 u.x.jd.com
+#127.0.0.1 wn.x.jd.com
 127.0.0.1 3m.mediav.com
 127.0.0.1 ckmap.mediav.com
 127.0.0.1 click.mediav.com
@@ -10215,7 +10203,6 @@
 127.0.0.1 as.mgtv.com
 127.0.0.1 cdn.cmop.mgtv.com
 127.0.0.1 cmop.mgtv.com
-127.0.0.1 imgaliyun.res.mgtv.com
 127.0.0.1 mobaliyun.res.mgtv.com
 127.0.0.1 mobile.da.mgtv.com
 127.0.0.1 pc.da.mgtv.com
@@ -10231,7 +10218,6 @@
 127.0.0.1 web.da.mgtv.com
 127.0.0.1 x.da.mgtv.com
 127.0.0.1 y.da.mgtv.com
-127.0.0.1 imgaliyun.da.mgtv.com
 127.0.0.1 log.da.hunantv.com
 127.0.0.1 log.p2p.hunantv.com
 127.0.0.1 log.rc.hunantv.com
@@ -10266,18 +10252,12 @@
 127.0.0.1 bsv.atm.youku.com
 127.0.0.1 count.atm.youku.com
 127.0.0.1 dmapp.youku.com
-127.0.0.1 html.atm.youku.com
 127.0.0.1 ipm.atm.youku.com
 127.0.0.1 myes.youku.com
 127.0.0.1 r.l.youku.com
 127.0.0.1 service.danmu.youku.com
 127.0.0.1 statis.mobile.youku.com
-127.0.0.1 v2html.atm.youku.com
 127.0.0.1 val.atm.youku.com
-127.0.0.1 valb.atm.youku.com
-127.0.0.1 valc.atm.youku.com
-127.0.0.1 valf.atm.youku.com
-127.0.0.1 valp.atm.youku.com
 127.0.0.1 valt.atm.youku.com
 127.0.0.1 1.letvlive.com
 127.0.0.1 2.letvlive.com
@@ -14684,10 +14664,7 @@
 #Youku
 127.0.0.1 atm.youku.com
 127.0.0.1 fvid.atm.youku.com
-127.0.0.1 html.atm.youku.com
 127.0.0.1 valb.atm.youku.com
-127.0.0.1 valc.atm.youku.com
-127.0.0.1 valf.atm.youku.com
 127.0.0.1 valo.atm.youku.com
 127.0.0.1 valp.atm.youku.com
 127.0.0.1 vid.atm.youku.com
@@ -14697,47 +14674,11 @@
 127.0.0.1 static.lstat.youku.com
 127.0.0.1 urchin.lstat.youku.com
 127.0.0.1 stat.youku.com
-
-#去优酷广告 
-0.0.0.0 stat.youku.com 
-0.0.0.0 static.lstat.youku.com 
-0.0.0.0 valb.atm.youku.com 
-0.0.0.0 valc.atm.youku.com 
-0.0.0.0 valf.atm.youku.com 
-0.0.0.0 valo.atm.youku.com 
-0.0.0.0 valp.atm.youku.com 
-0.0.0.0 vid.atm.youku.com 
-0.0.0.0 walp.atm.youku.com 
-
-127.0.0.1 atm.youku.com
-
 127.0.0.1 Fvid.atm.youku.com
-
 127.0.0.1 html.atm.youku.com
-
-127.0.0.1 valb.atm.youku.com
-
 127.0.0.1 valf.atm.youku.com
-
-127.0.0.1 valo.atm.youku.com
-
-127.0.0.1 valp.atm.youku.com
-
-127.0.0.1 lstat.youku.com
-
-127.0.0.1 speed.lstat.youku.com
-
-127.0.0.1 urchin.lstat.youku.com
-
-127.0.0.1 stat.youku.com
-
-127.0.0.1 static.lstat.youku.com
-
 127.0.0.1 valc.atm.youku.com
-
-127.0.0.1 vid.atm.youku.com
-
-127.0.0.1 walp.atm.youku.com
+127.0.0.1 v2html.atm.youku.com
 #去土豆网广告 
 127.0.0.1 adextensioncontrol.tudou.com 
 127.0.0.1 iwstat.tudou.com 
@@ -47905,7 +47846,6 @@
 127.0.0.1 bs.serving-sys.com.57886.9414.302br.net
 127.0.0.1 www.mailchimp.com
 127.0.0.1 r20.rs6.net
-127.0.0.1 valb.atm.youku.com
 127.0.0.1 www.turdgasm.com
 127.0.0.1 www.haha1234.com
 127.0.0.1 view.atdmt.com.72829.9517.302br.net
@@ -53003,7 +52943,6 @@
 127.0.0.1 api.yuedu.iqiyi.com
 127.0.0.1 ad.doubleclick.net.42558.9323.302br.net
 127.0.0.1 nightangel.com
-127.0.0.1 vid.atm.youku.com
 127.0.0.1 centertrk.com
 127.0.0.1 bs.serving-sys.com.47172.9349.302br.net
 127.0.0.1 www.quizstartweb.com
@@ -56474,3 +56413,4 @@ report.huatuo.qq.com
 127.0.0.1 www.hengshui1.com
 127.0.0.1 xn--fjqz50cv5q3so.ltd
 127.0.0.1 xn--wxtr9fwyxk9c.top
+127.0.0.1 api.zhihu.com
