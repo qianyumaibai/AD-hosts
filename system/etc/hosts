@@ -7881,7 +7881,6 @@
 127.0.0.1 alipay.dajiadou6.com
 127.0.0.1 alipaylog.com
 127.0.0.1 alisat.biz
-127.0.0.1 alissl.ucdl.pp.uc.cn
 127.0.0.1 alissonluis-musico.sites.uol.com.br
 127.0.0.1 alistatic.cn
 127.0.0.1 alitui.weibo.com
@@ -33815,8 +33814,7 @@
 127.0.0.1 server.bittads.com
 127.0.0.1 server.cpmstar.com
 127.0.0.1 server.freegamesall.com
-127.0.0.1 server.iad.liveperson.net
-127.0.0.1 server.m.pp.cn
+127.0.0.1 server.iad.liveperson.net 
 127.0.0.1 server.siteamplifier.net
 127.0.0.1 server.yoyi.com.cn
 127.0.0.1 server01.2cnt.net
