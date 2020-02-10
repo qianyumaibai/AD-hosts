@@ -6,9 +6,7 @@
 127.0.0.11 ip6-loopback
 127.0.0.11 localhost
 ::1 localhost 
-
-127.0.0.1 *.p2v.tudou.com*
-127.0.0.1 *.p2v.tudou.com*
+ 
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
 127.0.0.1 006.free-adult-counters.x-xtra.com
