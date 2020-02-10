@@ -8,7 +8,7 @@
 ::1 localhost 
 
 127.0.0.1 *.p2v.tudou.com*
-127.0.0.1 *.p2v.tudou.com* 
+127.0.0.1 *.p2v.tudou.com*
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
 127.0.0.1 006.free-adult-counters.x-xtra.com
@@ -64,7 +64,6 @@
 127.0.0.1 1.770765.cn
 127.0.0.1 1.aili.com
 127.0.0.1 1.allyes.com.cn
-127.0.0.1 1.allyes.com.cn 
 127.0.0.1 1.baidu.com
 127.0.0.1 1.bashenghuo.com
 127.0.0.1 1.chcx.cn
@@ -1064,7 +1063,7 @@
 127.0.0.1 7search.com
 127.0.0.1 7sultans.com
 127.0.0.1 7vws1j1j.com
-127.0.0.1 7xnvqo.com1.z0.glb.clouddn.com 
+127.0.0.1 7xnvqo.com1.z0.glb.clouddn.com
 127.0.0.1 8.dramafeverw2.appspot.com
 127.0.0.1 8.jrj.com
 127.0.0.1 8.jrj.com.cn
@@ -1094,9 +1093,9 @@
 127.0.0.1 85058s.com
 127.0.0.1 859-events.olark.com
 127.0.0.1 865.bitterstrawberry.com
-127.0.0.1 86file.megajoy.com 
-127.0.0.1 86get.joy.cn 
-127.0.0.1 86log.joy.cn 
+127.0.0.1 86file.megajoy.com
+127.0.0.1 86get.joy.cn
+127.0.0.1 86log.joy.cn
 127.0.0.1 879.stats.misstrends.com
 127.0.0.1 881.engine.mobileapptracking.com
 127.0.0.1 8866786.com
@@ -1279,7 +1278,6 @@
 127.0.0.1 a.bshu.com
 127.0.0.1 a.cam4free.com
 127.0.0.1 a.cctv.com
-127.0.0.1 a.cctv.com 
 127.0.0.1 a.cdn.intentmedia.net
 127.0.0.1 a.chartboost.com
 127.0.0.1 a.cj-cy.com
@@ -1290,7 +1288,6 @@
 127.0.0.1 a.cn.duoyi.com
 127.0.0.1 a.cn.miaozhen.com
 127.0.0.1 a.cntv.cn
-127.0.0.1 a.cntv.cn 
 127.0.0.1 a.cnzz.com
 127.0.0.1 a.collective-media.net
 127.0.0.1 a.collective-media.net.42372.9289.302br.net
@@ -1856,8 +1853,7 @@
 127.0.0.1 active.hit.stat24.com
 127.0.0.1 activeapps.go2cloud.org
 127.0.0.1 activeboard.com
-127.0.0.1 activepop.net 
-127.0.0.1 activeqq.3g.qq.com
+127.0.0.1 activepop.net
 127.0.0.1 actives.youku.com
 127.0.0.1 activetracker.activehotels.com
 127.0.0.1 activewin.us.intellitxt.com
@@ -2161,7 +2157,6 @@
 127.0.0.1 ad.caradisiac-publicite.com
 127.0.0.1 ad.caradisiac.com
 127.0.0.1 ad.cctv.com
-127.0.0.1 ad.cctv.com 
 127.0.0.1 ad.cdn.sex
 127.0.0.1 ad.ch.doubleclick.net
 127.0.0.1 ad.choiceradio.com
@@ -4081,7 +4076,6 @@
 127.0.0.1 adcontent.videoegg.com
 127.0.0.1 adcontrol.lonestarnaughtygirls.com
 127.0.0.1 adcontrol.tudou.com
-127.0.0.1 adcontrol.tudou.com 
 127.0.0.1 adcore.lenovomm.com
 127.0.0.1 adcount.hollywood.com
 127.0.0.1 adcount.sandai.net
@@ -4163,7 +4157,6 @@
 127.0.0.1 adexprts.com
 127.0.0.1 adext.inkclub.com
 127.0.0.1 adextensioncontrol.tudou.com
-127.0.0.1 adextensioncontrol.tudou.com 
 127.0.0.1 adextent.com
 127.0.0.1 adf.dahe.cn
 127.0.0.1 adf.ero-advertising.com
@@ -4223,7 +4216,6 @@
 127.0.0.1 adgroups.net
 127.0.0.1 adgrx.moatads.com
 127.0.0.1 adguanggao.eee114.com
-127.0.0.1 adguanggao.eee114.com 
 127.0.0.1 adhall.com
 127.0.0.1 adhese.com
 127.0.0.1 adhese.net
@@ -4598,7 +4590,6 @@
 127.0.0.1 adplans.info
 127.0.0.1 adplat.etonenet.com
 127.0.0.1 adplay.tudou.com
-127.0.0.1 adplay.tudou.com 
 127.0.0.1 adplexmedia.adk2.co
 127.0.0.1 adplexmedia.adk2x.com
 127.0.0.1 adplus.co.id
@@ -7982,10 +7973,8 @@
 127.0.0.1 alicdnv2.sitemonitor.cn.miaozhen.com
 127.0.0.1 alifixed.cn
 127.0.0.1 alimama.alicdn.com
-127.0.0.1 alimama.alicdn.com 
 127.0.0.1 alipaylog.com
-127.0.0.1 alisat.biz
-127.0.0.1 alissl.ucdl.pp.uc.cn
+127.0.0.1 alisat.biz。
 127.0.0.1 alissonluis-musico.sites.uol.com.br
 127.0.0.1 alistatic.cn
 127.0.0.1 alitui.weibo.com
@@ -8571,7 +8560,6 @@
 127.0.0.1 apf.whoclick.cn
 127.0.0.1 aphrodite.porntrack.com
 127.0.0.1 api-flow.flyme.cn
-127.0.0.1 api-flow.flyme.cn 
 127.0.0.1 api-lb-722311334.us-east-1.elb.amazonaws.com
 127.0.0.1 api-public.addthis.com
 127.0.0.1 api-push.meizu.com
@@ -13389,8 +13377,7 @@
 127.0.0.1 cfg.adsmogo.mobi
 127.0.0.1 cfg.adsmogo.net
 127.0.0.1 cfg.adsmogo.org
-127.0.0.1 cfg.himogo.com
-127.0.0.1 cfg.imtt.qq.com
+127.0.0.1 cfg.himogo.com 
 127.0.0.1 cfg.mywebsearch.com
 127.0.0.1 cfrfa.112.2o7.net
 127.0.0.1 cfzp1.voluumtrk.com
@@ -16664,7 +16651,6 @@
 127.0.0.1 dip.szhyzkj.com
 127.0.0.1 dip.wl963.com
 127.0.0.1 dip.zgydjr.com
-127.0.0.1 dir.minigame.qq.com
 127.0.0.1 direct-revenue.com
 127.0.0.1 direct-stats.com
 127.0.0.1 direct-xxx-access.com
@@ -16842,7 +16828,6 @@
 127.0.0.1 dm.jinshasi.cn
 127.0.0.1 dm.kingpolo.com.cn
 127.0.0.1 dm.mlstat.com
-127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
 127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
@@ -22197,7 +22182,6 @@
 127.0.0.1 image.adv.livedoor.com
 127.0.0.1 image.agency.91.com
 127.0.0.1 image.atdmt.com
-127.0.0.1 image.box.xiaomi.com
 127.0.0.1 image.cecash.com
 127.0.0.1 image.cybererotica.com
 127.0.0.1 image.emaradx.com
@@ -22214,7 +22198,6 @@
 127.0.0.1 image.masterstats.com
 127.0.0.1 image.nsk-sys.com
 127.0.0.1 image.online2019.com
-127.0.0.1 image.p4p.sogou.com
 127.0.0.1 image.pathfinder.com
 127.0.0.1 image.providesupport.com
 127.0.0.1 image.qj175.com
@@ -22575,8 +22558,7 @@
 127.0.0.1 img.servint.net
 127.0.0.1 img.shangxize.cn
 127.0.0.1 img.share-online.biz
-127.0.0.1 img.sheyuansu.com
-127.0.0.1 img.shouji.sogou.com
+127.0.0.1 img.sheyuansu.com 
 127.0.0.1 img.skenzo.com
 127.0.0.1 img.solocpm.com
 127.0.0.1 img.srxjz.cn
@@ -22957,7 +22939,6 @@
 127.0.0.1 influentialads.go2cloud.org
 127.0.0.1 info-mail.codeguard.com
 127.0.0.1 info-push.duba.net
-127.0.0.1 info.3g.qq.com
 127.0.0.1 info.9718.com
 127.0.0.1 info.analysis.kp.sec.miui.com
 127.0.0.1 info.anmedia.co.uk
@@ -22971,8 +22952,7 @@
 127.0.0.1 info.it.hc360.com
 127.0.0.1 info.meihua.docer.com
 127.0.0.1 info.pinyin.sogou.com
-127.0.0.1 info.ppweb.com.cn
-127.0.0.1 info.sec.miui.com
+127.0.0.1 info.ppweb.com.cn 
 127.0.0.1 info.skyhookwireless.com
 127.0.0.1 info.static.startappservice.com
 127.0.0.1 info.stockstar.com
@@ -23032,8 +23012,7 @@
 127.0.0.1 inpencil.go2cloud.org
 127.0.0.1 inpencilmedia.go2cloud.org
 127.0.0.1 inpref.s3-external-3.amazonaws.com
-127.0.0.1 inpref.s3.amazonaws.com
-127.0.0.1 input.shouji.sogou.com
+127.0.0.1 inpref.s3.amazonaws.com 
 127.0.0.1 inquake.de.intellitxt.com
 127.0.0.1 inquiries.redhat.com
 127.0.0.1 inquiry.shop.xerox.com
@@ -25234,7 +25213,6 @@
 127.0.0.1 log.superweb.ws
 127.0.0.1 log.tagtic.cn
 127.0.0.1 log.tapatalk.com 
-127.0.0.1 log.tbs.qq.com
 127.0.0.1 log.tiexue.net
 127.0.0.1 log.ttjx.tatagou.com.cn
 127.0.0.1 log.tv.moliv.cn
@@ -25451,8 +25429,7 @@
 127.0.0.1 logstat.kugou.com
 127.0.0.1 logstat.t.sfht.com
 127.0.0.1 logtest.moatads.com
-127.0.0.1 logua.com
-127.0.0.1 logupdate.avlyun.sec.miui.com
+127.0.0.1 logua.com 
 127.0.0.1 logv1.xiti.com
 127.0.0.1 logv10.xiti.com
 127.0.0.1 logv11.xiti.com
@@ -30511,7 +30488,6 @@
 127.0.0.1 otf.msn.com
 127.0.0.1 oth.eve.mdt.qq.com
 127.0.0.1 oth.str.mdt.qq.com
-127.0.0.1 oth.update.mdt.qq.com
 127.0.0.1 other.xxxcounter.com
 127.0.0.1 otherprofit.com
 127.0.0.1 otheve.beacon.qq.com
@@ -31793,7 +31769,6 @@
 127.0.0.1 pmetrics.getclicky.com
 127.0.0.1 pmetrics.performancing.com
 127.0.0.1 pmh.souid.com
-127.0.0.1 pmir.3g.qq.com
 127.0.0.1 pmm.people.com.cn
 127.0.0.1 pmp.adinall.com
 127.0.0.1 pmptrack-autohome.gentags.net
@@ -35314,9 +35289,7 @@
 127.0.0.1 server.bittads.com
 127.0.0.1 server.cpmstar.com
 127.0.0.1 server.exposebox.com
-127.0.0.1 server.freegamesall.com
-127.0.0.1 server.iad.liveperson.net 
-127.0.0.1 server.m.pp.cn
+127.0.0.1 server.freegamesall.com 
 127.0.0.1 server.siteamplifier.net
 127.0.0.1 server.yoyi.com.cn
 127.0.0.1 server01.2cnt.net
@@ -35423,9 +35396,6 @@
 127.0.0.1 sezwho.com
 127.0.0.1 sf.vserv.mobi
 127.0.0.1 sf01.fastapi.net 
-127.0.0.1 sf1-ttcdn-tos.pstatp.com
-127.0.0.1 sf3-ttcdn-tos.pstatp.com
-127.0.0.1 sf6-ttcdn-tos.pstatp.com
 127.0.0.1 sfd.maizhenai.cn
 127.0.0.1 sfiroqsm.njylyljg.com
 127.0.0.1 sfmusictech.appstores.com
@@ -36041,8 +36011,7 @@
 127.0.0.1 soft.chaomeng8.com
 127.0.0.1 soft.data.weather.360.cn
 127.0.0.1 soft.jiegeng.com
-127.0.0.1 soft.qymma.com
-127.0.0.1 soft.tbs.imtt.qq.com
+127.0.0.1 soft.qymma.com 
 127.0.0.1 soft.zhidian3g.cn
 127.0.0.1 soft32.us.intellitxt.com
 127.0.0.1 softads.50webs.com
@@ -49124,7 +49093,7 @@
 127.0.0.1 zzcw.office-mall.net
 127.0.0.1 zzdh.cnzz.com
 127.0.0.1 zzhzyy.cn
-127.0.0.1 zzimg.51.la
+127.0.0.1 zzimg.51.la 
 127.0.0.1 zzjs2.firefang.cn
 127.0.0.1 zzpush.58.com
 127.0.0.1 zzrv1uha.njylyljg.com
