@@ -13,4 +13,4 @@
 
 ### 捐赠
 <img src="https://raw.githubusercontent.com/E7KMbb/Gallery/blob/master/628183134.png">
-<img src="https://github.com/E7KMbb/Gallery/blob/master/Donation.jpg">
+<img src="https://raw.githubusercontent.com/E7KMbb/Gallery/blob/master/Donation.jpg">
