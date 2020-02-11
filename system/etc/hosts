@@ -5,7 +5,7 @@
 127.0.0.11 ip6-localhost
 127.0.0.11 ip6-loopback
 127.0.0.11 localhost
-::1 localhost 
+::1 localhost
  
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
@@ -11773,7 +11773,6 @@
 127.0.0.1 btprmnav.com
 127.0.0.1 btr.domywife.com
 127.0.0.1 btr.sharethis.com
-127.0.0.1 btrace.qq.com
 127.0.0.1 btrace.video.qq.com
 127.0.0.1 btrpreroll.s3.amazonaws.com
 127.0.0.1 btsportandroid.2cnt.net
@@ -14159,7 +14158,6 @@
 127.0.0.1 cm.au.thewest.overture.com 
 127.0.0.1 cm.baichuan.baidu.com
 127.0.0.1 cm.baidu.com
-127.0.0.1 cm.bilibili.com
 127.0.0.1 cm.br.clickgratis.overture.com
 127.0.0.1 cm.cbsnews.overture.com
 127.0.0.1 cm.cmt.overture.com
@@ -25064,7 +25062,7 @@
 127.0.0.1 lloogg.com
 127.0.0.1 lm-pk.com
 127.0.0.1 lm.admin5.com
-127.0.0.1 lm.bilibili.wan.liebao.cn
+#127.0.0.1 lm.bilibili.wan.liebao.cn
 127.0.0.1 lm.dawenxue.org
 127.0.0.1 lm.licenses.adobe.com
 127.0.0.1 lm.souid.com
@@ -25211,7 +25209,6 @@
 127.0.0.1 log.tiexue.net
 127.0.0.1 log.ttjx.tatagou.com.cn
 127.0.0.1 log.tv.moliv.cn
-127.0.0.1 log.umsns.com
 127.0.0.1 log.umtrack.com
 127.0.0.1 log.v.iask.com
 127.0.0.1 log.v2.hunantv.com
@@ -30481,7 +30478,6 @@
 127.0.0.1 ota.cartrawler.com
 127.0.0.1 ota.pay.mobile.sina.cn
 127.0.0.1 otf.msn.com
-127.0.0.1 oth.eve.mdt.qq.com
 127.0.0.1 oth.str.mdt.qq.com
 127.0.0.1 other.xxxcounter.com
 127.0.0.1 otherprofit.com
@@ -31491,7 +31487,6 @@
 127.0.0.1 pingfore.soso.com
 127.0.0.1 pinghot.qq.com
 127.0.0.1 pingjs.qq.com
-127.0.0.1 pingma.qq.com
 127.0.0.1 pingomatic.com
 127.0.0.1 pings.conviva.com
 127.0.0.1 pingtas.qq.com
@@ -36076,7 +36071,6 @@
 127.0.0.1 soundbeat.go2cloud.org
 127.0.0.1 soundofhope.org
 127.0.0.1 soundslam.us.intellitxt.com
-127.0.0.1 soup.v.qq.com
 127.0.0.1 source.click.ipd.pps.tv
 127.0.0.1 source.youxiaoad.com
 127.0.0.1 sources.wangqipu.com
@@ -36589,7 +36583,7 @@
 127.0.0.1 stat.aport.ru
 127.0.0.1 stat.appsgeyser.com
 127.0.0.1 stat.bigmir.net
-127.0.0.1 stat.bilibili.tv
+#127.0.0.1 stat.bilibili.tv
 127.0.0.1 stat.blogads.com
 127.0.0.1 stat.bokecc.com
 127.0.0.1 stat.browser.nearme.com.cn
