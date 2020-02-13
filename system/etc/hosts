@@ -2,11 +2,11 @@
 # https://github.com/E7KMbb/AD-hosts
 # 本hosts由多个hosts整合而来hosts源均来自于github，及网络搜索
 #*********************************************************************
-127.0.0.11 ip6-localhost
-127.0.0.11 ip6-loopback
-127.0.0.11 localhost
-::1 localhost
- 
+127.0.0.1 ip6-localhost
+127.0.0.1 ip6-loopback
+127.0.0.1 localhost
+::1        ip6-localhost
+
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
 127.0.0.1 006.free-adult-counters.x-xtra.com
@@ -3123,7 +3123,6 @@
 127.0.0.1 ad.leadbolt.net
 127.0.0.1 ad.leadboltads.net
 127.0.0.1 ad.leadboltapps.net
-127.0.0.1 ad.leadboltapps.net ## another airpush style ad#
 127.0.0.1 ad.leadboltmobile.net
 127.0.0.1 ad.leetoou.com
 127.0.0.1 ad.letsbonus.com
@@ -5619,7 +5618,6 @@
 127.0.0.1 ads.movielush.com
 127.0.0.1 ads.movieweb.com
 127.0.0.1 ads.mp.mydas.mobi
-127.0.0.1 ads.mp.mydas.mobi # with many subdomains
 127.0.0.1 ads.mp3.com
 127.0.0.1 ads.mplx.valueclick.net
 127.0.0.1 ads.mrgreen.com
@@ -8593,7 +8591,6 @@
 127.0.0.1 api.adyoulike.com
 127.0.0.1 api.ahjinshu.com
 127.0.0.1 api.airpush.com
-127.0.0.1 api.airpush.com ## hope this is all #
 127.0.0.1 api.aixifan.com
 127.0.0.1 api.amplitude.com
 127.0.0.1 api.analytics.omgpop.com
@@ -21816,7 +21813,6 @@
 127.0.0.1 i.verticalresponse.com
 127.0.0.1 i.vizejs.info
 127.0.0.1 i.w.inmobi.com
-127.0.0.1 i.w.inmobi.com #
 127.0.0.1 i.w.sandbox.inmobi.com
 127.0.0.1 i.w55c.net
 127.0.0.1 i.wowips.com
@@ -32819,7 +32815,6 @@
 127.0.0.1 r.uimserv.net
 127.0.0.1 r.unicornmedia.com
 127.0.0.1 r.w.inmobi.com
-127.0.0.1 r.w.inmobi.com # in-app provider
 127.0.0.1 r.wiyun.com
 127.0.0.1 r.xcycm.com
 127.0.0.1 r.yieldkit.com
@@ -32862,7 +32857,6 @@
 127.0.0.1 r5.cooleremail.com
 127.0.0.1 r5.plugrush.com
 127.0.0.1 r6.cooleremail.com
-127.0.0.1 r6.mo.baidu.com
 127.0.0.1 r7.cooleremail.com
 127.0.0.1 r8.cooleremail.com
 127.0.0.1 r8nu86wg.me
@@ -33356,7 +33350,6 @@
 127.0.0.1 res.lazyswipe.com
 127.0.0.1 res.levexis.com
 127.0.0.1 res.limei.com
-127.0.0.1 res.mi.baidu.com
 127.0.0.1 res.mmstat.com
 127.0.0.1 res.qhupdate.com
 127.0.0.1 res.ymxiaopin.com
@@ -34502,7 +34495,7 @@
 127.0.0.1 s89.cnzz.com
 127.0.0.1 s9-cdn.futuriti.com
 127.0.0.1 s9.addthis.com
-127.0.0.1 s9.cnzz.com
+#127.0.0.1 s9.cnzz.com
 127.0.0.1 s9.shinystat.com
 127.0.0.1 s90.cnzz.com
 127.0.0.1 s91.cnzz.com
