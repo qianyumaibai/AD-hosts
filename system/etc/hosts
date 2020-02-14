@@ -2,9 +2,9 @@
 # https://github.com/E7KMbb/AD-hosts
 # 本hosts由多个hosts整合而来hosts源均来自于github，及网络搜索
 #*********************************************************************
+127.0.0.1 localhost
 127.0.0.1 ip6-localhost
 127.0.0.1 ip6-loopback
-127.0.0.1 localhost
 ::1        ip6-localhost
 
 127.0.0.1 0.r.msn.com
@@ -7956,7 +7956,6 @@
 127.0.0.1 alfatraffic.com
 127.0.0.1 alfcasino.com
 127.0.0.1 alhcm.pop.91tiger.com
-
 127.0.0.1 ali.adsame.com
 127.0.0.1 aliaz.go2cloud.org
 127.0.0.1 alibaba.zhihei.com
@@ -8298,7 +8297,6 @@
 127.0.0.1 analytics.soup.io
 127.0.0.1 analytics.spoken-tutorial.org
 127.0.0.1 analytics.spongecell.com
-127.0.0.1 analytics.spotify.com
 127.0.0.1 analytics.springboardvideo.com
 127.0.0.1 analytics.stg.springboardvideo.com
 127.0.0.1 analytics.strangeloopnetworks.com
@@ -15350,7 +15348,6 @@
 127.0.0.1 crash.browser.qq.com
 127.0.0.1 crash.qiushibaike.com
 127.0.0.1 crashapi.growingio.com
-127.0.0.1 crashdump.spotify.com
 127.0.0.1 crashes.mo.wps.cn
 127.0.0.1 crashlytics.163.com
 127.0.0.1 crashlytics.com
@@ -25158,7 +25155,6 @@
 127.0.0.1 log.sina.cn
 127.0.0.1 log.sitemeter.com
 127.0.0.1 log.so.hunantv.com
-127.0.0.1 log.spotify.com
 127.0.0.1 log.stat.kugou.com
 127.0.0.1 log.streamagent.sensic.net
 127.0.0.1 log.superweb.ws
@@ -36046,7 +36042,6 @@
 127.0.0.1 spc.cefhdghhafdgceifiehdfdad.iban.telemetryverification.net
 127.0.0.1 spcdnpc.i-mobile.co.jp
 127.0.0.1 spcdnsp.i-mobile.co.jp
-127.0.0.1 spclient.wg.spotify.com
 127.0.0.1 spcnv.i-mobile.co.jp
 127.0.0.1 spcode.baidu.com
 127.0.0.1 spd.atdmt.com
@@ -38058,7 +38053,6 @@
 127.0.0.1 taobaoafp.allyes.com
 127.0.0.1 taoke.alimama.com
 127.0.0.1 taomike.com
-127.0.0.1 taou.cn
 127.0.0.1 tap-cdn.rubiconproject.com
 127.0.0.1 tap-secure.rubiconproject.com
 127.0.0.1 tap-t.rubiconproject.com
@@ -41931,7 +41925,6 @@
 127.0.0.1 webiq-cdn.appspot.com
 127.0.0.1 webiq-warp.appspot.com
 127.0.0.1 webiq005.webiqonline.com
-127.0.0.1 weblb-wg.gslb.spotify.com
 127.0.0.1 weblink.settrade.com
 127.0.0.1 webload101.hitbox.com
 127.0.0.1 weblog.blogads.com
