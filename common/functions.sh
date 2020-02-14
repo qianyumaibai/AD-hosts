@@ -1,6 +1,6 @@
 ##########################################################################################
 #
-# MMT Extended and E7KMbb Utility Functions
+# MMT Extended Utility Functions
 #
 ##########################################################################################
 
@@ -17,7 +17,10 @@ cleanup() {
   ui_print " "
   ui_print "    **************************************"
   ui_print "    *   MMT Extended by Zackptg5 @ XDA   *"
-  ui_print "    *   E7KMbb by 依然的爱/Ai Sauce @ Coolapk   *"
+  ui_print "    **************************************"
+  ui_print " "
+  ui_print "    **************************************"
+  ui_print "    *E7KMbb by 依然的爱/Ai Sauce @ Coolapk*"
   ui_print "    **************************************"
   ui_print " "
   $DEBUG && debug_log
@@ -53,7 +56,7 @@ debug_log() {
 }
 
 device_check() {
-  local PROP=$(echo "$1" | tr '[:upper:]' '[:lower:]') i
+  local PROP=$(echo "$1" | tr '[:upper:]' '[:lower:]')
   for i in /system /vendor /odm /product; do
     if [ -f $i/build.prop ]; then
       for j in "ro.product.device" "ro.build.product" "ro.product.vendor.device" "ro.vendor.product.device"; do
@@ -183,9 +186,9 @@ fi
 # Debug
 if $DEBUG; then
   ui_print "- Debug mode"
-  LOGFILE=/storage/emulated/0/Download/$MODID-debug.log
-  ui_print "  Debug log will be written to: $LOGFILE"
-  exec 2>$LOGFILE
+  LOGFILE=/storage/emulated/0/Download/$MODID-debug
+  ui_print "  Debug log will be written to: $LOGFILE.log"
+  exec 2>$LOGFILE.log
   set -x
 fi
 
