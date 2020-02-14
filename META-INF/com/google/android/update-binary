@@ -173,7 +173,7 @@ fi
 # Remove stuffs that don't belong to modules
 rm -rf \
 $MODPATH/system/placeholder $MODPATH/customize.sh \
-$MODPATH/README.md $MODPATH/.git* 2>/dev/null
+$MODPATH/README.md $MODPATH/LICENSE $MODPATH/.git* 2>/dev/null
 
 ##############
 # Finalizing
