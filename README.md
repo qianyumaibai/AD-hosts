@@ -12,5 +12,6 @@
 * [GitHub](https://github.com/E7KMbb/AD-hosts)
 
 ### 捐赠
-如果喜欢可以捐赠,您的捐赠是我更新最大的动力(当然不捐赠也没关系)
+如果喜欢可以捐赠,您的捐赠是我更新最大的动力（当然不捐赠也没关系）
+
 <img src="https://raw.githubusercontent.com/E7KMbb/Gallery/blob/master/Donation.jpg">
