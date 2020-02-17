@@ -25012,7 +25012,6 @@
 127.0.0.1 lloogg.com
 127.0.0.1 lm-pk.com
 127.0.0.1 lm.admin5.com
-#127.0.0.1 lm.bilibili.wan.liebao.cn
 127.0.0.1 lm.dawenxue.org
 127.0.0.1 lm.licenses.adobe.com
 127.0.0.1 lm.souid.com
@@ -25178,6 +25177,7 @@
 127.0.0.1 log1.surf-town.net
 127.0.0.1 log1.uuserv10.com
 127.0.0.1 log10.doubleverify.com
+127.0.0.1 log1wtlogin.qq.com
 127.0.0.1 log2.air.yoyi.com.cn
 127.0.0.1 log2.molitv.cn
 127.0.0.1 log2.quintelligence.com
@@ -26456,6 +26456,7 @@
 127.0.0.1 m.pt05c.cn
 127.0.0.1 m.ptuoa.com
 127.0.0.1 m.pubbirdf.com
+127.0.0.1 m.pubgorg.xyz
 127.0.0.1 m.puooi.com
 127.0.0.1 m.pwjhg.com
 127.0.0.1 m.px69z.cn
@@ -34424,7 +34425,6 @@
 127.0.0.1 s89.cnzz.com
 127.0.0.1 s9-cdn.futuriti.com
 127.0.0.1 s9.addthis.com
-#127.0.0.1 s9.cnzz.com
 127.0.0.1 s9.shinystat.com
 127.0.0.1 s90.cnzz.com
 127.0.0.1 s91.cnzz.com
@@ -36500,7 +36500,6 @@
 127.0.0.1 stat.aport.ru
 127.0.0.1 stat.appsgeyser.com
 127.0.0.1 stat.bigmir.net
-#127.0.0.1 stat.bilibili.tv
 127.0.0.1 stat.blogads.com
 127.0.0.1 stat.bokecc.com
 127.0.0.1 stat.browser.nearme.com.cn
@@ -47384,6 +47383,7 @@
 127.0.0.1 www.voodooparking.com
 127.0.0.1 www.vpon.com
 127.0.0.1 www.vporn.com
+127.0.0.1 www.vqq.admaster.com.cn
 127.0.0.1 www.vroll.net
 127.0.0.1 www.vsevjednom.cz
 127.0.0.1 www.vsnoon.net
@@ -48988,5 +48988,6 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
-127.0.0.1 www.vqq.admaster.com.cn
-127.0.0.1 log1wtlogin.qq.com
+#127.0.0.1 lm.bilibili.wan.liebao.cn
+#127.0.0.1 s9.cnzz.com
+#127.0.0.1 stat.bilibili.tv
