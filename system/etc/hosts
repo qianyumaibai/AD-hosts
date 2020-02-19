@@ -10825,7 +10825,6 @@
 127.0.0.1 bdsp.x.jd.com
 127.0.0.1 bdtg.37wan.com
 127.0.0.1 bdtv.tianlangkm.com
-127.0.0.1 bduserlog.eastmoney.com
 127.0.0.1 bdv.bidvertiser.com
 127.0.0.1 bdx.comclick.com
 127.0.0.1 be-funk.com
@@ -14272,7 +14271,6 @@
 127.0.0.1 cmstool.youku.com
 127.0.0.1 cmstrendslog.indiatimes.com
 127.0.0.1 cmstrendslog.timesnow.tv
-127.0.0.1 cmts.iqiyi.com
 127.0.0.1 cmtvia.112.2o7.net
 127.0.0.1 cmx.autohome.com.cn
 127.0.0.1 cmx.tw.yahoo.overture.com
@@ -25655,8 +25653,6 @@
 127.0.0.1 m.107279.com
 127.0.0.1 m.1133.cc
 127.0.0.1 m.118ex.cn
-127.0.0.1 m.12306media.com
-127.0.0.1 m.1234567.com.cn
 127.0.0.1 m.12365chia.com
 127.0.0.1 m.131pu.cn
 127.0.0.1 m.1680go.com
@@ -28168,7 +28164,6 @@
 127.0.0.1 mobads.e.shifen.com
 127.0.0.1 mobaliyun.res.mgtv.com
 127.0.0.1 mobaloo.go2cloud.org
-127.0.0.1 mobappconfig.securities.eastmoney.com
 127.0.0.1 mobatory.com
 127.0.0.1 mobbridge.mobpartner.mobi
 127.0.0.1 mobcdn.com
@@ -34492,7 +34487,6 @@
 127.0.0.1 sambaclk.adsame.com
 127.0.0.1 sambasys.adsame.com
 127.0.0.1 same.chinadaily.com.cn
-127.0.0.1 same.eastmoney.com
 127.0.0.1 same.jrj.com.cn
 127.0.0.1 same.mzy2014.com
 127.0.0.1 same.stockstar.com
@@ -37819,7 +37813,6 @@
 127.0.0.1 t1.51maiwanju.com
 127.0.0.1 t1.58cdn.com.cn
 127.0.0.1 t1.adserver.com
-127.0.0.1 t1.baidu.com
 127.0.0.1 t1.extreme-dm.com
 127.0.0.1 t1.formalyzer.com
 127.0.0.1 t1.huafeibianzhidai.com
@@ -37836,18 +37829,14 @@
 127.0.0.1 t1.wrating.com
 127.0.0.1 t1.wshufa.com
 127.0.0.1 t1.xc0429.com
-127.0.0.1 t10.baidu.com
 127.0.0.1 t10.rbnt.org
 127.0.0.1 t10.wrating.com
 127.0.0.1 t10.yijia2009.com
-127.0.0.1 t11.baidu.com
-127.0.0.1 t12.baidu.com
 127.0.0.1 t188.dazhonghua.cn
 127.0.0.1 t1n.cn
 127.0.0.1 t2.51maiwanju.com
 127.0.0.1 t2.58cdn.com.cn
 127.0.0.1 t2.70e.com
-127.0.0.1 t2.baidu.com
 127.0.0.1 t2.formalyzer.com
 127.0.0.1 t2.hulu.com
 127.0.0.1 t2.huluim.com
@@ -37864,7 +37853,6 @@
 127.0.0.1 t22.3sdaigou.com
 127.0.0.1 t3.51maiwanju.com
 127.0.0.1 t3.58cdn.com.cn
-127.0.0.1 t3.baidu.com
 127.0.0.1 t3.formalyzer.com
 127.0.0.1 t3.guomob.com
 127.0.0.1 t3.leadlander.com
@@ -37878,7 +37866,6 @@
 127.0.0.1 t3shz.jinanhe.com.cn
 127.0.0.1 t4.51maiwanju.com
 127.0.0.1 t4.agrantsem.com
-127.0.0.1 t4.baidu.com
 127.0.0.1 t4.formalyzer.com
 127.0.0.1 t4.guomob.com
 127.0.0.1 t4.leadlander.com
@@ -37887,18 +37874,15 @@
 127.0.0.1 t4.wrating.com
 127.0.0.1 t4u.stat.v-56.com
 127.0.0.1 t5.51maiwanju.com
-127.0.0.1 t5.baidu.com
 127.0.0.1 t5.formalyzer.com
 127.0.0.1 t5.leadlander.com
 127.0.0.1 t5.trackalyzer.com
 127.0.0.1 t5.wrating.com
 127.0.0.1 t6.51maiwanju.com
-127.0.0.1 t6.baidu.com
 127.0.0.1 t6.formalyzer.com
 127.0.0.1 t6.leadlander.com
 127.0.0.1 t6.trackalyzer.com
 127.0.0.1 t6.wrating.com
-127.0.0.1 t7.baidu.com
 127.0.0.1 t7.formalyzer.com
 127.0.0.1 t7.leadlander.com
 127.0.0.1 t7.trackalyzer.com
@@ -37906,14 +37890,12 @@
 127.0.0.1 t75.qyqc4s.com
 127.0.0.1 t7z.cupid.iqiyi.com
 127.0.0.1 t7z.cupid.ptqy.gitv.tv
-127.0.0.1 t8.baidu.com
 127.0.0.1 t8.dnvus.com
 127.0.0.1 t8.formalyzer.com
 127.0.0.1 t8.leadlander.com
 127.0.0.1 t8.trackalyzer.com
 127.0.0.1 t8.wrating.com
 127.0.0.1 t8ac8a8f8.jingfeed.com
-127.0.0.1 t9.baidu.com
 127.0.0.1 t9.formalyzer.com
 127.0.0.1 t9.leadlander.com
 127.0.0.1 t9.trackalyzer.com
@@ -48991,3 +48973,4 @@
 #127.0.0.1 lm.bilibili.wan.liebao.cn
 #127.0.0.1 s9.cnzz.com
 #127.0.0.1 stat.bilibili.tv
+#127.0.0.1 cmts.iqiyi.com
