@@ -8716,7 +8716,6 @@
 127.0.0.1 api.nrelate.com
 127.0.0.1 api.o2o.lianwifi.com
 127.0.0.1 api.oneyuan.nagezan.net
-127.0.0.1 api.open.uc.cn
 127.0.0.1 api.opencandy.com
 127.0.0.1 api.optimizely.com
 127.0.0.1 api.optinmonster.com
@@ -16083,6 +16082,7 @@
 127.0.0.1 data.lizads.com
 127.0.0.1 data.marketgid.com
 127.0.0.1 data.mobclix.com
+127.0.0.1 data.mistat.xiaomi.com
 127.0.0.1 data.neuroxmedia.com
 127.0.0.1 data.oileddaintiessunset.info
 127.0.0.1 data.perion.com
@@ -23943,7 +23943,6 @@
 127.0.0.1 js3987.vdhufs.com
 127.0.0.1 js3987.yzh360.com
 127.0.0.1 js4.clickzs.com
-127.0.0.1 js4.eastmoney.com
 127.0.0.1 js4.ringrevenue.com
 127.0.0.1 js4104.lygshgj.com
 127.0.0.1 js4104.scfatao.com
@@ -32417,7 +32416,6 @@
 127.0.0.1 push.zdworks.com
 127.0.0.1 push.zhangyue.com
 127.0.0.1 push.zhanzhang.baidu.com
-127.0.0.1 push2.eastmoney.com
 127.0.0.1 pushapi.lenovomm.com
 127.0.0.1 pushmsg.camera360.com
 127.0.0.1 pussygreen.com
@@ -48970,7 +48968,4 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
-#127.0.0.1 lm.bilibili.wan.liebao.cn
-#127.0.0.1 s9.cnzz.com
-#127.0.0.1 stat.bilibili.tv
 #127.0.0.1 cmts.iqiyi.com
