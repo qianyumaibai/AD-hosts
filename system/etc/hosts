@@ -1651,10 +1651,8 @@
 127.0.0.1 aax-eu-rtb.amazon-adsystem.com
 127.0.0.1 aax-eu.amazon-adsystem.com
 127.0.0.1 aax-fe-pek.amazon-adsystem.com
-127.0.0.1 aax-fe-sin.amazon-adsystem.com
 127.0.0.1 aax-fe.amazon-adsystem.com
 127.0.0.1 aax-us-east-rtb.amazon-adsystem.com
-127.0.0.1 aax-us-east.amazon-adsystem.com
 127.0.0.1 aax-us-pdx.amazon-adsystem.com
 127.0.0.1 aax-us-west.amazon-adsystem.com
 127.0.0.1 aax.amazon-adsystem.com
@@ -12720,7 +12718,6 @@
 127.0.0.1 ccv.ybt999.com
 127.0.0.1 cd-ads.com
 127.0.0.1 cd-ladsp-com.s3.amazonaws.com
-127.0.0.1 cd.bendibao.com
 127.0.0.1 cd.jejre.cn
 127.0.0.1 cd001.www.duba.net
 127.0.0.1 cd75.htyfmm.com
@@ -15278,7 +15275,6 @@
 127.0.0.1 cpmfun.com
 127.0.0.1 cpmleader.com
 127.0.0.1 cpmstar.com
-127.0.0.1 cpoml.iask.sina.com.cn
 127.0.0.1 cpro.7791.com.cn
 127.0.0.1 cpro.9xu.com
 127.0.0.1 cpro.baidu.cn
@@ -15298,7 +15294,6 @@
 127.0.0.1 cps.yaoqing.com
 127.0.0.1 cpu-admin.baidu.com
 127.0.0.1 cpu-baidu-com-block.cdn.bcebos.com
-127.0.0.1 cpu.baidu.com
 127.0.0.1 cpucdn.baidu.com
 127.0.0.1 cpull.360.cn
 127.0.0.1 cpusall.112.2o7.net
@@ -20182,7 +20177,6 @@
 127.0.0.1 gbotvisit.com
 127.0.0.1 gbscript.com
 127.0.0.1 gbsg.buluogamesdk.gxpan.cn
-127.0.0.1 gc.keefung-zs.com
 127.0.0.1 gc.mobilem.360.cn
 127.0.0.1 gc128.infusionsoft.com
 127.0.0.1 gcapi.sy.kugou.com
@@ -22191,7 +22185,6 @@
 127.0.0.1 imagen03.247realmedia.com
 127.0.0.1 imagen04.247realmedia.com
 127.0.0.1 imagenen1.247realmedia.com
-127.0.0.1 imageplus.baidu.com
 127.0.0.1 images-72-26-207-6.assets.qhosted.com
 127.0.0.1 images-aud.freshmeat.net
 127.0.0.1 images-aud.slashdot.org
@@ -24604,7 +24597,6 @@
 127.0.0.1 lb-02-613398411.us-west-1.elb.amazonaws.com
 127.0.0.1 lb.apicit.net
 127.0.0.1 lb.fruitflan.com
-127.0.0.1 lb.gtimg.com
 127.0.0.1 lb.l.qq.com
 127.0.0.1 lb.statsevent.com
 127.0.0.1 lb.trellian.com
@@ -31415,11 +31407,9 @@
 127.0.0.1 pingfore.qq.com
 127.0.0.1 pingfore.soso.com
 127.0.0.1 pinghot.qq.com
-127.0.0.1 pingjs.qq.com
 127.0.0.1 pingomatic.com
 127.0.0.1 pings.conviva.com
 127.0.0.1 pingtas.qq.com
-127.0.0.1 pingtcss.qq.com
 127.0.0.1 pinion.gg
 127.0.0.1 pinkisthenewblog.us.intellitxt.com
 127.0.0.1 pinktrkn.com
@@ -32152,7 +32142,6 @@
 127.0.0.1 promote.pair.com
 127.0.0.1 promoterbanner.com
 127.0.0.1 promotion-campaigns.com
-127.0.0.1 promotion.aliyun.com
 127.0.0.1 promotion.gomlab.com
 127.0.0.1 promotion.partnercash.com
 127.0.0.1 promotion.shirtinator.net
@@ -32338,7 +32327,6 @@
 127.0.0.1 publicidad.adlead.com
 127.0.0.1 publicidad.eluniversal.com.mx
 127.0.0.1 publicidad.entelchile.net
-127.0.0.1 publish-pic-cpu.baidu.com
 127.0.0.1 publish.ad.youth.cn
 127.0.0.1 publish.pizzazzemail.com
 127.0.0.1 publish.vidavee.com
@@ -36267,7 +36255,6 @@
 127.0.0.1 ss2p.uuxs.net
 127.0.0.1 ss3.zedo.com
 127.0.0.1 ss7.zedo.com
-127.0.0.1 ssac.suning.com
 127.0.0.1 ssc.union.ijinshan.com
 127.0.0.1 sscdn.banners.advidi.com
 127.0.0.1 sscm2.mipujia.com
@@ -40503,7 +40490,6 @@
 127.0.0.1 v.effectivemeasure.net
 127.0.0.1 v.emedia.cn
 127.0.0.1 v.extreme-dm.com
-127.0.0.1 v.gdt.qq.com
 127.0.0.1 v.hr41.cn
 127.0.0.1 v.img.vsnoon.net
 127.0.0.1 v.imofan.com
@@ -48364,7 +48350,6 @@
 127.0.0.1 y.zeroredirect2.com
 127.0.0.1 y.zp22.cn
 127.0.0.1 y.zxwdw.com
-127.0.0.1 y0.cn
 127.0.0.1 y0.extreme-dm.com
 127.0.0.1 y1.extreme-dm.com
 127.0.0.1 y2click.logger.baofeng.com
@@ -48968,4 +48953,5 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
+127.0.0.1 registration.presonus.com
 #127.0.0.1 cmts.iqiyi.com
