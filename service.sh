@@ -3,4 +3,3 @@
 #set permissions
 chmod 600 $MODPATH/./system/etc/hosts
 set_perm $MODPATH/system/etc/hosts 0 0 0600
-set_perm $tmpModPath/system/etc/hosts 0 0 0600

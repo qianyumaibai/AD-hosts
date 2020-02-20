@@ -56,7 +56,6 @@ REPLACE="
 
 set_permissions() {
 set_perm $UNITY/system/etc/hosts 0 0 0600
-set_perm $tmpModPath/system/etc/hosts 0 0 0600
 set_perm $MODPATH/system/etc/hosts 0 0 0600
   : # Remove this if adding to this function
 
