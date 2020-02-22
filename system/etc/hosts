@@ -12805,6 +12805,7 @@
 127.0.0.1 cdn.appendad.com
 127.0.0.1 cdn.applifier.com
 127.0.0.1 cdn.apptv.com
+127.0.0.1 cdn.ark.qq.com
 127.0.0.1 cdn.assets.craveonline.com
 127.0.0.1 cdn.assets.gorillanation.com
 127.0.0.1 cdn.at.atwola.com
@@ -16075,8 +16076,8 @@
 127.0.0.1 data.kamcord.com
 127.0.0.1 data.lizads.com
 127.0.0.1 data.marketgid.com
-127.0.0.1 data.mobclix.com
 127.0.0.1 data.mistat.xiaomi.com
+127.0.0.1 data.mobclix.com
 127.0.0.1 data.neuroxmedia.com
 127.0.0.1 data.oileddaintiessunset.info
 127.0.0.1 data.perion.com
@@ -21716,6 +21717,7 @@
 127.0.0.1 i.flowgo.com
 127.0.0.1 i.gdt.qq.com
 127.0.0.1 i.go.sohu.com
+127.0.0.1 i.gtimg.cn
 127.0.0.1 i.haloapps.com
 127.0.0.1 i.hao61.net
 127.0.0.1 i.holalauncher.com
@@ -24484,7 +24486,6 @@
 127.0.0.1 l.springmetrics.com
 127.0.0.1 l.supfast.net
 127.0.0.1 l.ujian.cc
-127.0.0.1 l.yidianzixun.com
 127.0.0.1 l.yieldmanager.net
 127.0.0.1 l.zeroredirect.com
 127.0.0.1 l.zeroredirect1.com
@@ -25141,6 +25142,7 @@
 127.0.0.1 log.superweb.ws
 127.0.0.1 log.tagtic.cn
 127.0.0.1 log.tapatalk.com 
+127.0.0.1 log.tbs.qq.com
 127.0.0.1 log.tiexue.net
 127.0.0.1 log.ttjx.tatagou.com.cn
 127.0.0.1 log.tv.moliv.cn
@@ -25583,7 +25585,6 @@
 127.0.0.1 lwken.com
 127.0.0.1 lwnne.cn
 127.0.0.1 lwq.wangketuan.com
-127.0.0.1 lx-upload-log.yidianzixun.com
 127.0.0.1 lxb.baidu.com
 127.0.0.1 lxbjs.baidu.com
 127.0.0.1 lxcdn.dl.files.xiaomi.net
@@ -26470,6 +26471,7 @@
 127.0.0.1 m.qlr0d.cn
 127.0.0.1 m.qneit.com
 127.0.0.1 m.qoiusky.com
+127.0.0.1 m.qpic.cn
 127.0.0.1 m.qq.com
 127.0.0.1 m.qqyue.top
 127.0.0.1 m.qu79j.cn
@@ -29382,6 +29384,7 @@
 127.0.0.1 nodes.double6affiliation.com
 127.0.0.1 nodes.r66t.com
 127.0.0.1 nodevice.uk.intellitxt.com
+127.0.0.1 nodisk.oss-cn-hangzhou.aliyuncs.com
 127.0.0.1 nojsstats.appspot.com
 127.0.0.1 nol.yahoo.com
 127.0.0.1 nonsi.csheaven.com
@@ -30400,6 +30403,8 @@
 127.0.0.1 ota.cartrawler.com
 127.0.0.1 ota.pay.mobile.sina.cn
 127.0.0.1 otf.msn.com
+127.0.0.1 oth.eve.mdt.qq.com
+127.0.0.1 oth.str.mdt.qq.com
 127.0.0.1 other.xxxcounter.com
 127.0.0.1 otherprofit.com
 127.0.0.1 otheve.beacon.qq.com
@@ -32599,6 +32604,7 @@
 127.0.0.1 qq.m.cn.miaozhen.com
 127.0.0.1 qq.wrating.com
 127.0.0.1 qqa.miaozhu823.com
+127.0.0.1 qqadapt.qpic.cn
 127.0.0.1 qqe.ihear123.com
 127.0.0.1 qqlogo.qq.com
 127.0.0.1 qqs.glpen08.com
@@ -32673,6 +32679,7 @@
 127.0.0.1 qwiklnk.com
 127.0.0.1 qxm.pluto.sogou.com
 127.0.0.1 qyrix.go2cloud.org
+127.0.0.1 qzs.qq.com
 127.0.0.1 qzxcvb.m.zwdu.com
 127.0.0.1 r.14244.com
 127.0.0.1 r.254a.com
@@ -33145,6 +33152,7 @@
 127.0.0.1 register.zonelabs.com
 127.0.0.1 registercom.122.2o7.net
 127.0.0.1 registration.livejasmin.com
+127.0.0.1 registration.presonus.com
 127.0.0.1 registrydefender.com
 127.0.0.1 registrydefenderplatinum.com
 127.0.0.1 regman.freeze.com
@@ -42312,6 +42320,7 @@
 127.0.0.1 wpnipostcomjobs.112.2o7.net
 127.0.0.1 wprp.zemanta.com
 127.0.0.1 wptag.net
+127.0.0.1 wq.jd.com
 127.0.0.1 wqmobile.com
 127.0.0.1 wqw.planetsuzy.org
 127.0.0.1 wr.da.netease.com
@@ -48383,6 +48392,7 @@
 127.0.0.1 yang.jfqkj.com
 127.0.0.1 yao.ccmdgg.com
 127.0.0.1 yao.zzsdjq.com
+127.0.0.1 yaohuo.me
 127.0.0.1 yaolan.adsame.com
 127.0.0.1 yaolu.mh.163.com
 127.0.0.1 yaolu.yuedu.163.com
@@ -48892,6 +48902,7 @@
 127.0.0.1 zst.jzntxs.com
 127.0.0.1 zszwcp.cn
 127.0.0.1 zt.adsage.com
+127.0.0.1 zt.jd.com
 127.0.0.1 zt.pptv.com
 127.0.0.1 zt.tim-taxi.com
 127.0.0.1 zt.zeroredirect1.com
@@ -48952,6 +48963,3 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
-127.0.0.1 registration.presonus.com
-127.0.0.1 yaohuo.me
-#127.0.0.1 cmts.iqiyi.com
