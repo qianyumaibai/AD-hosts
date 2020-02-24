@@ -1653,6 +1653,7 @@
 127.0.0.1 aax-fe-pek.amazon-adsystem.com
 127.0.0.1 aax-fe.amazon-adsystem.com
 127.0.0.1 aax-us-east-rtb.amazon-adsystem.com
+127.0.0.1 aax-us-east.amazon-adsystem.com
 127.0.0.1 aax-us-pdx.amazon-adsystem.com
 127.0.0.1 aax-us-west.amazon-adsystem.com
 127.0.0.1 aax.amazon-adsystem.com
@@ -1808,7 +1809,9 @@
 127.0.0.1 acrossperformance.go2cloud.org
 127.0.0.1 acs.56.com
 127.0.0.1 acs.56.com 
+127.0.0.1 acs.agent.56.com
 127.0.0.1 acs.agent.56.com 
+127.0.0.1 acs.agent.v-56.com
 127.0.0.1 acs.agent.v-56.com 
 127.0.0.1 acs.stat.v-56.com
 127.0.0.1 acs4baichuan.m.taobao.com
@@ -4291,6 +4294,7 @@
 127.0.0.1 adinf.voole.com
 127.0.0.1 adinfo.aol.com
 127.0.0.1 adinfo.ra1.xlmc.sec. 
+127.0.0.1 adinfo.ra1.xlmc.sec.miui.com
 127.0.0.1 adinfuse.com
 127.0.0.1 adinjector.net
 127.0.0.1 adinterax.cnet.com.edgesuite.net
@@ -5715,6 +5719,7 @@
 127.0.0.1 ads.onlineguiden.com
 127.0.0.1 ads.onmedia.bg
 127.0.0.1 ads.ontheweb.com
+127.0.0.1 ads.ookla.com
 127.0.0.1 ads.opensubtitles.org
 127.0.0.1 ads.openx.net
 127.0.0.1 ads.opera.com
@@ -7954,6 +7959,7 @@
 127.0.0.1 alfatraffic.com
 127.0.0.1 alfcasino.com
 127.0.0.1 alhcm.pop.91tiger.com
+127.0.0.1 ali-stats.jpush.cn
 127.0.0.1 ali.adsame.com
 127.0.0.1 aliaz.go2cloud.org
 127.0.0.1 alibaba.zhihei.com
@@ -8560,6 +8566,7 @@
 127.0.0.1 api.ad-patrick.com
 127.0.0.1 api.ad-stir.com
 127.0.0.1 api.ad.ly
+127.0.0.1 api.ad.xiaomi.com
 127.0.0.1 api.ad.xv555.com
 127.0.0.1 api.ad.yipinread.com
 127.0.0.1 api.adbana.com
@@ -8570,6 +8577,7 @@
 127.0.0.1 api.adip.ly
 127.0.0.1 api.adlure.net
 127.0.0.1 api.admob.com
+127.0.0.1 api.adnet.mob.com
 127.0.0.1 api.adrenalads.com
 127.0.0.1 api.adsmogo.net
 127.0.0.1 api.adsnative.com
@@ -8769,6 +8777,7 @@
 127.0.0.1 api.ts.feedback.71.am
 127.0.0.1 api.ts.feedback.qy.net
 127.0.0.1 api.tuisong.baidu.com
+127.0.0.1 api.tw06.xlmc.sec.miui.com
 127.0.0.1 api.tweetmeme.com
 127.0.0.1 api.ujian.cc
 127.0.0.1 api.umbel.com
@@ -9606,6 +9615,7 @@
 127.0.0.1 b.am15.net
 127.0.0.1 b.aol.com
 127.0.0.1 b.aowugame.com
+127.0.0.1 b.appjiagu.com
 127.0.0.1 b.apzeyu.com
 127.0.0.1 b.baidu.com
 127.0.0.1 b.baitaiad.com
@@ -9659,6 +9669,7 @@
 127.0.0.1 b.rifub.com
 127.0.0.1 b.rmgserving.com
 127.0.0.1 b.sc.omtrdc.net
+127.0.0.1 b.scorecardresearch.com
 127.0.0.1 b.secuurity.net
 127.0.0.1 b.sell.com
 127.0.0.1 b.siftscience.com
@@ -11215,7 +11226,9 @@
 127.0.0.1 bild.de.intellitxt.com
 127.0.0.1 bild01.webtrekk.net
 127.0.0.1 bill-info.com
+127.0.0.1 bill.agent.56.com
 127.0.0.1 bill.agent.56.com 
+127.0.0.1 bill.agent.v-56.com
 127.0.0.1 bill.agent.v-56.com 
 127.0.0.1 bill.ccbill.com
 127.0.0.1 bill.ecsuite.com
@@ -11289,6 +11302,7 @@
 127.0.0.1 bjdnserror8.wo.com.cn
 127.0.0.1 bjdnserror9.wo.com.cn
 127.0.0.1 bjedpt.com
+127.0.0.1 bjuser.jpush.cn
 127.0.0.1 bkmcgi.play.cp81.ott.cibntv.net
 127.0.0.1 bkrntr.netmng.com
 127.0.0.1 bksdkconfig.play.cp81.ott.cibntv.net
@@ -11742,6 +11756,7 @@
 127.0.0.1 btprmnav.com
 127.0.0.1 btr.domywife.com
 127.0.0.1 btr.sharethis.com
+127.0.0.1 btrace.qq.com
 127.0.0.1 btrace.video.qq.com
 127.0.0.1 btrpreroll.s3.amazonaws.com
 127.0.0.1 btsportandroid.2cnt.net
@@ -12602,6 +12617,7 @@
 127.0.0.1 cast.innity.com
 127.0.0.1 cast.ra.icast.cn
 127.0.0.1 cast.ra.imocha.com
+127.0.0.1 casting.openv.com
 127.0.0.1 casting.openv.com 
 127.0.0.1 castingshow-news.de.intellitxt.com
 127.0.0.1 castplatform.com
@@ -16075,7 +16091,6 @@
 127.0.0.1 data.kamcord.com
 127.0.0.1 data.lizads.com
 127.0.0.1 data.marketgid.com
-127.0.0.1 data.mistat.xiaomi.com
 127.0.0.1 data.mobclix.com
 127.0.0.1 data.neuroxmedia.com
 127.0.0.1 data.oileddaintiessunset.info
@@ -21966,6 +21981,7 @@
 127.0.0.1 idreamsky.com
 127.0.0.1 idregie.com
 127.0.0.1 idritracker.com
+127.0.0.1 ids1.deliver.ifeng.com
 127.0.0.1 idspaces.ero-advertising.com
 127.0.0.1 idsync.rlcdn.com
 127.0.0.1 idvisitor.click2houston.com
@@ -24968,7 +24984,6 @@
 127.0.0.1 livetracker.martinoticias.org
 127.0.0.1 livetrck.com
 127.0.0.1 liveupdate.mac.sandai.net
-127.0.0.1 livew.l.qq.com
 127.0.0.1 livezila.namoroevangelicos.com
 127.0.0.1 livingsocial.sp1.convertro.com
 127.0.0.1 livre.wasastation.fi
@@ -25140,9 +25155,11 @@
 127.0.0.1 log.superweb.ws
 127.0.0.1 log.tagtic.cn
 127.0.0.1 log.tapatalk.com
+127.0.0.1 log.tbs.qq.com
 127.0.0.1 log.tiexue.net
 127.0.0.1 log.ttjx.tatagou.com.cn
 127.0.0.1 log.tv.moliv.cn
+127.0.0.1 log.umsns.com
 127.0.0.1 log.umtrack.com
 127.0.0.1 log.v.iask.com
 127.0.0.1 log.v2.hunantv.com
@@ -26412,6 +26429,7 @@
 127.0.0.1 m.okuis.com
 127.0.0.1 m.omztf.cn
 127.0.0.1 m.onlifjj.net
+127.0.0.1 m.openv.tv
 127.0.0.1 m.openv.tv 
 127.0.0.1 m.opqsr.com
 127.0.0.1 m.oyrim.com
@@ -27223,6 +27241,7 @@
 127.0.0.1 mb.zam.com
 127.0.0.1 mb01.com
 127.0.0.1 mb104.com
+127.0.0.1 mbd.baidu.com
 127.0.0.1 mbd.weathercn.com
 127.0.0.1 mbdapp.iqiyi.com
 127.0.0.1 mbdlog.iqiyi.com
@@ -27869,6 +27888,7 @@
 127.0.0.1 mi-web43.prod.millennialmedia.com
 127.0.0.1 mi.adinterax.com
 127.0.0.1 mi.atm.youku.com
+127.0.0.1 mi.gdt.qq.com
 127.0.0.1 mi9.gscontxt.net
 127.0.0.1 miami.ero-advertising.com
 127.0.0.1 miamicasino.com
@@ -28147,6 +28167,7 @@
 127.0.0.1 mob10.cqjktj.com
 127.0.0.1 mobaders.oss-cn-beijing.aliyuncs.com
 127.0.0.1 mobadme.jp
+127.0.0.1 mobads-logs.baidu.com
 127.0.0.1 mobads-speed.baidu.com
 127.0.0.1 mobads.baidu.com
 127.0.0.1 mobads.e.shifen.com
@@ -28463,6 +28484,7 @@
 127.0.0.1 msg.c002.ottcn.com
 127.0.0.1 msg.cn.miaozhen.com
 127.0.0.1 msg.eclicks.cn
+127.0.0.1 msg.iqiyi.com
 127.0.0.1 msg.m.letv.com
 127.0.0.1 msg.mbm.cn.miaozhen.com
 127.0.0.1 msg.mobile.kugou.com
@@ -29496,6 +29518,7 @@
 127.0.0.1 nsa.conviva.com
 127.0.0.1 nsa.lphbs.com
 127.0.0.1 nsads.sv.publicus.com
+127.0.0.1 nsclick.baidu.com
 127.0.0.1 nsclickvideo.baidu.com
 127.0.0.1 nsdldlese.112.2o7.net
 127.0.0.1 nsdsok.cn
@@ -31163,6 +31186,7 @@
 127.0.0.1 pgalvaoteles.pt
 127.0.0.1 pgdb1.surf-town.net
 127.0.0.1 pgdbb1.surf-town.net
+127.0.0.1 pgdt.gtimg.cn
 127.0.0.1 pgdt.ugdtimg.com
 127.0.0.1 pgg.huabojnxdd.com
 127.0.0.1 pglb.buzzfed.com
@@ -33204,6 +33228,7 @@
 127.0.0.1 replaycontroller.4seeresults.com
 127.0.0.1 reply.lomark.cn
 127.0.0.1 report.adview.cn
+127.0.0.1 report.huatuo.qq.com
 127.0.0.1 report.mitsubishicars.com
 127.0.0.1 report.qq.com
 127.0.0.1 report.sj.ijinshan.com
@@ -35972,6 +35997,7 @@
 127.0.0.1 soundbeat.go2cloud.org
 127.0.0.1 soundofhope.org
 127.0.0.1 soundslam.us.intellitxt.com
+127.0.0.1 soup.v.qq.com
 127.0.0.1 source.click.ipd.pps.tv
 127.0.0.1 source.youxiaoad.com
 127.0.0.1 sources.wangqipu.com
@@ -36471,6 +36497,7 @@
 127.0.0.1 stat-y.xywy.com
 127.0.0.1 stat-z.xywy.com
 127.0.0.1 stat.360safe.com
+127.0.0.1 stat.56.com
 127.0.0.1 stat.56.com 
 127.0.0.1 stat.adbana.com
 127.0.0.1 stat.adirects.com
@@ -37041,6 +37068,7 @@
 127.0.0.1 stats.ipvertising.com
 127.0.0.1 stats.ircfast.com
 127.0.0.1 stats.iwebtrack.com
+127.0.0.1 stats.jpush.cn
 127.0.0.1 stats.jtvnw.net
 127.0.0.1 stats.justin.tv
 127.0.0.1 stats.kaltura.com
@@ -37875,7 +37903,6 @@
 127.0.0.1 t7.trackalyzer.com
 127.0.0.1 t7.wrating.com
 127.0.0.1 t75.qyqc4s.com
-127.0.0.1 t7z.cupid.iqiyi.com
 127.0.0.1 t7z.cupid.ptqy.gitv.tv
 127.0.0.1 t8.dnvus.com
 127.0.0.1 t8.formalyzer.com
@@ -40141,6 +40168,7 @@
 127.0.0.1 unica.com
 127.0.0.1 unicast.com
 127.0.0.1 unicast.ign.com
+127.0.0.1 uniclick.openv.com
 127.0.0.1 uniclick.openv.com 
 127.0.0.1 unicume.go2cloud.org
 127.0.0.1 unidesk.alicdn.com
@@ -40150,6 +40178,7 @@
 127.0.0.1 union.114.com.cn
 127.0.0.1 union.163.com
 127.0.0.1 union.2345.com
+127.0.0.1 union.56.com
 127.0.0.1 union.56.com 
 127.0.0.1 union.6.cn
 127.0.0.1 union.6.cn 
@@ -40461,6 +40490,7 @@
 127.0.0.1 uuseeafp.allyes.com
 127.0.0.1 uuserv30.net
 127.0.0.1 uvidu.butlerelectricsupply.com
+127.0.0.1 uvimage.56.com
 127.0.0.1 uvimage.56.com 
 127.0.0.1 uvu.nojmlxq.cn
 127.0.0.1 uwcu.0b6h.cn
@@ -40492,6 +40522,7 @@
 127.0.0.1 v.effectivemeasure.net
 127.0.0.1 v.emedia.cn
 127.0.0.1 v.extreme-dm.com
+127.0.0.1 v.gdt.qq.com
 127.0.0.1 v.hr41.cn
 127.0.0.1 v.img.vsnoon.net
 127.0.0.1 v.imofan.com
@@ -40545,6 +40576,7 @@
 127.0.0.1 v13-6173431.z.irs01.com
 127.0.0.1 v13.cnzz.com
 127.0.0.1 v14.cnzz.com
+127.0.0.1 v16.56.com
 127.0.0.1 v16.56.com 
 127.0.0.1 v1log.v1.cn
 127.0.0.1 v2.adgoto.com
@@ -42049,6 +42081,7 @@
 127.0.0.1 wgh.ag
 127.0.0.1 wgie.0z5jn.cn
 127.0.0.1 wgn.wgnlz.com
+127.0.0.1 wgo.mmstat.com
 127.0.0.1 wgz.wgnlz.com
 127.0.0.1 whabi.csheaven.com
 127.0.0.1 whainteryield.jmp9.com
@@ -46322,6 +46355,7 @@
 127.0.0.1 www.qadabra.com
 127.0.0.1 www.qbao.com
 127.0.0.1 www.qbop.com
+127.0.0.1 www.qchannel01.cn
 127.0.0.1 www.qchannel02.cn
 127.0.0.1 www.qchannel03.cn
 127.0.0.1 www.qchannel04.cn
