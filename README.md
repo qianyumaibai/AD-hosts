@@ -14,4 +14,4 @@
 ### 捐赠
 如果喜欢可以捐赠,您的捐赠是我更新最大的动力（当然不捐赠也没关系）
 
-<img src="https://raw.githubusercontent.com/E7KMbb/Gallery/blob/master/Donation.jpg">
+<img src="https://s2.ax1x.com/2020/02/29/3si8l4.jpg" alt="3si8l4.jpg" border="0" />
