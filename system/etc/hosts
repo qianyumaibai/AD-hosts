@@ -21332,7 +21332,7 @@
 127.0.0.1 hljdnserror5.wo.com.cn
 127.0.0.1 hlrcv.stage.adobe.com
 127.0.0.1 hm-analytics.com
-127.0.0.1 hm.baidu.com
+#127.0.0.1 hm.baidu.com
 127.0.0.1 hm.baidu.com.jnsiematcnc.com
 127.0.0.1 hm.baidu.com.zzsdtzb.com
 127.0.0.1 hm.cdiah.com
@@ -48412,7 +48412,6 @@
 127.0.0.1 yang.jfqkj.com
 127.0.0.1 yao.ccmdgg.com
 127.0.0.1 yao.zzsdjq.com
-127.0.0.1 yaohuo.me
 127.0.0.1 yaolan.adsame.com
 127.0.0.1 yaolu.mh.163.com
 127.0.0.1 yaolu.yuedu.163.com
