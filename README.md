@@ -9,7 +9,7 @@
 > 使用时请关闭其它的hosts模块，请关闭systemless hosts模块(如果有)。
 
 ### 黑名单
-[无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/black.md)
+[无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/blob/master/black.md)
 
 ### 捐赠
 如果喜欢可以捐赠,您的捐赠是我更新最大的动力（当然不捐赠也没关系）
