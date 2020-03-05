@@ -8,7 +8,7 @@
 ::1        ip6-localhost
 
 #127.0.0.1 hm.baidu.com
-#127.0.0.1 mcc.godaddy.com
+127.0.0.1 mcc.godaddy.com
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
 127.0.0.1 006.free-adult-counters.x-xtra.com
@@ -30411,7 +30411,6 @@
 127.0.0.1 ota.cartrawler.com
 127.0.0.1 ota.pay.mobile.sina.cn
 127.0.0.1 otf.msn.com
-127.0.0.1 oth.str.mdt.qq.com
 127.0.0.1 other.xxxcounter.com
 127.0.0.1 otherprofit.com
 127.0.0.1 otheve.beacon.qq.com
@@ -32608,7 +32607,6 @@
 127.0.0.1 qq.m.cn.miaozhen.com
 127.0.0.1 qq.wrating.com
 127.0.0.1 qqa.miaozhu823.com
-127.0.0.1 qqadapt.qpic.cn
 127.0.0.1 qqe.ihear123.com
 127.0.0.1 qqlogo.qq.com
 127.0.0.1 qqs.glpen08.com
@@ -32683,7 +32681,6 @@
 127.0.0.1 qwiklnk.com
 127.0.0.1 qxm.pluto.sogou.com
 127.0.0.1 qyrix.go2cloud.org
-127.0.0.1 qzs.qq.com
 127.0.0.1 qzxcvb.m.zwdu.com
 127.0.0.1 r.14244.com
 127.0.0.1 r.254a.com
@@ -33156,7 +33153,6 @@
 127.0.0.1 register.zonelabs.com
 127.0.0.1 registercom.122.2o7.net
 127.0.0.1 registration.livejasmin.com
-127.0.0.1 registration.presonus.com
 127.0.0.1 registrydefender.com
 127.0.0.1 registrydefenderplatinum.com
 127.0.0.1 regman.freeze.com
@@ -48969,3 +48965,7 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
+127.0.0.1 new.api.ad.xiaomi.com
+127.0.0.1 res.qhupdate.com
+127.0.0.1 huichuan.sm.cn
+127.0.0.1 <adxiaomi>
