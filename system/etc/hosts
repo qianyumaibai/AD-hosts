@@ -8,6 +8,7 @@
 ::1        ip6-localhost
 
 #127.0.0.1 hm.baidu.com
+#127.0.0.1 api.ad.xiaomi.com
 127.0.0.1 <adxiaomi>
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
@@ -16854,7 +16855,6 @@
 127.0.0.1 dm.kingpolo.com.cn
 127.0.0.1 dm.mlstat.com
 127.0.0.1 dm.shanghuitianxia.cn
-127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
 127.0.0.1 dm.xiazaibao.xunlei.com
 127.0.0.1 dm50.yxlady.com
