@@ -1,5 +1,6 @@
 # External Tools
-
+var_miui="`grep_prop ro.miui.build.region`"
+if [ "`echo $var_miui`" = "cn" ]; then
 chmod -R 0755 $MODPATH/common/addon/Volume-Key-Selector/tools
 export PATH=$MODPATH/common/addon/Volume-Key-Selector/tools/$ARCH32:$PATH
 
@@ -71,3 +72,6 @@ case $(echo $(basename $ZIPFILE) | tr '[:upper:]' '[:lower:]') in
      fi;;
 esac
 IFS=$OIFS
+else
+  ui_print " "
+fi
