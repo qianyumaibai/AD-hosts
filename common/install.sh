@@ -14,5 +14,5 @@ if [ "`echo $var_miui`" = "cn" ]; then
     ui_print "已选择不加入"
   fi
 else
-  ui_print " "
+  sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODPATH/system/etc/hosts
 fi
