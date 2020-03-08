@@ -72,6 +72,4 @@ case $(echo $(basename $ZIPFILE) | tr '[:upper:]' '[:lower:]') in
      fi;;
 esac
 IFS=$OIFS
-else
-  ui_print " "
 fi
