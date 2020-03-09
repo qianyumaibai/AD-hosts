@@ -49057,7 +49057,12 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
-13.107.21.200 cn.bing.com
-255.255.255.255	broadcasthost
 127.0.0.1 t7z.cupid.iqiyi.com
 127.0.0.1 livew.l.qq.com
+13.107.21.200 cn.bing.com
+255.255.255.255	broadcasthost
+192.30.253.112 github.com
+192.30.253.120 codeload.github.com
+151.101.185.194 github.global.ssl.fastly.net
+151.101.184.133 assets-cdn.github.com
+151.101.184.133 raw.githubusercontent.com
