@@ -7,7 +7,7 @@
 127.0.0.1 ip6-loopback
 ::1        ip6-localhost
 
-#127.0.0.1 hm.baidu.com
+#127.0.0.1 adashbc.ut.taobao.com
 #127.0.0.1 api.ad.xiaomi.com
 #127.0.0.1 adsmind.gdtimg.com
 #127.0.0.1 pgdt.gtimg.cn
@@ -4007,7 +4007,6 @@
 127.0.0.1 adash.m.taobao.com
 127.0.0.1 adash.man.aliyuncs.com
 127.0.0.1 adashbc.m.taobao.com
-127.0.0.1 adashbc.ut.taobao.com
 127.0.0.1 adashx.m.taobao.com
 127.0.0.1 adashxgc.ut.taobao.com
 127.0.0.1 adattract.go2cloud.org
@@ -42394,7 +42393,6 @@
 127.0.0.1 wpnipostcomjobs.112.2o7.net
 127.0.0.1 wprp.zemanta.com
 127.0.0.1 wptag.net
-127.0.0.1 wq.jd.com
 127.0.0.1 wqmobile.com
 127.0.0.1 wqw.planetsuzy.org
 127.0.0.1 wr.da.netease.com
