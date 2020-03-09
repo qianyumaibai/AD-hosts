@@ -9,7 +9,11 @@
 
 #127.0.0.1 hm.baidu.com
 #127.0.0.1 api.ad.xiaomi.com
+#127.0.0.1 adsmind.gdtimg.com
+#127.0.0.1 pgdt.gtimg.cn
 127.0.0.1 <adxiaomi>
+127.0.0.1 <Tencentgamead1>
+127.0.0.1 <Tencentgamead2>
 127.0.0.1 0.r.msn.com
 127.0.0.1 0.up.qingdaonews.com
 127.0.0.1 006.free-adult-counters.x-xtra.com
@@ -6954,7 +6958,6 @@
 127.0.0.1 adsmile.biz
 127.0.0.1 adsmile.go2cloud.org
 127.0.0.1 adsmind.apdcdn.tc.qq.com
-127.0.0.1 adsmind.gdtimg.com
 127.0.0.1 adsmobi.com
 127.0.0.1 adsmobil.go2cloud.org
 127.0.0.1 adsmogo.com
@@ -14309,7 +14312,6 @@
 127.0.0.1 cms1.ami-admin.com
 127.0.0.1 cms2.net
 127.0.0.1 cmsapi.wifi8.com
-127.0.0.1 cmshow.gtimg.cn
 127.0.0.1 cmsn.wrating.com
 127.0.0.1 cmstool.youku.com
 127.0.0.1 cmstrendslog.indiatimes.com
@@ -31253,7 +31255,6 @@
 127.0.0.1 pgalvaoteles.pt
 127.0.0.1 pgdb1.surf-town.net
 127.0.0.1 pgdbb1.surf-town.net
-127.0.0.1 pgdt.gtimg.cn
 127.0.0.1 pgdt.ugdtimg.com
 127.0.0.1 pgg.huabojnxdd.com
 127.0.0.1 pglb.buzzfed.com
