@@ -8,6 +8,7 @@
 ::1        ip6-localhost
 
 #127.0.0.1 adashbc.ut.taobao.com
+#如果您使用订阅源方式使用hosts可以去除以下几条的#号
 #127.0.0.1 api.ad.xiaomi.com
 #127.0.0.1 adsmind.gdtimg.com
 #127.0.0.1 pgdt.gtimg.cn
@@ -1852,7 +1853,6 @@
 127.0.0.1 acquinityinteractive.com
 127.0.0.1 acquiromedia.go2cloud.org
 127.0.0.1 acrossperformance.go2cloud.org
-127.0.0.1 acs.56.com
 127.0.0.1 acs.56.com
 127.0.0.1 acs.agent.56.com
 127.0.0.1 acs.agent.v-56.com
@@ -12554,6 +12554,7 @@
 127.0.0.1 cap1ss.xp1.ru4.com
 127.0.0.1 capcityadvcom.112.2o7.net
 127.0.0.1 capecodonlinecom.112.2o7.net
+127.0.0.1 capi.douyucdn.cn
 127.0.0.1 capital.nuggad.net
 127.0.0.1 capp.simsimi.com
 127.0.0.1 caprewards.go2cloud.org
@@ -14122,6 +14123,7 @@
 127.0.0.1 cloudfront-dsa-eu.cedexis.com
 127.0.0.1 cloudfront-labs.amazonaws.com
 127.0.0.1 cloudfront.cedexis.com
+127.0.0.1 cloudgame-res.127.net
 127.0.0.1 cloudhot.net
 127.0.0.1 cloudixconnection.com
 127.0.0.1 cloudpush.iqiyi.com
@@ -16832,6 +16834,7 @@
 127.0.0.1 dm.jinshasi.cn
 127.0.0.1 dm.kingpolo.com.cn
 127.0.0.1 dm.mlstat.com
+127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
 127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
@@ -20422,6 +20425,7 @@
 127.0.0.1 gfh.ahfzly.com
 127.0.0.1 gfk-de.sensic.net
 127.0.0.1 gflinks.industrybrains.com
+127.0.0.1 gfs-op.douyucdn.cn
 127.0.0.1 gfx.infomine.com
 127.0.0.1 gfx.webmasterprofitcenter.com
 127.0.0.1 gfx3.avn.com
@@ -20490,6 +20494,7 @@
 127.0.0.1 gif.lu.sogoucdn.com
 127.0.0.1 gifastcompanycom.112.2o7.net
 127.0.0.1 gifs.burstnet.com
+127.0.0.1 gift.douyucdn.cn
 127.0.0.1 gifthulk.go2cloud.org
 127.0.0.1 giftscom.122.2o7.net
 127.0.0.1 gifttracker.com
@@ -21208,7 +21213,9 @@
 127.0.0.1 help.mysearch.com
 127.0.0.1 help.qualaroo.com
 127.0.0.1 help.yunaq.com
+127.0.0.1 helpantutu1.ksmobile.com
 127.0.0.1 helpdesk.marketbill.com
+127.0.0.1 helpgamemoneysdk1.ksmobile.com
 127.0.0.1 helpmedownload.com
 127.0.0.1 hem.spray.se
 127.0.0.1 hemx.0n6h.cn
@@ -25035,6 +25042,7 @@
 127.0.0.1 livetracker.martinoticias.org
 127.0.0.1 livetrck.com
 127.0.0.1 liveupdate.mac.sandai.net
+127.0.0.1 livew.l.qq.com
 127.0.0.1 livezila.namoroevangelicos.com
 127.0.0.1 livingsocial.sp1.convertro.com
 127.0.0.1 livre.wasastation.fi
@@ -28555,6 +28563,7 @@
 127.0.0.1 msg.71.am
 127.0.0.1 msg.c002.ottcn.com
 127.0.0.1 msg.cn.miaozhen.com
+127.0.0.1 msg.douyu.com
 127.0.0.1 msg.eclicks.cn
 127.0.0.1 msg.iqiyi.com
 127.0.0.1 msg.m.letv.com
@@ -29495,6 +29504,7 @@
 127.0.0.1 northwestairlines.112.2o7.net
 127.0.0.1 norton-antivirus-trial.searchservice.info
 127.0.0.1 nortonfire.co.uk
+127.0.0.1 nosdn-yx.127.net
 127.0.0.1 nossl.aafp.org
 127.0.0.1 nostrabet.com
 127.0.0.1 notebooksbilliger02.webtrekk.net
@@ -33710,6 +33720,7 @@
 127.0.0.1 rtb.tubemogul.com
 127.0.0.1 rtb.watchmedia.biz
 127.0.0.1 rtb3.doubleverify.com
+127.0.0.1 rtbapi.douyucdn.cn
 127.0.0.1 rtbcdn.doubleverify.com
 127.0.0.1 rtbpop.com
 127.0.0.1 rtbpopd.com
@@ -36292,6 +36303,7 @@
 127.0.0.1 sroomafp.allyes.com
 127.0.0.1 srs.targetpoint.com
 127.0.0.1 srslogisticts.com
+127.0.0.1 srtj.antutu.net
 127.0.0.1 srv-2015-01-12-10.pixel.parsely.com
 127.0.0.1 srv-us.znaptag.com
 127.0.0.1 srv.adengage.com
@@ -37470,6 +37482,7 @@
 127.0.0.1 superill.ivwbox.de
 127.0.0.1 superlenny.com
 127.0.0.1 superloofy.com
+127.0.0.1 superman.cmcm.com
 127.0.0.1 supernature-forum.de.intellitxt.com
 127.0.0.1 superpages.122.2o7.net
 127.0.0.1 supersoccer.co.uk
@@ -37958,6 +37971,7 @@
 127.0.0.1 t7.trackalyzer.com
 127.0.0.1 t7.wrating.com
 127.0.0.1 t75.qyqc4s.com
+127.0.0.1 t7z.cupid.iqiyi.com
 127.0.0.1 t7z.cupid.ptqy.gitv.tv
 127.0.0.1 t8.dnvus.com
 127.0.0.1 t8.formalyzer.com
@@ -38908,6 +38922,7 @@
 127.0.0.1 toutiao.2haha.com
 127.0.0.1 toutiao.jxnews.com.cn
 127.0.0.1 touy.deryakose.com
+127.0.0.1 tower.douyucdn.cn
 127.0.0.1 towerrecords.track4.com
 127.0.0.1 toxicjackpot.com
 127.0.0.1 toyota.112.2o7.net
@@ -40788,6 +40803,7 @@
 127.0.0.1 venetian.evyy.net
 127.0.0.1 ventivmedia.com
 127.0.0.1 venus.cometsystems.com
+127.0.0.1 venus.douyucdn.cn
 127.0.0.1 venus.goclick.com
 127.0.0.1 ver.touclick.com
 127.0.0.1 verajohn.com
@@ -48673,6 +48689,7 @@
 127.0.0.1 ywdp.baojijiecheng.com
 127.0.0.1 yx.baidu.com
 127.0.0.1 yx.lenovomm.com
+127.0.0.1 yxgame.nos-yx.netease.com
 127.0.0.1 yxrp.lianfuhuang.cn
 127.0.0.1 yxs.tymsyx.com
 127.0.0.1 yxyhtea.com
@@ -49046,8 +49063,6 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
-127.0.0.1 t7z.cupid.iqiyi.com
-127.0.0.1 livew.l.qq.com
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
 192.30.253.112 github.com
