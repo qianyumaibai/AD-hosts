@@ -12136,7 +12136,6 @@
 127.0.0.1 c.ylist.cn
 127.0.0.1 c.ynlysg.com
 127.0.0.1 c.yootui19999.com
-127.0.0.1 c.youdao.com
 127.0.0.1 c.zeroredirect1.com
 127.0.0.1 c.zeroredirect2.com
 127.0.0.1 c.zgnm.cc
@@ -14089,7 +14088,6 @@
 127.0.0.1 clktag.com
 127.0.0.1 clkuk.tradedoubler.com
 127.0.0.1 clmbtrk.com
-127.0.0.1 clnk.me
 127.0.0.1 clock.report2.zdworks.com
 127.0.0.1 clock.stat.zdworks.com
 127.0.0.1 clock.stat2.zdworks.com
@@ -16828,7 +16826,7 @@
 127.0.0.1 dm.mlstat.com
 127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
-127.0.0.1 dm.toutiao.com
+#127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
 127.0.0.1 dm.xiazaibao.xunlei.com
 127.0.0.1 dm50.yxlady.com
@@ -25381,7 +25379,6 @@
 127.0.0.1 logs.17173.com
 127.0.0.1 logs.51cto.com
 127.0.0.1 logs.aiya.com.cn
-127.0.0.1 logs.amap.com
 127.0.0.1 logs.cafewell.com
 127.0.0.1 logs.cnfol.com
 127.0.0.1 logs.dashlane.com
@@ -26545,7 +26542,6 @@
 127.0.0.1 m.qlr0d.cn
 127.0.0.1 m.qneit.com
 127.0.0.1 m.qoiusky.com
-127.0.0.1 m.qpic.cn
 127.0.0.1 m.qq.com
 127.0.0.1 m.qqyue.top
 127.0.0.1 m.qu79j.cn
@@ -29040,8 +29036,6 @@
 127.0.0.1 nbtg3.youyou234.com
 127.0.0.1 nc.atdmt.com
 127.0.0.1 nc.gdt.qq.com
-127.0.0.1 nc004x.corp.youdao.com
-127.0.0.1 nc045x.corp.youdao.com
 127.0.0.1 nc2199.eden5.netclusive.de
 127.0.0.1 ncads.s3.amazonaws.com
 127.0.0.1 nch.xnghmc.com
@@ -30121,12 +30115,6 @@
 127.0.0.1 ohtuleht.spring-tns.net
 127.0.0.1 ohwx.7cjsh.cn
 127.0.0.1 oilwrestlingeurope.com
-127.0.0.1 oimagea2.ydstatic.com
-127.0.0.1 oimagea3.ydstatic.com
-127.0.0.1 oimageb1.ydstatic.com
-127.0.0.1 oimageb2.ydstatic.com
-127.0.0.1 oimageb8.ydstatic.com
-127.0.0.1 oimagec5.ydstatic.com
 127.0.0.1 oimg.m.cnbc.com
 127.0.0.1 oimg.mobile.cnbc.com
 127.0.0.1 oimg.nbcuni.com
@@ -31252,7 +31240,7 @@
 127.0.0.1 pgalvaoteles.pt
 127.0.0.1 pgdb1.surf-town.net
 127.0.0.1 pgdbb1.surf-town.net
-127.0.0.1 pgdt.ugdtimg.com
+#127.0.0.1 pgdt.ugdtimg.com
 127.0.0.1 pgg.huabojnxdd.com
 127.0.0.1 pglb.buzzfed.com
 127.0.0.1 pgm.yide69.com
@@ -33516,7 +33504,6 @@
 127.0.0.1 rlog-video.conn.aiseet.atianqi.com
 127.0.0.1 rlog.9gag.com
 127.0.0.1 rlog.video.qq.com
-127.0.0.1 rlogs.youdao.com
 127.0.0.1 rlt.inte.sogou.com
 127.0.0.1 rlyg7.voluumtrk.com
 127.0.0.1 rm.gdt.qq.com
@@ -35432,7 +35419,6 @@
 127.0.0.1 shareaholic.com
 127.0.0.1 shareasale.com
 127.0.0.1 sharecast.uk.intellitxt.com
-127.0.0.1 shared.youdao.com
 127.0.0.1 sharemyclick.go2cloud.org
 127.0.0.1 sharepointads.com
 127.0.0.1 sharesdk.cn
@@ -40635,7 +40621,6 @@
 127.0.0.1 v2.da.mgtv.com
 127.0.0.1 v2.fm.n.duokanbox.com
 127.0.0.1 v2.g2.91.com
-127.0.0.1 v2.gdt.qq.com
 127.0.0.1 v2.hd.log.hunantv.com
 127.0.0.1 v2.hdd.log.hunantv.com
 127.0.0.1 v2.jiathis.com
@@ -49052,6 +49037,7 @@
 127.0.0.1 zzz.clickbank.net
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
+127.0.0.1 speed.adipman.net
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
 192.30.253.112 github.com
