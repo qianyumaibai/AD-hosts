@@ -13652,11 +13652,6 @@
 127.0.0.1 cl.njhansheng.com
 127.0.0.1 cl.webterren.com
 127.0.0.1 cl.xzqxzs.com
-127.0.0.1 cl0.webterren.com
-127.0.0.1 cl2.webterren.com
-127.0.0.1 cl3.webterren.com
-127.0.0.1 cl4.webterren.com
-127.0.0.1 cl5.webterren.com
 127.0.0.1 claire-bonelli.us
 127.0.0.1 claria.com
 127.0.0.1 clarity.abacast.com
@@ -15752,7 +15747,7 @@
 127.0.0.1 cydia.a3tweaks.com
 127.0.0.1 cyhners.ero-advertising.com
 127.0.0.1 cyht.adsame.com
-127.0.0.1 cyol.wrating.com
+#127.0.0.1 cyol.wrating.com
 127.0.0.1 cyprusads.info
 127.0.0.1 cytron.videojj.com
 127.0.0.1 cytroncdn.videojj.com
@@ -49064,6 +49059,7 @@
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
 192.30.253.112 github.com
+151.101.184.133 api.github.com
 192.30.253.120 codeload.github.com
 151.101.185.194 github.global.ssl.fastly.net
 151.101.184.133 assets-cdn.github.com
