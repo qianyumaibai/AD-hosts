@@ -18124,7 +18124,6 @@
 127.0.0.1 edge.reporo.net
 127.0.0.1 edge.sharethis.com
 127.0.0.1 edge.simplereach.com
-127.0.0.1 edge.yunjiasu.com
 127.0.0.1 edgecast-vod.yahoo.net
 127.0.0.1 edgecast-vod.yimg.com
 127.0.0.1 edgeio.com
@@ -20415,7 +20414,6 @@
 127.0.0.1 gfh.ahfzly.com
 127.0.0.1 gfk-de.sensic.net
 127.0.0.1 gflinks.industrybrains.com
-127.0.0.1 gfs-op.douyucdn.cn
 127.0.0.1 gfx.infomine.com
 127.0.0.1 gfx.webmasterprofitcenter.com
 127.0.0.1 gfx3.avn.com
@@ -20484,7 +20482,6 @@
 127.0.0.1 gif.lu.sogoucdn.com
 127.0.0.1 gifastcompanycom.112.2o7.net
 127.0.0.1 gifs.burstnet.com
-127.0.0.1 gift.douyucdn.cn
 127.0.0.1 gifthulk.go2cloud.org
 127.0.0.1 giftscom.122.2o7.net
 127.0.0.1 gifttracker.com
@@ -22095,7 +22092,6 @@
 127.0.0.1 iframesrccdn1.adexprt.com
 127.0.0.1 iframesrccdn2.adexprt.com
 127.0.0.1 ifriends.net
-127.0.0.1 ifs.tanx.com
 127.0.0.1 ifwbox.de
 127.0.0.1 ig.nukefans.net
 127.0.0.1 igagh.tourstogo.us
@@ -40178,7 +40174,6 @@
 127.0.0.1 um29.com
 127.0.0.1 uma.gtags.net
 127.0.0.1 umbs.ero-advertising.com
-127.0.0.1 umengacs.m.taobao.com
 127.0.0.1 umid.orion.meizu.com
 127.0.0.1 ums.adtechjp.com
 127.0.0.1 ums.adtechus.com
@@ -49038,11 +49033,15 @@
 127.0.0.1 zzz7.52896368.com
 127.0.0.1 zzzzz4.52896368.com
 127.0.0.1 speed.adipman.net
+127.0.0.1 vweixinthumb.tc.qq.com
+127.0.0.1 canvas.gdt.qq.com
+127.0.0.1 mo.sdakxz.xyz
+127.0.0.1 eo.sdakxz.xyz
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
 192.30.253.112 github.com
-151.101.184.133 api.github.com
+151.101.185.194 api.github.com
 192.30.253.120 codeload.github.com
 151.101.185.194 github.global.ssl.fastly.net
 151.101.184.133 assets-cdn.github.com
-151.101.184.133 raw.githubusercontent.com
+192.30.253.120 raw.githubusercontent.com
