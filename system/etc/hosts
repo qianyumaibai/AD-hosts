@@ -4539,6 +4539,7 @@
 127.0.0.1 admperformance.go2cloud.org
 127.0.0.1 adms.physorg.com
 127.0.0.1 admulti.com
+127.0.0.1 admusicpic.music.126.net
 127.0.0.1 adn.agrantsem.com
 127.0.0.1 adn.atdmt.com
 127.0.0.1 adn.blinkx.com
@@ -16573,6 +16574,7 @@
 127.0.0.1 di63.shoppingshadow.com
 127.0.0.1 diag-vd.gridsumdissector.com
 127.0.0.1 diag-wd.gridsumdissector.com
+127.0.0.1 diagnosis.ad.xiaomi.com
 127.0.0.1 diagnostics.support.microsoft.com
 127.0.0.1 dialabet.com.au
 127.0.0.1 dialer.cdn.cootekservice.com
@@ -49033,5 +49035,15 @@
 127.0.0.1 canvas.gdt.qq.com
 127.0.0.1 mo.sdakxz.xyz
 127.0.0.1 eo.sdakxz.xyz
+127.0.0.1 rcv.aiclk.com
+127.0.0.1 adsdk.yandex.ru
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
+
+127.0.0.1 cdn.aiclk.com
+127.0.0.1 cfg-cdn.aiclk.com
+127.0.0.1 ad-sdk.aiclk.com
+127.0.0.1 api.aiclk.com
+127.0.0.1 update0.aiclk.com
+127.0.0.1 sdk-ab-config.aiclk.com
+127.0.0.1 sdk-globalconfig.aiclk.com
