@@ -1,7 +1,8 @@
-#*********************************************************************
+#************************************************************************************
+# 本hosts由多个hosts整合及人工抓取而来，hosts源均来自于github，及网络搜索
 # https://github.com/E7KMbb/AD-hosts
-# 本hosts由多个hosts整合而来hosts源均来自于github，及网络搜索
-#*********************************************************************
+# https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts
+#************************************************************************************
 127.0.0.1 localhost
 127.0.0.1 ip6-localhost
 127.0.0.1 ip6-loopback
@@ -21028,7 +21029,6 @@
 127.0.0.1 h5.analytics.126.net
 127.0.0.1 h5.holalauncher.com
 127.0.0.1 h5.jiumaster.com
-127.0.0.1 h5.mse.360.cn
 127.0.0.1 h5.pk1179.com
 127.0.0.1 h5.super-dreamers.com
 127.0.0.1 h5.taihao.cc
