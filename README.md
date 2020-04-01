@@ -14,6 +14,6 @@
 [无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/black.md)
 
 ### 捐赠
-如果喜欢可以捐赠,您的捐赠是我更新最大的动力（当然，不捐赠也没关系）
+如果觉得好用可以请我吃包辣条,您的捐赠将是我更新最大的动力(当然,不捐赠也没关系)
 
 <img src="https://i.niupic.com/images/2020/03/01/6XjG.jpg"/>
