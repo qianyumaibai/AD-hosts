@@ -16826,7 +16826,7 @@
 127.0.0.1 dm.mlstat.com
 127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
-#127.0.0.1 dm.toutiao.com
+127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
 127.0.0.1 dm.xiazaibao.xunlei.com
 127.0.0.1 dm50.yxlady.com
@@ -31232,7 +31232,6 @@
 127.0.0.1 pgalvaoteles.pt
 127.0.0.1 pgdb1.surf-town.net
 127.0.0.1 pgdbb1.surf-town.net
-#127.0.0.1 pgdt.ugdtimg.com
 127.0.0.1 pgg.huabojnxdd.com
 127.0.0.1 pglb.buzzfed.com
 127.0.0.1 pgm.yide69.com
@@ -48023,7 +48022,7 @@
 127.0.0.1 wx.sifakaoshi360.com
 127.0.0.1 wx.xwjqr.com
 127.0.0.1 wx.zx590.com
-127.0.0.1 wxa.wxs.qq.com
+#127.0.0.1 wxa.wxs.qq.com
 127.0.0.1 wxa79ef55c1a84e284.wx.ckjr001.com
 127.0.0.1 wxas.ejwmc.cn
 127.0.0.1 wxb.wxbdfm.com
