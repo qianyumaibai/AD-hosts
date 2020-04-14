@@ -11905,7 +11905,7 @@
 127.0.0.1 byubroadcast.112.2o7.net
 127.0.0.1 bz.cnjianzhan.net
 127.0.0.1 bz.lhzly.com
-127.0.0.1 bzclk.baidu.com
+#127.0.0.1 bzclk.baidu.com
 127.0.0.1 bzresults.122.2o7.net
 127.0.0.1 c-adash.m.taobao.com
 127.0.0.1 c-col.com
@@ -33333,7 +33333,6 @@
 127.0.0.1 res.levexis.com
 127.0.0.1 res.limei.com
 127.0.0.1 res.mmstat.com
-127.0.0.1 res.qhupdate.com
 127.0.0.1 res.ymxiaopin.com
 127.0.0.1 res.yytou.cn
 127.0.0.1 res001.kogo12345.com
@@ -34861,7 +34860,6 @@
 127.0.0.1 sdk.e.qq.com
 127.0.0.1 sdk.hockeyapp.net
 127.0.0.1 sdk.imocha.com
-127.0.0.1 sdk.look.360.cn
 127.0.0.1 sdk.mediav.com
 127.0.0.1 sdk.mobad.ijinshan.com
 127.0.0.1 sdk.mobcent.com
