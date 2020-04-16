@@ -8693,7 +8693,6 @@
 127.0.0.1 api.g1.junfull.com
 127.0.0.1 api.g2.junfull.com
 127.0.0.1 api.game.letvstore.com
-127.0.0.1 api.gameanalytics.com
 127.0.0.1 api.gamex.mobile.youku.com
 127.0.0.1 api.geosrv.info
 127.0.0.1 api.getvero.com
@@ -16108,7 +16107,6 @@
 127.0.0.1 data.econa.com
 127.0.0.1 data.ero-advertising.com
 127.0.0.1 data.fanfinityapp.com
-127.0.0.1 data.flurry.com
 127.0.0.1 data.gametree.tw
 127.0.0.1 data.gosquared.com
 127.0.0.1 data.haoma.sogou.com
@@ -19912,7 +19910,7 @@
 127.0.0.1 funcasino.com
 127.0.0.1 funchill.com
 127.0.0.1 funexist.com
-127.0.0.1 fungamesmobile.com
+#127.0.0.1 fungamesmobile.com
 127.0.0.1 funklicks.com
 127.0.0.1 funkucck.bluerobot.cl
 127.0.0.1 funkyd.2cnt.net
@@ -20540,7 +20538,6 @@
 127.0.0.1 glxp.6c4t5.cn
 127.0.0.1 gm.demdex.net
 127.0.0.1 gm.fengyunzhibo.com
-127.0.0.1 gm.mmstat.com
 127.0.0.1 gm.touchclarity.com
 127.0.0.1 gm.uc003.com
 127.0.0.1 gm_download3.yy.com
@@ -49028,6 +49025,7 @@
 127.0.0.1 rcv.aiclk.com
 127.0.0.1 adsdk.yandex.ru
 127.0.0.1 nav.browser.miui.com
+127.0.0.1 m.dzdkw9.cn
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
 
