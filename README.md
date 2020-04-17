@@ -11,9 +11,11 @@
 使用时请关闭其它的hosts模块，请关闭systemless hosts模块(如果有)。
 
 ### 链接
-[GitHub](https://github.com/E7KMbb/AD-hosts)
-[订阅源直链](https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts)
-[捐赠](https://docs.qq.com/doc/DWVJKWVVDWURQZUZK?disableReturnList=1&_from=1)
+- [GitHub](https://github.com/E7KMbb/AD-hosts)
+
+- [订阅源直链](https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts)
+
+- [捐赠](https://docs.qq.com/doc/DWVJKWVVDWURQZUZK?disableReturnList=1&_from=1)
 
 ### 黑名单
 [无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/blob/master/black.md)
