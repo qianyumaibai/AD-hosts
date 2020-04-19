@@ -8363,7 +8363,6 @@
 127.0.0.1 analytics.vast.com
 127.0.0.1 analytics.wanmei.com
 127.0.0.1 analytics.wildtangent.com
-127.0.0.1 analytics.woozooo.com
 127.0.0.1 analytics.worldnow.com
 127.0.0.1 analytics.ws.126.net
 127.0.0.1 analytics.xgimi.com
@@ -10941,7 +10940,6 @@
 127.0.0.1 becontext.com
 127.0.0.1 bee-ads.com
 127.0.0.1 beespace.com.ua
-127.0.0.1 beha.ksmobile.com
 127.0.0.1 behacdn.ksmobile.net
 127.0.0.1 behance.vo.llnwd.net
 127.0.0.1 behe.com
@@ -26517,7 +26515,7 @@
 127.0.0.1 m.qlr0d.cn
 127.0.0.1 m.qneit.com
 127.0.0.1 m.qoiusky.com
-127.0.0.1 m.qq.com
+#127.0.0.1 m.qq.com
 127.0.0.1 m.qqyue.top
 127.0.0.1 m.qu79j.cn
 127.0.0.1 m.quantcount.com
@@ -27845,7 +27843,6 @@
 127.0.0.1 mfcvxw.cn
 127.0.0.1 mfeed.newzfind.com
 127.0.0.1 mfkn.71mxc6.cn
-127.0.0.1 mfm.video.qq.com
 127.0.0.1 mfp.deliver.ifeng.com
 127.0.0.1 mfr.247realmedia.com
 127.0.0.1 mfr.a2dfp.net
@@ -36923,7 +36920,6 @@
 127.0.0.1 statics.3987.com
 127.0.0.1 statics.9669.com
 127.0.0.1 statics.poker.static.zynga.com
-127.0.0.1 statics.woozooo.com
 127.0.0.1 statictest.fraudmetrix.cn
 127.0.0.1 staticxx.facebook.com
 127.0.0.1 statik.topica.com
@@ -47734,7 +47730,6 @@
 127.0.0.1 www.zshacker.com
 127.0.0.1 www.ztrack.net
 127.0.0.1 www.zugo.com
-127.0.0.1 www.zwda.com
 127.0.0.1 www.zxziyuan.com
 127.0.0.1 www.zyxyfy.com
 127.0.0.1 www.zz123.com
@@ -49005,7 +49000,7 @@
 127.0.0.1 vda.lilithcdn.com
 127.0.0.1 e-stat.huya.com
 127.0.0.1 ffilelogapp.huya.com
-
+127.0.0.1 ld2.axbxgg.com
 127.0.0.1 upage.imtt.qq.com
 127.0.0.1 agstat.html5.qq.com
 127.0.0.1 growthpic.weishi.qq.com
@@ -49039,4 +49034,8 @@
 127.0.0.1 z3.cnzz.com
 127.0.0.1 t.srongee.top
 127.0.0.1 xn--2qux23c9ziyrq.icu
+127.0.0.1 analytics.woozooo.com
+127.0.0.1 statics.woozooo.com
+
+127.0.0.1 l.glrcy.cn
 
