@@ -25188,7 +25188,6 @@
 127.0.0.1 log.videojj.com
 127.0.0.1 log.viva.co.id
 127.0.0.1 log.voice.cn
-127.0.0.1 log.voicecloud.cn
 127.0.0.1 log.web.kugou.com
 127.0.0.1 log.wilmaa.com
 127.0.0.1 log.worldsoft-cms.info
@@ -49032,6 +49031,6 @@
 127.0.0.1 xn--2qux23c9ziyrq.icu
 127.0.0.1 analytics.woozooo.com
 127.0.0.1 statics.woozooo.com
-
+127.0.0.1 abtest.kuyinyun.com
 127.0.0.1 l.glrcy.cn
 
