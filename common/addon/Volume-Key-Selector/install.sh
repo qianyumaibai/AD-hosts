@@ -5,7 +5,7 @@ alias keycheck="$MODPATH/common/addon/Volume-Key-Selector/tools/$ARCH32/keycheck
 
 keytest() {
   ui_print "- 音量键测试"
-  ui_print "   请按音量+键:"
+  ui_print "   请按任意音量键:"
   if (timeout 3 /system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $TMPDIR/events); then
     return 0
   else
