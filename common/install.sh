@@ -1,5 +1,5 @@
-var_miui="`grep_prop ro.miui.build.region`"
-if [ "`echo $var_miui`" = "cn" ]; then
+var_miui="`grep_prop ro.miui.ui.version.*`"
+if [ $var_miui ]; then
   ui_print " "
   ui_print "是否加入api.ad.xiaomi.com"
   ui_print "加入会教导致小米应用商城里的积分商城与红包功能无法使用"
