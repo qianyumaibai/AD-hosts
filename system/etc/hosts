@@ -16623,7 +16623,6 @@
 127.0.0.1 diff3.smartadserver.com
 127.0.0.1 diff4.smartadserver.com
 127.0.0.1 difnxm.cn
-127.0.0.1 dig.bdurl.net
 127.0.0.1 digdug.divxnetworks.com
 127.0.0.1 digg.analytics.live.com
 127.0.0.1 digi-net.com
@@ -16842,7 +16841,6 @@
 127.0.0.1 dm.mlstat.com
 127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
-127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
 127.0.0.1 dm.xiazaibao.xunlei.com
 127.0.0.1 dm50.yxlady.com
@@ -49310,3 +49308,17 @@
 127.0.0.1 zzzzz4.52896368.com
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
+
+127.0.0.1 tobapplog.ctobsnssdk.com
+127.0.0.1 ads.reader.yueyouxs.com
+127.0.0.1 vpn.ch-hr12333.com
+127.0.0.1 c.sayhi.360.cn
+127.0.0.1 cloud.zyiis.net
+127.0.0.1 ads.weilitoutiao.net
+127.0.0.1 ssp-api.domob.cn
+127.0.0.1 ssp-event.domob.cn
+127.0.0.1 sp0.baidu.com
+127.0.0.1 qapm.baidu.com
+127.0.0.1 wxsnsdy.tc.qq.com
+127.0.0.1 wxsnsdy.video.qq.com
+127.0.0.1 ynuf.aliapp.org
