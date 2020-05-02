@@ -31102,8 +31102,6 @@
 127.0.0.1 pagead.l.doubleclick.net
 127.0.0.1 pagead.l.google.com
 127.0.0.1 pagead.topobiavi.com
-127.0.0.1 pagead1.googlesyndication.com
-127.0.0.1 pagead2.googlesyndication.com
 127.0.0.1 pagead2.jujinw.com
 127.0.0.1 pagead2.vxiaoshuo8.com
 127.0.0.1 pagead46.l.doubleclick.net
@@ -49317,8 +49315,6 @@
 127.0.0.1 ads.weilitoutiao.net
 127.0.0.1 ssp-api.domob.cn
 127.0.0.1 ssp-event.domob.cn
-127.0.0.1 sp0.baidu.com
-127.0.0.1 qapm.baidu.com
 127.0.0.1 wxsnsdy.tc.qq.com
 127.0.0.1 wxsnsdy.video.qq.com
 127.0.0.1 ynuf.aliapp.org
