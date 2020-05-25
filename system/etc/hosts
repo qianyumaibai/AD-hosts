@@ -14403,7 +14403,7 @@
 127.0.0.1 cnywst.com
 127.0.0.1 cnzz.172internet.com
 127.0.0.1 cnzz.com
-127.0.0.1 cnzz.mmstat.com
+#127.0.0.1 cnzz.mmstat.com
 127.0.0.1 cnzz.pygold.net
 127.0.0.1 cnzztest.cnzz.com
 127.0.0.1 co.dtech.baofeng.com
@@ -25242,7 +25242,6 @@
 127.0.0.1 log.m.taobao.com
 127.0.0.1 log.mix.sina.com.cn
 127.0.0.1 log.mm.vip.cnz.alimama.com
-127.0.0.1 log.mmstat.com
 127.0.0.1 log.moji.com
 127.0.0.1 log.molitv.cn
 127.0.0.1 log.music.baidu.com
@@ -42570,7 +42569,6 @@
 127.0.0.1 wonchangvacuum.com.my
 127.0.0.1 wonderadafa7.allyes.com
 127.0.0.1 wooboo.com.cn
-127.0.0.1 woodpecker.uc.cn
 127.0.0.1 woopra.com
 127.0.0.1 wopper.bioblitzgaming.ca
 127.0.0.1 wordpresscom.skimlinks.com
@@ -49301,6 +49299,24 @@
 127.0.0.1 ynuf.aliapp.org
 127.0.0.1 pad.da.mgtv.com
 127.0.0.1 pcvideocmnetzte.titan.mgtv.com
+
+127.0.0.1 181ue.com
+127.0.0.1 c.lalaxqt.cn
+127.0.0.1 e.sxhwscj.cn
+127.0.0.1 ee.sbdgjqg.cn
+127.0.0.1 eo.nunxi.xyz
+127.0.0.1 eo.ou6d.cn
+127.0.0.1 k.gzbld.net
+127.0.0.1 l.xfmfqdt.cn
+127.0.0.1 m.sbdgjqg.cn
+127.0.0.1 m.sxhwscj.cn
+127.0.0.1 mo.nunxi.xyz
+127.0.0.1 mo.ou6d.cn
+127.0.0.1 mo.ot1n.cn
+127.0.0.1 s.cshkjf.top
+127.0.0.1 t.tymbf.top
+127.0.0.1 v.lalaxqt.cn
+127.0.0.1 yahafda.qivsod.com
 
 # GitHub Start
 192.30.255.112	gist.github.com
