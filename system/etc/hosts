@@ -49286,6 +49286,37 @@
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
 
+127.0.0.1 is.snssdk.com
+127.0.0.1 xiaomi.m.cn.miaozhen.com
+127.0.0.1 paopao.iqiyi.com
+127.0.0.1 paopao-monitor.iqiyi.com
+127.0.0.1 rd596n.jomodns.com
+127.0.0.1 adse.wsa.ximalaya.com
+127.0.0.1 adsebs.ximalaya.com
+127.0.0.1 events.appsflyer.com
+127.0.0.1 adbehavior.ximalaya.com
+127.0.0.1 b.qchannel03.cn
+127.0.0.1 tracking.ad-survey.com
+127.0.0.1 api1.888zy.cn
+127.0.0.1 i8.i8ggwm.com
+127.0.0.1 dig.zjurl.cn
+127.0.0.1 open.e.kuaishou.com
+127.0.0.1 dm.toutiao.com
+127.0.0.1 sdk.api.oaid.wocloud.cn
+127.0.0.1 i.w.inmobi.cn
+127.0.0.1 sdktm.w.inmobi.cn
+127.0.0.1 hybird.rayjump.com
+127.0.0.1 dsa-mfp.fengshows.cn
+127.0.0.1 du.163.com
+127.0.0.1 yaolu.mh.163.com
+127.0.0.1 yaolu.yuedu.163.com
+127.0.0.1 newswifiapi.dftoutiao.com
+127.0.0.1 mbd.baidu.com
+127.0.0.1 fclog.baidu.com
+127.0.0.1 adashx.m.taobao.com
+127.0.0.1 ae01.alicdn.com
+127.0.0.1 umengjmacs.m.taobao.com
+
 127.0.0.1 tobapplog.ctobsnssdk.com
 127.0.0.1 ads.reader.yueyouxs.com
 127.0.0.1 vpn.ch-hr12333.com
