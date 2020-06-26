@@ -12018,7 +12018,6 @@
 127.0.0.1 ae.gsecondscreen.com
 127.0.0.1 ae.madserving.com
 127.0.0.1 ae.siteapps.com
-127.0.0.1 ae01.alicdn.com
 127.0.0.1 ae28-1e4a-ec3b-e9e6.reporo.net
 127.0.0.1 aec.shjk123.net
 127.0.0.1 aecpm.alicdn.com
@@ -91912,6 +91911,11 @@
 127.0.0.1 zzzzz4.52896368.com
 13.107.21.200 cn.bing.com
 255.255.255.255	broadcasthost
+
+127.0.0.1 optimus-ads.amap.com
+127.0.0.1 ec2-52-192-230-206apnortheast-1.compute.amazonaws.com
+127.0.0.1 staticsns.cdn.bcebos.com
+127.0.0.1 scs.openspeech.cn
 
 # GitHub Start (引用Googlehosts后期可能删除)
 192.30.255.112	gist.github.com
