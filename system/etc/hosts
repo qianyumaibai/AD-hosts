@@ -15274,7 +15274,6 @@
 127.0.0.1 appload.ingest.crittercism.com
 127.0.0.1 appload.ingest.eu.crittercism.com
 127.0.0.1 applog.camera360.com
-127.0.0.1 applog.uc.cn
 127.0.0.1 applogapi.autohome.com.cn
 127.0.0.1 applogios.uc.cn
 127.0.0.1 applovin-asia-rtb.liftoff.io
@@ -44073,7 +44072,6 @@
 127.0.0.1 lobby.sexlist.com
 127.0.0.1 loboclick.com
 127.0.0.1 loc1.hitsprocessor.com
-127.0.0.1 local
 127.0.0.1 local-analytics.uberinternal.com
 127.0.0.1 local-media.ambient-platform.com
 127.0.0.1 local-media.m.ambient-platform.com
@@ -58053,7 +58051,6 @@
 127.0.0.1 px.splittag.com
 127.0.0.1 px.steelhousemedia.com
 127.0.0.1 px.topspin.net
-127.0.0.1 px.ucweb.com
 127.0.0.1 px.za.zalo.me
 127.0.0.1 px.za.zaloapp.com
 127.0.0.1 px10.net
