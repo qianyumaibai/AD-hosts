@@ -50,7 +50,7 @@ if $(curl -V > /dev/null 2>&1) ; then
 else
     if $(wget --help > /dev/null 2>&1) ; then
         for i in $(seq 1 5); do
-        if wget -P $work_dir ${ADhosts_link}; then
+        if wget ${ADhosts_link} -O $work_dir/hosts; then
         break;
         fi
         if [[ $i == 5 ]]; then
@@ -78,6 +78,7 @@ Now=$(md5sum $ADhosts_dir | awk '{print $1}')
 New=$(md5sum  $work_dir/hosts | awk '{print $1}')
 if [ $Now = $New ]; then
    rm -rf $work_dir/hosts
+   echo "没有更新: $curdate" >> $work_dir/update.log
 else
    mv -f $work_dir/hosts $ADhosts_dir
    chmod 644 $MODDIR/./system/etc/hosts

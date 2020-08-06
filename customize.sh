@@ -192,8 +192,20 @@ else
   ui_print "已选择不加入"
 fi
 
-if [ ! -d /sdcard/ADhosts ];then
-mkdir -p /sdcard/ADhosts
+work_dir=/sdcard/ADhosts
+if [ ! -d $work_dir ];then
+   mkdir -p $work_dir
+fi
+if [ ! -e $work_dir/update.log ];then
+   touch $work_dir/update.log
+   echo "First line" >> $work_dir/update.log
+   sed -i "G;G;G;G;G" $work_dir/update.log
+   sed -i '1d' $work_dir/update.log
+fi
+if [ ! -e $work_dir/Start.sh ];then
+   touch $work_dir/Start.sh
+   echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
+   echo "sh /data/adb/modules/AD-Hosts/service.sh" >> $work_dir/Start.sh
 fi
 
 # 删除多余文件
