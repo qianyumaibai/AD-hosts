@@ -1,0 +1,2 @@
+MIUI=<xiaomi>
+Tencent=<QQ>
