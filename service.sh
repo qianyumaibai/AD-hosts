@@ -18,7 +18,12 @@ done
 work_dir=/sdcard/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 ADhosts_dir=$MODDIR/system/etc/hosts
-ADhosts_link="https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/system/etc/hosts"
+hosts_link=$(grep hosts_link $MODDIR/select.txt | awk -F '=' '{print $2}')
+if [ $hosts_link = "true" ]; then
+   ADhosts_link="https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts"
+else
+   ADhosts_link="https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/system/etc/hosts"
+fi
 
 if [ ! -d $work_dir ];then
    mkdir -p $work_dir

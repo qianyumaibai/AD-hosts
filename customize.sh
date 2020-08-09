@@ -157,6 +157,18 @@ case $(echo $(basename $ZIPFILE) | tr '[:upper:]' '[:lower:]') in
 esac
 IFS=$OIFS
 
+
+ui_print "选择自动更新的地址"
+ui_print "  音量+ = GitHub链接(国外推荐)"
+ui_print "  音量– = Coding镜像链接(国内推荐)"
+if $VKSEL; then
+  ui_print "已选择GitHub链接"
+  sed -i "s/<hosts>/true/g" $MODPATH/select.txt
+else
+  ui_print "已选择Coding镜像链接"
+  sed -i "s/<hosts>/false/g" $MODPATH/select.txt
+fi
+
 var_miui="`grep_prop ro.miui.ui.version.*`"
 if [ $var_miui ]; then
   ui_print " "
@@ -164,7 +176,7 @@ if [ $var_miui ]; then
   ui_print "加入会教导致小米应用商城里的积分商城与红包功能无法使用"
   ui_print "但会屏蔽掉更多的来自小米的广告"
   ui_print "  音量+ = 加入"
-  ui_print "  音量- = 不加入"
+  ui_print "  音量– = 不加入"
   if $VKSEL; then
     ui_print "已选择加入"
     ui_print "正在写入中....."
@@ -181,7 +193,7 @@ fi
   ui_print "是否加入去除腾讯QQ微信小程序广告"
   ui_print "加入会导致小程序无法看广告得奖励"
   ui_print "  音量+ = 加入"
-  ui_print "  音量- = 不加入"
+  ui_print "  音量– = 不加入"
 if $VKSEL; then
   ui_print "已选择加入"
   ui_print "正在写入中....."
