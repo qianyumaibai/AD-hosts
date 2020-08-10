@@ -6,7 +6,9 @@
 127.0.0.1 localhost
 127.0.0.1 ip6-localhost
 127.0.0.1 ip6-loopback
-::1        ip6-localhost
+::1 localhost
+::1 ip6-localhost
+::1 ip6-loopback
 
 #127.0.0.1 adashbc.ut.taobao.com
 #如果您使用订阅源方式使用hosts可以去除以下几条的#号
@@ -47531,7 +47533,6 @@
 127.0.0.1 mb104.com
 127.0.0.1 mba-online.petrovka.info
 127.0.0.1 mbank.hit.gemius.pl
-127.0.0.1 mbd.baidu.com
 127.0.0.1 mbd.weathercn.com
 127.0.0.1 mbdapp.iqiyi.com
 127.0.0.1 mbdlog.iqiyi.com
