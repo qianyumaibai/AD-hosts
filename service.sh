@@ -23,7 +23,7 @@ if [ ! -d $work_dir ];then
 fi
 if [ ! -e $work_dir/update.log ];then
    touch $work_dir/update.log
-   echo "First line" >> $work_dir/update.log
+   echo "paceholder" >> $work_dir/update.log
    sed -i "G;G;G;G;G" $work_dir/update.log
    sed -i '1d' $work_dir/update.log
 fi
@@ -58,7 +58,7 @@ if $(curl -V > /dev/null 2>&1) ; then
     sleep 2
     if [[ $i == 20 ]]; then
     echo "curl连接失败,更新失败: $curdate" >> $work_dir/update.log
-    rm -rf $MODDIR/hosts
+    rm -rf $work_dir/hosts
     exit 0
     fi
     done
@@ -69,7 +69,7 @@ elif $(wget --help > /dev/null 2>&1) ; then
       fi
       if [[ $i == 5 ]]; then
       echo "wget连接,更新失败: $curdate" >> $work_dir/update.log
-      rm -rf $MODDIR/hosts
+      rm -rf $work_dir/hosts
       exit 0
       fi
       done
