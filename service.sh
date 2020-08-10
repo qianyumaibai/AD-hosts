@@ -52,23 +52,24 @@ fi
 
 if $(curl -V > /dev/null 2>&1) ; then
     for i in $(seq 1 20); do
-    if curl "${ADhosts_link}" -k -L -o "$work_dir/hosts" >&2; then
+    if curl "${ADhosts_link}" -k -L -o "$MODDIR/hosts" >&2; then
     break;
     fi
     sleep 2
     if [[ $i == 20 ]]; then
     echo "curl连接失败,更新失败: $curdate" >> $work_dir/update.log
-    rm -rf $work_dir/hosts
+    rm -rf $MODDIR/hosts
     exit 0
     fi
     done
 elif $(wget --help > /dev/null 2>&1) ; then
       for i in $(seq 1 5); do
-      if wget --no-check-certificate ${ADhosts_link} -O $work_dir/hosts; then
+      if wget --no-check-certificate ${ADhosts_link} -O $MODDIR/hosts; then
       break;
       fi
       if [[ $i == 5 ]]; then
       echo "wget连接,更新失败: $curdate" >> $work_dir/update.log
+      rm -rf $MODDIR/hosts
       exit 0
       fi
       done
@@ -80,20 +81,20 @@ fi
 MIUI=$(grep MIUI $MODDIR/select.txt | awk -F '=' '{print $2}')
 Tencent=$(grep Tencent $MODDIR/select.txt | awk -F '=' '{print $2}')
 if [ $MIUI = "true" ]; then
-   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $work_dir/hosts
+   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODDIR/hosts
 fi
 if [ $Tencent = "true" ]; then
-   sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $work_dir/hosts
-   sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $work_dir/hosts
+   sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $MODDIR/hosts
+   sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $MODDIR/hosts
 fi
 
 Now=$(md5sum $ADhosts_dir/hosts | awk '{print $1}')
-New=$(md5sum  $work_dir/hosts | awk '{print $1}')
+New=$(md5sum  $MODDIR/hosts | awk '{print $1}')
 if [ $Now = $New ]; then
    rm -rf $work_dir/hosts
    echo "没有更新: $curdate" >> $work_dir/update.log
 else
-   mv -f $work_dir/hosts $ADhosts_dir/hosts
+   mv -f $MODDIR/hosts $ADhosts_dir/hosts
    chmod 644 $ADhosts_dir/hosts
    chown 0:0 $ADhosts_dir/hosts
    chcon u:object_r:system_file:s0 $ADhosts_dir/hosts
