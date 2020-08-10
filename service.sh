@@ -17,13 +17,6 @@ done
 
 work_dir=/sdcard/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
-ADhosts_dir=$MODDIR/system/etc/hosts
-hosts_link=$(grep hosts_link $MODDIR/select.txt | awk -F '=' '{print $2}')
-if [ $hosts_link = "true" ]; then
-   ADhosts_link="https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts"
-else
-   ADhosts_link="https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/system/etc/hosts"
-fi
 
 if [ ! -d $work_dir ];then
    mkdir -p $work_dir
@@ -40,6 +33,23 @@ if [ ! -e $work_dir/Start.sh ];then
    echo "sh /data/adb/modules/AD-Hosts/service.sh" >> $work_dir/Start.sh
 fi
 
+hosts_link=$(grep hosts_link $MODDIR/select.txt | awk -F '=' '{print $2}')
+if [ $hosts_link = "true" ]; then
+   ADhosts_link="https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts"
+elif [ $hosts_link = "false" ]; then
+   ADhosts_link="https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/system/etc/hosts"
+else
+   echo "Error: 地址错误" >> $work_dir/update.log
+   exit 0
+fi
+
+install_mod=$(grep install_mod $MODDIR/select.txt | awk -F '=' '{print $2}')
+if [ $install_mod = "true" ]; then
+   ADhosts_dir=$MODDIR/system/etc
+else
+   ADhosts_dir=/system/etc
+fi
+
 if $(curl -V > /dev/null 2>&1) ; then
     for i in $(seq 1 20); do
     if curl "${ADhosts_link}" -k -L -o "$work_dir/hosts" >&2; then
@@ -52,21 +62,19 @@ if $(curl -V > /dev/null 2>&1) ; then
     exit 0
     fi
     done
+elif $(wget --help > /dev/null 2>&1) ; then
+      for i in $(seq 1 5); do
+      if wget --no-check-certificate ${ADhosts_link} -O $work_dir/hosts; then
+      break;
+      fi
+      if [[ $i == 5 ]]; then
+      echo "wget连接,更新失败: $curdate" >> $work_dir/update.log
+      exit 0
+      fi
+      done
 else
-    if $(wget --help > /dev/null 2>&1) ; then
-        for i in $(seq 1 5); do
-        if wget ${ADhosts_link} -O $work_dir/hosts; then
-        break;
-        fi
-        if [[ $i == 5 ]]; then
-        echo "wget连接,更新失败: $curdate" >> $work_dir/update.log
-        exit 0
-        fi
-        done
-    else
-        echo "Error: 您没有下载所需要用到的指令文件，请安装Busybox for Android NDK模块" >> $work_dir/update.log
-        exit 0
-    fi
+      echo "Error: 您没有下载所需要用到的指令文件，请安装Busybox for Android NDK模块" >> $work_dir/update.log
+      exit 0
 fi
 
 MIUI=$(grep MIUI $MODDIR/select.txt | awk -F '=' '{print $2}')
@@ -79,16 +87,17 @@ if [ $Tencent = "true" ]; then
    sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $work_dir/hosts
 fi
 
-Now=$(md5sum $ADhosts_dir | awk '{print $1}')
+Now=$(md5sum $ADhosts_dir/hosts | awk '{print $1}')
 New=$(md5sum  $work_dir/hosts | awk '{print $1}')
 if [ $Now = $New ]; then
    rm -rf $work_dir/hosts
    echo "没有更新: $curdate" >> $work_dir/update.log
 else
-   mv -f $work_dir/hosts $ADhosts_dir
-   chmod 644 $MODDIR/./system/etc/hosts
-   chown 0:0 $ADhosts_dir
-   chcon u:object_r:system_file:s0 $ADhosts_dir
-   echo "上次更新时间: $curdate" >> $work_dir/update.log
+   mv -f $work_dir/hosts $ADhosts_dir/hosts
+   chmod 644 $ADhosts_dir/hosts
+   chown 0:0 $ADhosts_dir/hosts
+   chcon u:object_r:system_file:s0 $ADhosts_dir/hosts
+   echo -n "上次更新时间: $curdate" >> $work_dir/update.log
+   echo "  hosts文件目录:$ADhosts_dir/hosts" >> $work_dir/update.log
    sed -i '1d' $work_dir/update.log
 fi

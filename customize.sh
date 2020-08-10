@@ -82,9 +82,27 @@ REPLACE="
 ##########################################################################################
  
 # 将 $ZIPFILE 提取到 $MODPATH
-  ui_print "- 解压模块文件"
-  unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
-  tar -xf $MODPATH/tools.tar.xz -C $TMPDIR >&2
+ui_print "- 解压模块文件"
+unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
+
+work_dir=/sdcard/ADhosts
+syshosts=/system/etc/hosts
+if [ ! -d $work_dir ];then
+   mkdir -p $work_dir
+fi
+if [ ! -e $work_dir/update.log ];then
+   touch $work_dir/update.log
+   echo "First line" >> $work_dir/update.log
+   sed -i "G;G;G;G;G" $work_dir/update.log
+   sed -i '1d' $work_dir/update.log
+fi
+if [ ! -e $work_dir/Start.sh ];then
+   touch $work_dir/Start.sh
+   echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
+   echo "sh /data/adb/modules/AD-Hosts/service.sh" >> $work_dir/Start.sh
+fi
+
+tar -xf $MODPATH/tools.tar.xz -C $TMPDIR >&2
 chmod -R 0755 $TMPDIR/tools
 alias keycheck="$TMPDIR/tools/$ARCH32/keycheck"
 
@@ -169,6 +187,23 @@ else
   sed -i "s/<hosts>/false/g" $MODPATH/select.txt
 fi
 
+ui_print "选择hosts安装模式"
+ui_print "  音量+ = systemless"
+ui_print "  音量– = system"
+if $VKSEL; then
+  ui_print "已选择systemless模式"
+  sed -i "s/<mod>/true/g" $MODPATH/select.txt
+else
+  ui_print "已选择system模式"
+  ui_print "备份系统hosts文件至$work_dir/hosts.bak"
+  sed -i "s/<mod>/false/g" $MODPATH/select.txt
+  if [ ! -e $work_dir/syshosts.bak ]; then
+     cp $syshosts $work_dir/syshosts.bak
+  fi
+  mv -f $MODPATH/system/etc/hosts $syshosts
+  rm -rf $MODPATH/system
+fi
+
 var_miui="`grep_prop ro.miui.ui.version.*`"
 if [ $var_miui ]; then
   ui_print " "
@@ -202,22 +237,6 @@ if $VKSEL; then
   sed -i "s/<QQ>/true/g" $MODPATH/select.txt
 else
   ui_print "已选择不加入"
-fi
-
-work_dir=/sdcard/ADhosts
-if [ ! -d $work_dir ];then
-   mkdir -p $work_dir
-fi
-if [ ! -e $work_dir/update.log ];then
-   touch $work_dir/update.log
-   echo "First line" >> $work_dir/update.log
-   sed -i "G;G;G;G;G" $work_dir/update.log
-   sed -i '1d' $work_dir/update.log
-fi
-if [ ! -e $work_dir/Start.sh ];then
-   touch $work_dir/Start.sh
-   echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
-   echo "sh /data/adb/modules/AD-Hosts/service.sh" >> $work_dir/Start.sh
 fi
 
 # 删除多余文件
