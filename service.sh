@@ -52,7 +52,7 @@ fi
 
 if $(curl -V > /dev/null 2>&1) ; then
     for i in $(seq 1 20); do
-    if curl "${ADhosts_link}" -k -L -o "$MODDIR/hosts" >&2; then
+    if curl "${ADhosts_link}" -k -L -o "$work_dir/hosts" >&2; then
     break;
     fi
     sleep 2
@@ -64,7 +64,7 @@ if $(curl -V > /dev/null 2>&1) ; then
     done
 elif $(wget --help > /dev/null 2>&1) ; then
       for i in $(seq 1 5); do
-      if wget --no-check-certificate ${ADhosts_link} -O $MODDIR/hosts; then
+      if wget --no-check-certificate ${ADhosts_link} -O $work_dir/hosts; then
       break;
       fi
       if [[ $i == 5 ]]; then
@@ -89,15 +89,17 @@ if [ $Tencent = "true" ]; then
 fi
 
 Now=$(md5sum $ADhosts_dir/hosts | awk '{print $1}')
-New=$(md5sum  $MODDIR/hosts | awk '{print $1}')
+New=$(md5sum  $work_dir/hosts | awk '{print $1}')
 if [ $Now = $New ]; then
    rm -rf $work_dir/hosts
    echo "没有更新: $curdate" >> $work_dir/update.log
 else
-   mv -f $MODDIR/hosts $ADhosts_dir/hosts
+   mount -o rw,remount /system
+   mv -f $work_dir/hosts $ADhosts_dir/hosts
    chmod 644 $ADhosts_dir/hosts
    chown 0:0 $ADhosts_dir/hosts
    chcon u:object_r:system_file:s0 $ADhosts_dir/hosts
+   mount -o ro,remount /system
    echo -n "上次更新时间: $curdate" >> $work_dir/update.log
    echo "  hosts文件目录:$ADhosts_dir/hosts" >> $work_dir/update.log
    sed -i '1d' $work_dir/update.log
