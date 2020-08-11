@@ -92,7 +92,7 @@ if [ ! -d $work_dir ];then
 fi
 if [ ! -e $work_dir/update.log ];then
    touch $work_dir/update.log
-   echo "First line" >> $work_dir/update.log
+   echo "paceholder" >> $work_dir/update.log
    sed -i "G;G;G;G;G" $work_dir/update.log
    sed -i '1d' $work_dir/update.log
 fi

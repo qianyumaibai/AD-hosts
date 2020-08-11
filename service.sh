@@ -81,11 +81,11 @@ fi
 MIUI=$(grep MIUI $MODDIR/select.txt | awk -F '=' '{print $2}')
 Tencent=$(grep Tencent $MODDIR/select.txt | awk -F '=' '{print $2}')
 if [ $MIUI = "true" ]; then
-   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODDIR/hosts
+   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $work_dir/hosts
 fi
 if [ $Tencent = "true" ]; then
-   sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $MODDIR/hosts
-   sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $MODDIR/hosts
+   sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $work_dir/hosts
+   sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $work_dir/hosts
 fi
 
 Now=$(md5sum $ADhosts_dir/hosts | awk '{print $1}')
