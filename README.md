@@ -32,3 +32,6 @@
 
 ### 黑名单
 [无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/blob/master/black.md)
+
+### 捐赠名单
+捐赠后请在酷安私信我并附上截图我会将你的ID加入[捐赠名单](https://github.com/E7KMbb/AD-hosts/blob/master/thanks.md)中。

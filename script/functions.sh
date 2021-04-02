@@ -21,7 +21,7 @@ if [ ! -e $work_dir/Start.sh ];then
 fi
 
 if [ $install_mod = "systemless" ]; then
-   hosts_dir=/data/adb/modules/hosts/system/etc
+   hosts_dir=/data/adb/modules/AD-Hosts/system/etc
 elif [ $install_mod = "system" ]; then
    hosts_dir=/system/etc
 else
@@ -68,7 +68,7 @@ fi
 Now=$(md5sum $hosts_dir/hosts | awk '{print $1}')
 New=$(md5sum  $work_dir/hosts | awk '{print $1}')
 ab_device=$(getprop ro.build.ab_update)
-if [ $Now = $New ]; then
+if [ $Now == $New ]; then
    rm -rf $work_dir/hosts
    echo "没有更新: $curdate" >> $work_dir/update.log
 else
