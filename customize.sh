@@ -48,7 +48,7 @@
 ##########################################################################################
 
 ##########################################################################################
-# SKIPUNZIP
+# 变量
 ##########################################################################################
 
 # 如果您需要更多的自定义，并且希望自己做所有事情
@@ -56,6 +56,9 @@
 # 以跳过提取操作并应用默认权限/上下文上下文步骤。
 # 请注意，这样做后，您的custom.sh将负责自行安装所有内容。
 SKIPUNZIP=1
+# 如果您需要调用Magisk内部的busybox
+# 请在custom.sh中标注ASH_STANDALONE=1
+ASH_STANDALONE=1
 
 ##########################################################################################
 # 替换列表
@@ -100,110 +103,67 @@ fi
 if [ ! -e $work_dir/Start.sh ];then
    touch $work_dir/Start.sh
    echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
-   echo "sh /data/adb/modules/AD-Hosts/service.sh" >> $work_dir/Start.sh
+   echo "sh /data/adb/modules/AD-Hosts/script/functions.sh" >> $work_dir/Start.sh
 fi
 
-tar -xf $MODPATH/tools.tar.xz -C $TMPDIR >&2
-chmod -R 0755 $TMPDIR/tools
-alias keycheck="$TMPDIR/tools/$ARCH32/keycheck"
-
-keytest() {
-  ui_print "- 音量键测试"
-  ui_print "   请按任意音量键:"
-  if (timeout 3 /system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $TMPDIR/events); then
-    return 0
-  else
-    ui_print "   再试一次:"
-    timeout 3 keycheck
-    local SEL=$?
-    [ $SEL -eq 143 ] && abort "   未检测到音量键!" || return 1
-  fi
-}
-
+chmod -R 0755 $MODPATH/tools
 chooseport() {
-  # Original idea by chainfire @xda-developers, improved on by ianmacd @xda-developers
-  #note from chainfire @xda-developers: getevent behaves weird when piped, and busybox grep likes that even less than toolbox/toybox grep
-  while true; do
-    /system/bin/getevent -lc 1 2>&1 | /system/bin/grep VOLUME | /system/bin/grep " DOWN" > $TMPDIR/events
-    if (`cat $TMPDIR/events 2>/dev/null | /system/bin/grep VOLUME >/dev/null`); then
-      break
-    fi
-  done
-  if (`cat $TMPDIR/events 2>/dev/null | /system/bin/grep VOLUMEUP >/dev/null`); then
-    return 0
-  else
-    return 1
-  fi
-}
-
-chooseportold() {
   # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
   # Calling it first time detects previous input. Calling it second time will do what we want
+  [ "$1" ] && local delay=$1 || local delay=3
+  local error=false
   while true; do
-    keycheck
-    keycheck
+    timeout 0 $MODPATH/tools/$ARCH32/keycheck
+    timeout $delay $MODPATH/tools/$ARCH32/keycheck
     local SEL=$?
-    if [ "$1" == "UP" ]; then
-      UP=$SEL
-      break
-    elif [ "$1" == "DOWN" ]; then
-      DOWN=$SEL
-      break
-    elif [ $SEL -eq $UP ]; then
+    if [ $SEL -eq 42 ]; then
       return 0
-    elif [ $SEL -eq $DOWN ]; then
+    elif [ $SEL -eq 41 ]; then
       return 1
+    else
+      $error && abort "- 音量键错误!"
+      error=true
+      echo "- 未检测到音量键。再试一次。"
     fi
   done
 }
-
-# Have user option to skip vol keys
-OIFS=$IFS; IFS=\|; MID=false; NEW=false
-case $(echo $(basename $ZIPFILE) | tr '[:upper:]' '[:lower:]') in
-  *novk*) ui_print "- 跳过音量键 -";;
-  *) if keytest; then
-       VKSEL=chooseport
-     else
-       VKSEL=chooseportold
-       ui_print "  ! 检测到遗留设备! 使用旧的 keycheck 方案"
-       ui_print " "
-       ui_print "- 音量键录入 -"
-       ui_print "  请按音量+键:"
-       $VKSEL "UP"
-       ui_print "  请按音量–键"
-       $VKSEL "DOWN"
-     fi;;
-esac
-IFS=$OIFS
-
 
 ui_print "选择自动更新的地址"
 ui_print "  音量+ = GitHub链接(国外推荐)"
 ui_print "  音量– = Coding镜像链接(国内推荐)"
-if $VKSEL; then
+if chooseport; then
   ui_print "已选择GitHub链接"
-  sed -i "s/<hosts>/true/g" $MODPATH/select.txt
+  sed -i "s/<link>/https:\/\/raw.githubusercontent.com\/E7KMbb\/AD-hosts\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
 else
   ui_print "已选择Coding镜像链接"
-  sed -i "s/<hosts>/false/g" $MODPATH/select.txt
+  sed -i "s/<link>/https:\/\/aisauce.coding.net\/p\/ad-hosts\/d\/ad-hosts\/git\/raw\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
 fi
 
 ui_print "选择hosts安装模式"
 ui_print "  音量+ = systemless"
 ui_print "  音量– = system"
-if $VKSEL; then
+if chooseport; then
   ui_print "已选择systemless模式"
-  sed -i "s/<mod>/true/g" $MODPATH/select.txt
+  sed -i "s/<mod>/systemless/g" $MODPATH/script/select.ini
 else
   ui_print "已选择system模式"
-  ui_print "备份系统hosts文件至$work_dir/hosts.bak"
-  sed -i "s/<mod>/false/g" $MODPATH/select.txt
+  sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
   if [ ! -e $work_dir/syshosts.bak ]; then
+     ui_print "备份系统hosts文件至$work_dir/hosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
-  mount -o remount,rw /
+  ab_device=$(getprop ro.build.ab_update)
+  if [ $ab_device = "true" ]; then
+      mount -o remount,rw /
+  else
+      mount -o remount,rw /system
+  fi
   mv -f $MODPATH/system/etc/hosts $syshosts
-  mount -o remount,ro /
+  if [ $ab_device = "true" ]; then
+      mount -o remount,ro /
+  else
+      mount -o remount,ro /system
+  fi
   rm -rf $MODPATH/system
 fi
 
@@ -215,37 +175,39 @@ if [ $var_miui ]; then
   ui_print "但会屏蔽掉更多的来自小米的广告"
   ui_print "  音量+ = 加入"
   ui_print "  音量– = 不加入"
-  if $VKSEL; then
+  if chooseport; then
     ui_print "已选择加入"
     ui_print "正在写入中....."
     sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODPATH/system/etc/hosts
-    sed -i "s/<xiaomi>/true/g" $MODPATH/select.txt
+    sed -i "s/<xiaomi>/true/g" $MODPATH/script/select.ini
   else
     ui_print "已选择不加入"
+    sed -i "s/<xiaomi>/false/g" $MODPATH/script/select.ini
   fi
 else
   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODPATH/system/etc/hosts
-  sed -i "s/<xiaomi>/true/g" $MODPATH/select.txt
+  sed -i "s/<xiaomi>/true/g" $MODPATH/script/select.ini
 fi
-  ui_print " "
-  ui_print "是否加入去除腾讯QQ微信小程序广告"
-  ui_print "加入会导致小程序无法看广告得奖励"
-  ui_print "  音量+ = 加入"
-  ui_print "  音量– = 不加入"
-if $VKSEL; then
+ui_print " "
+ui_print "是否加入去除腾讯QQ微信小程序广告"
+ui_print "加入会导致小程序无法看广告得奖励"
+ui_print "  音量+ = 加入"
+ui_print "  音量– = 不加入"
+if chooseport; then
   ui_print "已选择加入"
   ui_print "正在写入中....."
   sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $MODPATH/system/etc/hosts
   sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $MODPATH/system/etc/hosts
-  sed -i "s/<QQ>/true/g" $MODPATH/select.txt
+  sed -i "s/<QQ>/true/g" $MODPATH/script/select.ini
 else
   ui_print "已选择不加入"
+  sed -i "s/<QQ>/false/g" $MODPATH/script/select.ini
 fi
 
 # 删除多余文件
  rm -rf \
  $MODPATH/system/placeholder $MODPATH/customize.sh \
- $MODPATH/*.md $MODPATH/.git* $MODPATH/LICENSE $MODPATH/tools.tar.xz 4>/dev/null
+ $MODPATH/*.md $MODPATH/.git* $MODPATH/LICENSE $MODPATH/tools 4>/dev/null
 
 ##########################################################################################
 # 权限设置
@@ -270,5 +232,5 @@ fi
 
   # 默认权限请勿删除
   set_perm_recursive $MODPATH 0 0 0755 0644
-  set_perm $MODPATH/service.sh 0 0 777
+  set_perm $MODPATH/script/functions.sh 0 0 777
 

@@ -1,4 +1,0 @@
-hosts_link=<hosts>
-install_mod=<mod>
-MIUI=<xiaomi>
-Tencent=<QQ>
