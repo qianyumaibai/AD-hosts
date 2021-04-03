@@ -73,7 +73,7 @@ if [ $Now == $New ]; then
 else
    if [ $install_mod = "system" ]; then
        mount -o remount,rw /system
-       if [ $? != 0 ]; then
+       if [ $? -gt 0 ]; then
            mount -o remount,rw /
        fi
    fi
@@ -83,7 +83,7 @@ else
    chcon u:object_r:system_file:s0 $hosts_dir/hosts
    if [ $install_mod = "system" ]; then
        mount -o remount,ro /system
-       if [ $? != 0 ]; then
+       if [ $? -gt 0 ]; then
            mount -o remount,ro /
        fi
    fi

@@ -153,12 +153,12 @@ else
      cp $syshosts $work_dir/syshosts.bak
   fi
   mount -o remount,rw /system
-  if [ $? != 0 ]; then
+  if [ $? -gt 0 ]; then
       mount -o remount,rw /
   fi
   mv -f $MODPATH/system/etc/hosts $syshosts
   mount -o remount,ro /system
-  if [ $? != 0 ]; then
+  if [ $? -gt 0 ]; then
       mount -o remount,ro /
   fi
   rm -rf $MODPATH/system
