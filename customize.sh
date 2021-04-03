@@ -152,17 +152,14 @@ else
      ui_print "备份系统hosts文件至$work_dir/hosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
-  ab_device=$(getprop ro.build.ab_update)
-  if [ $ab_device = "true" ]; then
+  mount -o remount,rw /system
+  if [ $? != 0 ]; then
       mount -o remount,rw /
-  else
-      mount -o remount,rw /system
   fi
   mv -f $MODPATH/system/etc/hosts $syshosts
-  if [ $ab_device = "true" ]; then
+  mount -o remount,ro /system
+  if [ $? != 0 ]; then
       mount -o remount,ro /
-  else
-      mount -o remount,ro /system
   fi
   rm -rf $MODPATH/system
 fi

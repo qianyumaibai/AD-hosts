@@ -67,28 +67,25 @@ fi
 
 Now=$(md5sum $hosts_dir/hosts | awk '{print $1}')
 New=$(md5sum  $work_dir/hosts | awk '{print $1}')
-ab_device=$(getprop ro.build.ab_update)
 if [ $Now == $New ]; then
    rm -rf $work_dir/hosts
    echo "没有更新: $curdate" >> $work_dir/update.log
 else
    if [ $install_mod = "system" ]; then
-      if [ $ab_device = "true" ]; then
-         mount -o remount,rw /
-      else
-         mount -o remount,rw /system
-      fi
+       mount -o remount,rw /system
+       if [ $? != 0 ]; then
+           mount -o remount,rw /
+       fi
    fi
    mv -f $work_dir/hosts $hosts_dir/hosts
    chmod 644 $hosts_dir/hosts
    chown 0:0 $hosts_dir/hosts
    chcon u:object_r:system_file:s0 $hosts_dir/hosts
    if [ $install_mod = "system" ]; then
-      if [ $ab_device = "true" ]; then
-         mount -o remount,ro /
-      else
-         mount -o remount,ro /system
-      fi
+       mount -o remount,ro /system
+       if [ $? != 0 ]; then
+           mount -o remount,ro /
+       fi
    fi
    echo -n "上次更新时间: $curdate" >> $work_dir/update.log
    echo "  hosts文件目录:$hosts_dir/hosts" >> $work_dir/update.log
