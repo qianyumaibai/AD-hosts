@@ -72,7 +72,7 @@ if [ $Now == $New ]; then
    echo "没有更新: $curdate" >> $work_dir/update.log
 else
    if [ $install_mod = "system" ]; then
-       mount -o remount,rw /system
+       mount -o remount,rw /system &> /dev/null
        if [ $? -gt 0 ]; then
            mount -o remount,rw /
        fi
@@ -82,7 +82,7 @@ else
    chown 0:0 $hosts_dir/hosts
    chcon u:object_r:system_file:s0 $hosts_dir/hosts
    if [ $install_mod = "system" ]; then
-       mount -o remount,ro /system
+       mount -o remount,ro /system &> /dev/null
        if [ $? -gt 0 ]; then
            mount -o remount,ro /
        fi
