@@ -1,5 +1,5 @@
 #!/system/bin/sh
-work_dir=/sdcard/ADhosts
+work_dir=/sdcard/Android/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 script_dir=${0%/*}
 
