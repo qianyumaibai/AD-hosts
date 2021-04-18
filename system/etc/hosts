@@ -10,7 +10,6 @@
 ::1 ip6-localhost
 ::1 ip6-loopback
 
-#127.0.0.1 adashbc.ut.taobao.com
 #如果您使用订阅源方式使用hosts可以去除以下几条的#号
 #127.0.0.1 api.ad.xiaomi.com
 #127.0.0.1 adsmind.gdtimg.com
@@ -6311,7 +6310,6 @@
 127.0.0.1 adash.m.taobao.com
 127.0.0.1 adash.man.aliyuncs.com
 127.0.0.1 adashbc.m.taobao.com
-127.0.0.1 adashbc.ut.taobao.com
 127.0.0.1 adashx.m.taobao.com
 127.0.0.1 adashx.ut.taobao.com
 127.0.0.1 adashx4ae.ut.taobao.com
@@ -14390,7 +14388,6 @@
 127.0.0.1 api.ad.smaato.net
 127.0.0.1 api.ad.snappea.com
 127.0.0.1 api.ad.wazzapps.org
-127.0.0.1 api.ad.xiaomi.com
 127.0.0.1 api.ad.xv555.com
 127.0.0.1 api.ad.yipinread.com
 127.0.0.1 api.ad4push.com
@@ -44271,7 +44268,6 @@
 127.0.0.1 livenew.ksapisrv.com
 127.0.0.1 livep.l.aiseet.atianqi.com
 127.0.0.1 livep.l.cp81.ott.cibntv.net
-127.0.0.1 livep.l.qq.com
 127.0.0.1 livepass.conviva.com
 127.0.0.1 livepassdl-global.conviva.com
 127.0.0.1 livepassdl.conviva.com
@@ -48065,7 +48061,6 @@
 127.0.0.1 mcfg.sandai.net
 127.0.0.1 mcgi.play.aiseet.atianqi.com
 127.0.0.1 mcgi.play.cp81.ott.cibntv.net
-127.0.0.1 mcgi.v.qq.com
 127.0.0.1 mcgm.sakura.ne.jp
 127.0.0.1 mci12.clicksor.com
 127.0.0.1 mcityadslink.com
@@ -50454,7 +50449,6 @@
 127.0.0.1 msg.c002.ottcn.com
 127.0.0.1 msg.cn.miaozhen.com
 127.0.0.1 msg.cocamobile.com
-127.0.0.1 msg.douyu.com
 127.0.0.1 msg.eclicks.cn
 127.0.0.1 msg.iqiyi.com
 127.0.0.1 msg.m.letv.com
@@ -56626,7 +56620,6 @@
 127.0.0.1 playweez.pl
 127.0.0.1 playwire-d.openx.net
 127.0.0.1 plazowapolska.pl
-127.0.0.1 plbslog.umeng.com
 127.0.0.1 pldev.112.2o7.net
 127.0.0.1 pleasewait.co
 127.0.0.1 plemedia.com
@@ -62576,7 +62569,6 @@
 127.0.0.1 sdk.dofunapps.com
 127.0.0.1 sdk.dotui.cn
 127.0.0.1 sdk.dreamflyuu.com
-127.0.0.1 sdk.e.qq.com
 127.0.0.1 sdk.engage.co
 127.0.0.1 sdk.fevo.com
 127.0.0.1 sdk.fiksu.com
@@ -65098,7 +65090,6 @@
 127.0.0.1 soundofhope.org
 127.0.0.1 soundshow.pl
 127.0.0.1 soundslam.us.intellitxt.com
-127.0.0.1 soup.v.qq.com
 127.0.0.1 source.bidgear.com
 127.0.0.1 source.click.ipd.pps.tv
 127.0.0.1 source.youxiaoad.com
@@ -72733,7 +72724,6 @@
 127.0.0.1 ulink.immomo.com
 127.0.0.1 ulml.mob.com
 127.0.0.1 ulog.ksapisrv.com
-127.0.0.1 ulogs.umeng.com
 127.0.0.1 ulogs.umengcloud.com
 127.0.0.1 ulok.zutodu.cn
 127.0.0.1 ulow.mingyangzhizun.com
@@ -92618,24 +92608,28 @@
 127.0.0.1 www.881xj.com
 127.0.0.1 zhizhunbao.top
 127.0.0.1 ck.jads.co
+127.0.0.1 api.adsymptotic.com
+127.0.0.1 tdid.m.qq.com
+127.0.0.1 s72f5a8e.irs03.com
+127.0.0.1 s06aa680.irs03.com
 
 # 广告奖励
 127.0.0.1 gw.365you.com
 127.0.0.1 c.gdt.qq.com
-127.0.0.1 d.gdt.qq.com
-127.0.0.1 i.gdt.qq.com
+#127.0.0.1 d.gdt.qq.com
+#127.0.0.1 i.gdt.qq.com
 127.0.0.1 m.gdt.qq.com
 127.0.0.1 t.gdt.qq.com
 127.0.0.1 v.gdt.qq.com
 127.0.0.1 q.i.gdt.qq.com
 127.0.0.1 v2.gdt.qq.com
 127.0.0.1 mi.gdt.qq.com
-127.0.0.1 ii.gdt.qq.com
+#127.0.0.1 ii.gdt.qq.com
 127.0.0.1 rm.gdt.qq.com
 127.0.0.1 nc.gdt.qq.com
 127.0.0.1 vr.gdt.qq.com
 127.0.0.1 rpt.gdt.qq.com
 127.0.0.1 win.gdt.qq.com
 127.0.0.1 ipv4.gdt.qq.com
-127.0.0.1 canvas.gdt.qq.com
+#127.0.0.1 canvas.gdt.qq.com
 127.0.0.1 x.adnet.qq.com
