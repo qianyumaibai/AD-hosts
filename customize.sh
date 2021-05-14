@@ -94,12 +94,48 @@ syshosts=/system/etc/hosts
 if [ ! -d $work_dir ];then
    mkdir -p $work_dir
 fi
+if [ ! -e $work_dir/Cron.ini ];then
+   touch $work_dir/Cron.ini
+   echo "#定时更新配置文件" >> $work_dir/Cron.ini
+   echo "#开关定时更新on/off" >> $work_dir/Cron.ini
+   echo "regular_update=off" >> $work_dir/Cron.ini
+   echo "M='*' && H='4' && DOM='*' && M='*' && DOW='*'" >> $work_dir/Cron.ini
+   echo "#*        *        *        *            *" >> $work_dir/Cron.ini
+   echo "#-        -        -         -            -" >> $work_dir/Cron.ini
+   echo "#|        |        |         |            |" >> $work_dir/Cron.ini
+   echo "#|        |        |         |            +----- DOW=星期(0 - 7) (0和7都代表星期天)" >> $work_dir/Cron.ini
+   echo "#|        |        |         +---------- M=月份(1 - 12)" >> $work_dir/Cron.ini
+   echo "#|        |        +--------------- DOM=日期(1 - 31)" >> $work_dir/Cron.ini
+   echo "#|        +-------------------- H=小时(0 - 23)" >> $work_dir/Cron.ini
+   echo "#+------------------------- M=分钟(0 - 59)" >> $work_dir/Cron.ini
+   echo "#例:" >> $work_dir/Cron.ini
+   echo "#* * * * * 每分钟执行一次" >> $work_dir/Cron.ini
+   echo "#* 4 * * * 每天的4:00执行一次" >> $work_dir/Cron.ini
+   echo "#每个时间(/4)" >> $work_dir/Cron.ini
+   echo "#*/4 * * * * 每4分钟执行一次" >> $work_dir/Cron.ini
+   echo "#* */4 * * * 每4个小时执行一次" >> $work_dir/Cron.ini
+   echo "#* * */4 * * 每4天执行一次" >> $work_dir/Cron.ini
+   echo "#* * * */4 * 每4个月执行一次" >> $work_dir/Cron.ini
+   echo "#* * * * */4 每4周执行一次" >> $work_dir/Cron.ini
+   echo "#一个时间到一个时间(0-59)" >> $work_dir/Cron.ini
+   echo "#25 8-11 * * * 每天8-11点的第25分钟执行一次" >> $work_dir/Cron.ini
+   echo "#0 6-12/3 * * * 每天6:00到12:00每3小时0分钟执行一次" >> $work_dir/Cron.ini
+   echo "#* 4 6-9 * * 每个月6-9号的4:00点执行一次" >> $work_dir/Cron.ini
+   echo "#* 4 18 6-9 * 6-9月的每个18号的4:00点执行一次" >> $work_dir/Cron.ini
+   echo "#* 4 * * 3-5 每周周3到周5的4:00点执行一次" >> $work_dir/Cron.ini
+fi
 if [ ! -e $work_dir/update.log ];then
    touch $work_dir/update.log
    echo "paceholder" >> $work_dir/update.log
    sed -i "G;G;G;G;G" $work_dir/update.log
    sed -i '1d' $work_dir/update.log
 fi
+if [ ! -e $work_dir/regular_update.sh ];then
+   touch $work_dir/regular_update.sh
+   echo "# 定时更新手动开关，开关状态请在Cron.ini中更改" >> $work_dir/Regular_update.sh
+   echo "sh $script_dir/cron.sh" >> $work_dir/Regular_update.sh
+fi
+rm -rf $work_dir/Start.sh
 if [ ! -e $work_dir/Start.sh ];then
    touch $work_dir/Start.sh
    echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
@@ -152,16 +188,38 @@ else
      ui_print "备份系统hosts文件至$work_dir/hosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
-  mount -o remount,rw /system
-  if [ $? -gt 0 ]; then
-      mount -o remount,rw /
+  mount -o remount,rw /system &> /dev/null
+  if [ $? != 0 ]; then
+     mount -o remount,rw / &> /dev/null
+     if [ $? != 0 ]; then
+        mount -o remount,rw /dev/block/bootdevice/by-name/system /system &> /dev/null
+        if [ $? != 0 ]; then
+           abort "挂载失败请切换为systemless模式"
+        fi
+     fi
   fi
   mv -f $MODPATH/system/etc/hosts $syshosts
-  mount -o remount,ro /system
-  if [ $? -gt 0 ]; then
-      mount -o remount,ro /
+  mount -o remount,ro /system &> /dev/null
+  if [ $? != 0 ]; then
+     mount -o remount,ro / &> /dev/null
+     if [ $? != 0 ]; then
+        mount -o remount,ro /dev/block/bootdevice/by-name/system /system &> /dev/null
+     fi
   fi
   rm -rf $MODPATH/system
+fi
+
+ui_print " "
+ui_print "是否启用定时更新"
+ui_print "可在/data/adb/modules/AD-Hosts/script/select.ini中进行开关"
+ui_print "  音量+ = 开启"
+ui_print "  音量– = 关闭"
+if chooseport; then
+  ui_print "已选择开启"
+  sed -i "s/<bool>/true/g" $MODPATH/script/select.ini
+else
+  ui_print "已选择关闭"
+  sed -i "s/<bool>/false/g" $MODPATH/script/select.ini
 fi
 
 var_miui="`grep_prop ro.miui.ui.version.*`"
@@ -185,6 +243,7 @@ else
   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODPATH/system/etc/hosts
   sed -i "s/<xiaomi>/true/g" $MODPATH/script/select.ini
 fi
+
 ui_print " "
 ui_print "是否加入去除腾讯QQ微信小程序广告"
 ui_print "加入会导致小程序无法看广告得奖励"
@@ -202,32 +261,31 @@ else
 fi
 
 # 删除多余文件
- rm -rf \
- $MODPATH/system/placeholder $MODPATH/customize.sh \
- $MODPATH/*.md $MODPATH/.git* $MODPATH/LICENSE $MODPATH/tools 4>/dev/null
+rm -rf \
+$MODPATH/system/placeholder $MODPATH/customize.sh \
+$MODPATH/*.md $MODPATH/.git* $MODPATH/LICENSE $MODPATH/tools 4>/dev/null
 
 ##########################################################################################
 # 权限设置
 ##########################################################################################
 
-  #如果添加到此功能，请将其删除
-
-  # 请注意，magisk模块目录中的所有文件/文件夹都有$MODPATH前缀-在所有文件/文件夹中保留此前缀
-  # 一些例子:
+# 请注意，magisk模块目录中的所有文件/文件夹都有$MODPATH前缀-在所有文件/文件夹中保留此前缀
+# 一些例子:
   
-  # 对于目录(包括文件):
-  # set_perm_recursive  <目录>                <所有者> <用户组> <目录权限> <文件权限> <上下文> (默认值是: u:object_r:system_file:s0)
+# 对于目录(包括文件):
+# set_perm_recursive  <目录>                <所有者> <用户组> <目录权限> <文件权限> <上下文> (默认值是: u:object_r:system_file:s0)
   
-  # set_perm_recursive $MODPATH/system/lib 0 0 0755 0644
-  # set_perm_recursive $MODPATH/system/vendor/lib/soundfx 0 0 0755 0644
+# set_perm_recursive $MODPATH/system/lib 0 0 0755 0644
+# set_perm_recursive $MODPATH/system/vendor/lib/soundfx 0 0 0755 0644
 
-  # 对于文件(不包括文件所在目录)
-  # set_perm  <文件名>                         <所有者> <用户组> <文件权限> <上下文> (默认值是: u:object_r:system_file:s0)
+# 对于文件(不包括文件所在目录)
+# set_perm  <文件名>                         <所有者> <用户组> <文件权限> <上下文> (默认值是: u:object_r:system_file:s0)
   
-  # set_perm $MODPATH/system/lib/libart.so 0 0 0644
-  # set_perm /data/local/tmp/file.txt 0 0 644
+# set_perm $MODPATH/system/lib/libart.so 0 0 0644
+# set_perm /data/local/tmp/file.txt 0 0 644
 
-  # 默认权限请勿删除
-  set_perm_recursive $MODPATH 0 0 0755 0644
-  set_perm $MODPATH/script/functions.sh 0 0 777
+# 默认权限请勿删除
+set_perm_recursive $MODPATH 0 0 0755 0644
+set_perm $MODPATH/script/functions.sh 0 0 777
+set_perm $MODPATH/script/cron.sh 0 0 777
 
