@@ -14,8 +14,8 @@
 - system模式:使用系统目录直接修改原文件，模块刷入时备份系统hosts至/sdcard/ADhosts，卸载还原备份，文件实时应用。
 
 ### 注意
-本模块会在/sdcard生成ADhosts文件夹，内有更新日志与，动更新脚本，系统hosts备份。
-使用时请关闭其它的hosts模块，请关闭systemless hosts模块(如果有)。
+本模块会在/sdcard/Android生成ADhosts文件夹，内有更新日志与，手动更新脚本，定时更新启动脚本，系统hosts备份。
+使用时请关闭其它带有hosts文件的模块，请关闭systemless hosts模块(如果有)。
 
 ### 链接
 * [GitHub](https://github.com/E7KMbb/AD-hosts)
