@@ -130,10 +130,11 @@ if [ ! -e $work_dir/update.log ];then
    sed -i "G;G;G;G;G" $work_dir/update.log
    sed -i '1d' $work_dir/update.log
 fi
+rm -rf $work_dir/Regular_update.sh
 if [ ! -e $work_dir/Regular_update.sh ];then
    touch $work_dir/regular_update.sh
    echo "# 定时更新手动开关，开关状态请在Cron.ini中更改" >> $work_dir/Regular_update.sh
-   echo "sh $script_dir/cron.sh" >> $work_dir/Regular_update.sh
+   echo "sh /data/adb/modules/AD-Hosts/script/cron.sh" >> $work_dir/Regular_update.sh
 fi
 rm -rf $work_dir/Start.sh
 if [ ! -e $work_dir/Start.sh ];then
