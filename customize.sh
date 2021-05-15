@@ -132,7 +132,7 @@ if [ ! -e $work_dir/update.log ];then
 fi
 rm -rf $work_dir/Regular_update.sh
 if [ ! -e $work_dir/Regular_update.sh ];then
-   touch $work_dir/regular_update.sh
+   touch $work_dir/Regular_update.sh
    echo "# 定时更新手动开关，开关状态请在Cron.ini中更改" >> $work_dir/Regular_update.sh
    echo "sh /data/adb/modules/AD-Hosts/script/cron.sh" >> $work_dir/Regular_update.sh
 fi
@@ -208,19 +208,6 @@ else
      fi
   fi
   rm -rf $MODPATH/system
-fi
-
-ui_print " "
-ui_print "是否启用定时更新"
-ui_print "可在/data/adb/modules/AD-Hosts/script/select.ini中进行开关"
-ui_print "  音量+ = 开启"
-ui_print "  音量– = 关闭"
-if chooseport; then
-  ui_print "已选择开启"
-  sed -i "s/<bool>/true/g" $MODPATH/script/select.ini
-else
-  ui_print "已选择关闭"
-  sed -i "s/<bool>/false/g" $MODPATH/script/select.ini
 fi
 
 var_miui="`grep_prop ro.miui.ui.version.*`"
