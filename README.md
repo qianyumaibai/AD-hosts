@@ -28,7 +28,7 @@
 * [Gitee 镜像](https://gitee.com/e7kmbb/AD-hosts)
 
 * [Coding 镜像](https://aisauce.coding.net/public/ad-hosts/ad-hosts/git/files)
-<<
+
 * [订阅源直链 GitHub](https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts)
 
 * [订阅源直链 Coding](https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/system/etc/hosts)
