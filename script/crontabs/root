@@ -1,1 +1,1 @@
-* 4 * * *  sh /data/adb/modules/AD-Hosts/script/functions.sh
+0 4 * * 4  sh /data/adb/modules/AD-Hosts/script/functions.sh

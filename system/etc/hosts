@@ -21,7 +21,6 @@
 #127.0.0.1 fungamesmobile.com
 #127.0.0.1 ulogs.umeng.com
 #127.0.0.1 plbslog.umeng.com
-#127.0.0.1 beacon-api.aliyuncs.com
 
 127.0.0.1 0.0.0.0.beeglivesex.com
 127.0.0.1 0.0.0.0.creative.hpyrdr.com
@@ -6310,7 +6309,6 @@
 127.0.0.1 adash.m.taobao.com
 127.0.0.1 adash.man.aliyuncs.com
 127.0.0.1 adashbc.m.taobao.com
-127.0.0.1 adashx.m.taobao.com
 127.0.0.1 adashx.ut.taobao.com
 127.0.0.1 adashx4ae.ut.taobao.com
 127.0.0.1 adashx4yt.m.taobao.com
@@ -14318,7 +14316,6 @@
 127.0.0.1 api-06.com
 127.0.0.1 api-07.com
 127.0.0.1 api-08.com
-127.0.0.1 api-access.pangolin-sdk-toutiao.com
 127.0.0.1 api-ad.kajicam.com
 127.0.0.1 api-ads.tiantianqutao.com
 127.0.0.1 api-analytics-bootstrap.metaps.com
@@ -15475,7 +15472,6 @@
 127.0.0.1 appload.ingest.crittercism.com
 127.0.0.1 appload.ingest.eu.crittercism.com
 127.0.0.1 applog.camera360.com
-127.0.0.1 applog.uc.cn
 127.0.0.1 applogapi.autohome.com.cn
 127.0.0.1 applogios.uc.cn
 127.0.0.1 applovin-asia-rtb.liftoff.io

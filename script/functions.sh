@@ -13,7 +13,7 @@ if [ ! -e $work_dir/Cron.ini ];then
    echo "#定时更新配置文件" >> $work_dir/Cron.ini
    echo "#开关定时更新on/off" >> $work_dir/Cron.ini
    echo "regular_update=off" >> $work_dir/Cron.ini
-   echo "M='*' && H='4' && DOM='*' && M='*' && DOW='*'" >> $work_dir/Cron.ini
+   echo "M='0' && H='4' && DOM='*' && M='*' && DOW='4'" >> $work_dir/Cron.ini
    echo "#*        *        *        *            *" >> $work_dir/Cron.ini
    echo "#-        -        -         -            -" >> $work_dir/Cron.ini
    echo "#|        |        |         |            |" >> $work_dir/Cron.ini
