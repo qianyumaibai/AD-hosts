@@ -10,33 +10,33 @@ if [ ! -d $work_dir ];then
 fi
 if [ ! -e $work_dir/Cron.ini ];then
    touch $work_dir/Cron.ini
-   echo "#定时更新配置文件" >> $work_dir/Cron.ini
-   echo "#开关定时更新on/off" >> $work_dir/Cron.ini
+   echo "# 定时更新配置文件" >> $work_dir/Cron.ini
+   echo "# 开关定时更新on/off" >> $work_dir/Cron.ini
    echo "regular_update=off" >> $work_dir/Cron.ini
-   echo "M='0' && H='4' && DOM='*' && M='*' && DOW='4'" >> $work_dir/Cron.ini
-   echo "#*        *        *        *            *" >> $work_dir/Cron.ini
-   echo "#-        -        -         -            -" >> $work_dir/Cron.ini
-   echo "#|        |        |         |            |" >> $work_dir/Cron.ini
-   echo "#|        |        |         |            +----- DOW=星期(0 - 7) (0和7都代表星期天)" >> $work_dir/Cron.ini
-   echo "#|        |        |         +---------- M=月份(1 - 12)" >> $work_dir/Cron.ini
-   echo "#|        |        +--------------- DOM=日期(1 - 31)" >> $work_dir/Cron.ini
-   echo "#|        +-------------------- H=小时(0 - 23)" >> $work_dir/Cron.ini
-   echo "#+------------------------- M=分钟(0 - 59)" >> $work_dir/Cron.ini
-   echo "#例:" >> $work_dir/Cron.ini
-   echo "#* * * * * 每分钟执行一次" >> $work_dir/Cron.ini
-   echo "#* 4 * * * 每天的4:00执行一次" >> $work_dir/Cron.ini
-   echo "#每个时间(/4)" >> $work_dir/Cron.ini
-   echo "#*/4 * * * * 每4分钟执行一次" >> $work_dir/Cron.ini
-   echo "#* */4 * * * 每4个小时执行一次" >> $work_dir/Cron.ini
-   echo "#* * */4 * * 每4天执行一次" >> $work_dir/Cron.ini
-   echo "#* * * */4 * 每4个月执行一次" >> $work_dir/Cron.ini
-   echo "#* * * * */4 每4周执行一次" >> $work_dir/Cron.ini
-   echo "#一个时间到一个时间(0-59)" >> $work_dir/Cron.ini
-   echo "#25 8-11 * * * 每天8-11点的第25分钟执行一次" >> $work_dir/Cron.ini
-   echo "#0 6-12/3 * * * 每天6:00到12:00每3小时0分钟执行一次" >> $work_dir/Cron.ini
-   echo "#* 4 6-9 * * 每个月6-9号的4:00点执行一次" >> $work_dir/Cron.ini
-   echo "#* 4 18 6-9 * 6-9月的每个18号的4:00点执行一次" >> $work_dir/Cron.ini
-   echo "#* 4 * * 3-5 每周周3到周5的4:00点执行一次" >> $work_dir/Cron.ini
+   echo "M='0' && H='4' && DOM='*' && MO='*' && DOW='4'" >> $work_dir/Cron.ini
+   echo "# *        *        *        *            *" >> $work_dir/Cron.ini
+   echo "# -        -        -         -            -" >> $work_dir/Cron.ini
+   echo "# |        |        |         |            |" >> $work_dir/Cron.ini
+   echo "# |        |        |         |            +----- DOW=星期(0 - 7) (0和7都代表星期天)" >> $work_dir/Cron.ini
+   echo "# |        |        |         +---------- MO=月份(1 - 12)" >> $work_dir/Cron.ini
+   echo "# |        |        +--------------- DOM=日期(1 - 31)" >> $work_dir/Cron.ini
+   echo "# |        +-------------------- H=小时(0 - 23)" >> $work_dir/Cron.ini
+   echo "# +------------------------- M=分钟(0 - 59)" >> $work_dir/Cron.ini
+   echo "# 例:" >> $work_dir/Cron.ini
+   echo "# * * * * * 每分钟执行一次" >> $work_dir/Cron.ini
+   echo "# * 4 * * * 每天的4:00执行一次" >> $work_dir/Cron.ini
+   echo "# 每个时间(/4)" >> $work_dir/Cron.ini
+   echo "# */4 * * * * 每4分钟执行一次" >> $work_dir/Cron.ini
+   echo "# * */4 * * * 每4个小时执行一次" >> $work_dir/Cron.ini
+   echo "# * * */4 * * 每4天执行一次" >> $work_dir/Cron.ini
+   echo "# * * * */4 * 每4个月执行一次" >> $work_dir/Cron.ini
+   echo "# * * * * */4 每4周执行一次" >> $work_dir/Cron.ini
+   echo "# 一个时间到一个时间(0-59)" >> $work_dir/Cron.ini
+   echo "# 25 8-11 * * * 每天8:00到11:00的第25分钟执行一次" >> $work_dir/Cron.ini
+   echo "# 0 6-12/3 * * * 每天6:00到12:00每3小时0分钟执行一次" >> $work_dir/Cron.ini
+   echo "# * 4 6-9 * * 每个月6-9号的4:00点执行一次" >> $work_dir/Cron.ini
+   echo "# * 4 18 6-9 * 6-9月的每个18号的4:00点执行一次" >> $work_dir/Cron.ini
+   echo "# * 4 * * 3-5 每周周3到周5的4:00点执行一次" >> $work_dir/Cron.ini
 fi
 if [ ! -e $work_dir/update.log ];then
    touch $work_dir/update.log
