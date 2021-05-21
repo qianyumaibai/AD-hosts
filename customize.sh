@@ -88,6 +88,58 @@ REPLACE="
 ui_print "- 解压模块文件"
 unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
 
+chmod -R 0755 $MODPATH/tools
+chooseport_legacy() {
+  # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
+  # Calling it first time detects previous input. Calling it second time will do what we want
+  [ "$1" ] && local delay=$1 || local delay=3
+  local error=false
+  while true; do
+    timeout 0 $MODPATH/tools/$ARCH32/keycheck
+    timeout $delay $MODPATH/tools/$ARCH32/keycheck
+    local sel=$?
+    if [ $sel -eq 42 ]; then
+      return 0
+    elif [ $sel -eq 41 ]; then
+      return 1
+    elif $error; then
+      abort "未检测到音量键!"
+    else
+      error=true
+      echo "- 未检测到音量键。再试一次。"
+    fi
+  done
+}
+
+chooseport() {
+  # Original idea by chainfire and ianmacd @xda-developers
+  [ "$1" ] && local delay=$1 || local delay=3
+  local error=false 
+  while true; do
+    local count=0
+    while true; do
+      timeout $delay /system/bin/getevent -lqc 1 2>&1 > $TMPDIR/events &
+      sleep 0.5; count=$((count + 1))
+      if (`grep -q 'KEY_VOLUMEUP *DOWN' $TMPDIR/events`); then
+        return 0
+      elif (`grep -q 'KEY_VOLUMEDOWN *DOWN' $TMPDIR/events`); then
+        return 1
+      fi
+      [ $count -gt 6 ] && break
+    done
+    if $error; then
+      # abort "未检测到音量键!"
+      echo "未检测到音量键。 尝试keycheck模式"
+      export chooseport=chooseport_legacy VKSEL=chooseport_legacy
+      chooseport_legacy $delay
+      return $?
+    else
+      error=true
+      echo "- 未检测到音量键。再试一次。"
+    fi
+  done
+}
+
 work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
 
@@ -143,58 +195,6 @@ if [ ! -e $work_dir/Start.sh ];then
    echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
    echo "sh /data/adb/modules/AD-Hosts/script/functions.sh" >> $work_dir/Start.sh
 fi
-
-chmod -R 0755 $MODPATH/tools
-chooseport_legacy() {
-  # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
-  # Calling it first time detects previous input. Calling it second time will do what we want
-  [ "$1" ] && local delay=$1 || local delay=3
-  local error=false
-  while true; do
-    timeout 0 $MODPATH/common/addon/Volume-Key-Selector/tools/$ARCH32/keycheck
-    timeout $delay $MODPATH/common/addon/Volume-Key-Selector/tools/$ARCH32/keycheck
-    local sel=$?
-    if [ $sel -eq 42 ]; then
-      return 0
-    elif [ $sel -eq 41 ]; then
-      return 1
-    elif $error; then
-      abort "未检测到音量键!"
-    else
-      error=true
-      echo "- 未检测到音量键。再试一次。"
-    fi
-  done
-}
-
-chooseport() {
-  # Original idea by chainfire and ianmacd @xda-developers
-  [ "$1" ] && local delay=$1 || local delay=3
-  local error=false 
-  while true; do
-    local count=0
-    while true; do
-      timeout $delay /system/bin/getevent -lqc 1 2>&1 > $TMPDIR/events &
-      sleep 0.5; count=$((count + 1))
-      if (`grep -q 'KEY_VOLUMEUP *DOWN' $TMPDIR/events`); then
-        return 0
-      elif (`grep -q 'KEY_VOLUMEDOWN *DOWN' $TMPDIR/events`); then
-        return 1
-      fi
-      [ $count -gt 6 ] && break
-    done
-    if $error; then
-      # abort "未检测到音量键!"
-      echo "未检测到音量键。 尝试keyCheck模式"
-      export chooseport=chooseport_legacy VKSEL=chooseport_legacy
-      chooseport_legacy $delay
-      return $?
-    else
-      error=true
-      echo "- 未检测到音量键。再试一次。"
-    fi
-  done
-}
 
 ui_print "选择自动更新的地址"
 ui_print "  音量+ = GitHub链接(国外推荐)"
