@@ -125,7 +125,7 @@ chooseport() {
       elif (`grep -q 'KEY_VOLUMEDOWN *DOWN' $TMPDIR/events`); then
         return 1
       fi
-      [ $count -gt 6 ] && break
+      [ $count -gt 15 ] && break
     done
     if $error; then
       # abort "未检测到音量键!"
@@ -187,13 +187,13 @@ rm -rf $work_dir/Regular_update.sh
 if [ ! -e $work_dir/Regular_update.sh ];then
    touch $work_dir/Regular_update.sh
    echo "# 定时更新手动开关，开关状态请在Cron.ini中更改" >> $work_dir/Regular_update.sh
-   echo "sh /data/adb/modules/AD-Hosts/script/cron.sh" >> $work_dir/Regular_update.sh
+   echo "sh $NVBASE/modules/$MODID/script/cron.sh" >> $work_dir/Regular_update.sh
 fi
 rm -rf $work_dir/Start.sh
 if [ ! -e $work_dir/Start.sh ];then
    touch $work_dir/Start.sh
    echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
-   echo "sh /data/adb/modules/AD-Hosts/script/functions.sh" >> $work_dir/Start.sh
+   echo "sh $NVBASE/modules/$MODID/script/functions.sh" >> $work_dir/Start.sh
 fi
 
 ui_print "选择自动更新的地址"
@@ -277,6 +277,18 @@ if chooseport; then
 else
   ui_print "已选择不加入"
   sed -i "s/<QQ>/false/g" $MODPATH/script/select.ini
+fi
+
+if [ -d /data/data/com.coolapk.market ]; then
+   ui_print " "
+   ui_print "检测到你安装了酷安"
+   ui_print "将跳转到开发者主页(可选)"
+   ui_print "  音量+ = 爷去"
+   ui_print "  音量– = 爷不去"
+   if chooseport; then
+     ui_print "正在跳转....."
+     am start -d 'coolmarket://u/999689' >/dev/null 2>&1
+   fi
 fi
 
 # 删除多余文件
