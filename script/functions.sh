@@ -118,8 +118,8 @@ else
            if [ $? != 0 ]; then
               mount -o remount,rw /dev/block/bootdevice/by-name/system /system &> /dev/null
               if [ $? != 0 ]; then
-                 echo "挂载失败请切换为systemless模式" >> $work_dir/update.log
-                 echo "挂载失败请切换为systemless模式"
+                 echo "挂载失败请重新安装模块并选择systemless模式" >> $work_dir/update.log
+                 echo "挂载失败请重新安装模块并选择systemless模式"
                  exit 0
               fi
            fi
