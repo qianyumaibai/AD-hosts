@@ -283,8 +283,8 @@ if [ -d /data/data/com.coolapk.market ]; then
    ui_print " "
    ui_print "检测到你安装了酷安"
    ui_print "将跳转到开发者主页(可选)"
-   ui_print "  音量+ = 爷去"
-   ui_print "  音量– = 爷不去"
+   ui_print "  音量+ = 吼呀"
+   ui_print "  音量– = 不吼"
    if chooseport; then
      ui_print "正在跳转....."
      am start -d 'coolmarket://u/999689' >/dev/null 2>&1

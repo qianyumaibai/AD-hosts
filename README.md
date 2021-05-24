@@ -1,5 +1,5 @@
 # AD hosts
-### 依然的爱
+### 依然的爱/AiSauce
 *替换hosts文件屏蔽广告*
 
 ## 本项目永远免费,且开源
@@ -19,8 +19,14 @@
 - 修改`/sdcard/Android/ADhosts/Cron.ini`中的参数后执行`Regular_update.sh`以应用，更新时间的填写规则请参考[crontabs命令教程](https://m.runoob.com/linux/linux-comm-crontab.html)
 
 ### 注意
-本模块会在/sdcard/Android生成ADhosts文件夹，内有更新日志与，手动更新脚本，定时更新启动脚本，系统hosts备份。
-使用时请关闭其它带有hosts文件的模块，请关闭systemless hosts模块(如果有)。
+本模块的工作目录为`/sdcard/Android/ADhosts`
+内部文件为：
+  - `Start.sh`手动更新脚本
+  - `Regular_update.sh`定时更新状态切换脚本
+  - `Cron.ini`定时更新参数配置文件
+  - `syshosts.bak`系统hosts文件备份仅在system模式下存，请在不要对它做任何改动
+  - `update.log`更新日志
+使用本模块请关闭其它带有hosts文件的模块，请关闭systemless hosts模块(如果有)。
 
 ### 链接
 * [GitHub](https://github.com/E7KMbb/AD-hosts)
