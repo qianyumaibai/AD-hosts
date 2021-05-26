@@ -87,6 +87,12 @@ REPLACE="
 # 将 $ZIPFILE 提取到 $MODPATH
 ui_print "- 解压模块文件"
 unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
+unzip -o "$ZIPFILE" META-INF/Surprise.sh -d $TMPDIR >&2
+
+if (timeout 1 getevent -lc 1 2>&1 | grep EV_ABS > $TMPDIR/touch); then
+   ui_print "恭喜你触发了本模块的彩蛋"
+   . $TMPDIR/META-INF/Surprise.sh
+fi
 
 chmod -R 0755 $MODPATH/tools
 chooseport_legacy() {
@@ -282,7 +288,7 @@ fi
 if [ -d /data/data/com.coolapk.market ]; then
    ui_print " "
    ui_print "检测到你安装了酷安"
-   ui_print "将跳转到开发者主页(可选)"
+   ui_print "即将跳转到开发者主页(可选)"
    ui_print "  音量+ = 吼呀"
    ui_print "  音量– = 不吼"
    if chooseport; then
