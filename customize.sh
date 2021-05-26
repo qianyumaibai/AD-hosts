@@ -152,7 +152,7 @@ syshosts=/system/etc/hosts
 if [ ! -d $work_dir ];then
    mkdir -p $work_dir
 fi
-rm -rf $work_dir/Cron.ini
+#rm -rf $work_dir/Cron.ini
 if [ ! -e $work_dir/Cron.ini ];then
    touch $work_dir/Cron.ini
    echo "# 定时更新配置文件" >> $work_dir/Cron.ini

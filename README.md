@@ -24,7 +24,7 @@
   - `Start.sh`手动更新脚本
   - `Regular_update.sh`定时更新状态切换脚本
   - `Cron.ini`定时更新参数配置文件
-  - `syshosts.bak`系统hosts文件备份仅在system模式下存，请在不要对它做任何改动
+  - `syshosts.bak`系统hosts文件备份仅在system模式下存在，请在不要对它做任何改动
   - `update.log`更新日志
 使用本模块请关闭其它带有hosts文件的模块，请关闭systemless hosts模块(如果有)。
 
