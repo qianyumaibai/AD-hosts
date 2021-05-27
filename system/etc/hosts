@@ -50723,7 +50723,6 @@
 127.0.0.1 dm.mlstat.com
 127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
-127.0.0.1 dm.toutiao.com
 127.0.0.1 dm.travelocity.com
 127.0.0.1 dm.vmsn.de
 127.0.0.1 dm.xiazaibao.xunlei.com
@@ -75100,7 +75099,7 @@
 127.0.0.1 mon.cdnfarm18.com
 127.0.0.1 mon.isnssdk.com
 127.0.0.1 mon.majorserving.com
-127.0.0.1 mon.snssdk.com
+#127.0.0.1 mon.snssdk.com
 127.0.0.1 mon.xtgreat.com
 127.0.0.1 mona-mono.blogspot.com
 127.0.0.1 monacoaces.com
@@ -126245,6 +126244,8 @@
 ﻿127.0.0.1 adad.ir
 127.0.0.1 applog.uc.cn
 127.0.0.1 beacon-api.aliyuncs.com
+127.0.0.1 static.360buyimg.com
+127.0.0.1 images.pinduoduo.compgdt.ugdtimg.com
 
 # 广告奖励
 127.0.0.1 gw.365you.com
