@@ -3,8 +3,9 @@ work_dir=/sdcard/Android/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 script_dir=${0%/*}
 
-source $script_dir/select.ini
+. $script_dir/select.ini
 
+# 创建工作文件
 if [ ! -d $work_dir ];then
    mkdir -p $work_dir
 fi
@@ -55,6 +56,7 @@ if [ ! -e $work_dir/Start.sh ];then
    echo "sh $script_dir/functions.sh" >> $work_dir/Start.sh
 fi
 
+# 判断安装模式
 if [ $install_mod = "systemless" ]; then
    hosts_dir=/data/adb/modules/AD-Hosts/system/etc
    if [ ! -d $hosts_dir ];then
@@ -71,6 +73,7 @@ else
    exit 0
 fi
 
+# 下载hosts文件
 if $(curl -V > /dev/null 2>&1) ; then
     for i in $(seq 1 20); do
     if curl "${hosts_link}" -k -L -o "$work_dir/hosts" >&2; then
@@ -102,6 +105,7 @@ else
       exit 0
 fi
 
+# 判断用户选择
 if [ $MIUI = "true" ]; then
    sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $work_dir/hosts
 fi
@@ -110,6 +114,7 @@ if [ $Tencent = "true" ]; then
    sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $work_dir/hosts
 fi
 
+# 安装hosts文件
 Now=$(md5sum $hosts_dir/hosts | awk '{print $1}')
 New=$(md5sum  $work_dir/hosts | awk '{print $1}')
 if [ $Now == $New ]; then
@@ -147,4 +152,14 @@ else
    echo -n "上次更新时间: $curdate" >> $work_dir/update.log
    echo "  hosts文件目录:$hosts_dir/hosts" >> $work_dir/update.log
    sed -i '1d' $work_dir/update.log
+   echo "更新成功"
+fi
+
+# 彩蛋
+if (timeout 1 getevent -lc 1 2>&1 | grep EV_ABS > $script_dir/touch); then
+   ui_print "恭喜你触发了本模块的彩蛋"
+   . $script_dir/surprise.sh
+fi
+if [ -e $script_dir/touch ]; then
+   rm -rf $script_dir/touch
 fi

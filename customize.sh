@@ -87,11 +87,10 @@ REPLACE="
 # 将 $ZIPFILE 提取到 $MODPATH
 ui_print "- 解压模块文件"
 unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
-unzip -o "$ZIPFILE" META-INF/Surprise.sh -d $TMPDIR >&2
 
 if (timeout 1 getevent -lc 1 2>&1 | grep EV_ABS > $TMPDIR/touch); then
    ui_print "恭喜你触发了本模块的彩蛋"
-   . $TMPDIR/META-INF/Surprise.sh
+   . $MODPATH/script/surprise.sh
 fi
 
 chmod -R 0755 $MODPATH/tools
@@ -245,6 +244,28 @@ else
      fi
   fi
   rm -rf $MODPATH/system
+fi
+
+ui_print "是否启用开机自动更新"
+ui_print "  音量+ = 启用"
+ui_print "  音量– = 关闭"
+if chooseport; then
+  ui_print "已选择启用"
+  sed -i "s/<update_boot>/true/g" $MODPATH/script/select.ini
+else
+  ui_print "已选择关闭"
+  sed -i "s/<update_boot>/false/g" $MODPATH/script/select.ini
+fi
+
+ui_print "是否启用开机启动自动更新服务(是否启动根据Cron.ini参数判断)"
+ui_print "  音量+ = 启用"
+ui_print "  音量– = 关闭"
+if chooseport; then
+  ui_print "已选择启用"
+  sed -i "s/<regular_update_boot>/true/g" $MODPATH/script/select.ini
+else
+  ui_print "已选择关闭"
+  sed -i "s/<regular_update_boot>/false/g" $MODPATH/script/select.ini
 fi
 
 var_miui="`grep_prop ro.miui.ui.version.*`"
