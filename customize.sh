@@ -223,7 +223,7 @@ else
   ui_print "已选择system模式"
   sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
   if [ ! -e $work_dir/syshosts.bak ]; then
-     ui_print "备份系统hosts文件至$work_dir/hosts.bak"
+     ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
   mount -o remount,rw /system &> /dev/null

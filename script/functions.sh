@@ -57,8 +57,14 @@ fi
 
 if [ $install_mod = "systemless" ]; then
    hosts_dir=/data/adb/modules/AD-Hosts/system/etc
+   if [ ! -d $hosts_dir ];then
+      mkdir -p $hosts_dir
+   fi
 elif [ $install_mod = "system" ]; then
    hosts_dir=/system/etc
+   if [ -d /data/adb/modules/AD-Hosts/system ];then
+      rm -rf /data/adb/modules/AD-Hosts/system
+   fi
 else
    echo "Error: 没有变量请检查$script_dir/select.ini是否存在" >> $work_dir/update.log
    echo "Error: 没有变量请检查$script_dir/select.ini是否存在"
