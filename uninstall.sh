@@ -4,6 +4,13 @@ syshosts=/system/etc/hosts
 script_dir=${0%/*}/script
 . $script_dir/select.ini
 if [ $install_mod = "system" ]; then
+   mount -o remount,rw /system &> /dev/null
+   if [ $? != 0 ]; then
+      mount -o remount,rw / &> /dev/null
+      if [ $? != 0 ]; then
+         mount -o remount,rw /dev/block/bootdevice/by-name/system /system &> /dev/null
+      fi
+   fi
    if [ -e $work_dir/syshosts.bak ];then
       mv -f $work_dir/syshosts.bak $syshosts
    else
@@ -15,6 +22,13 @@ if [ $install_mod = "system" ]; then
       chmod 644 $syshosts
       chown 0:0 $syshosts
       chcon u:object_r:system_file:s0 $syshosts
+   fi
+   mount -o remount,ro /system &> /dev/null
+   if [ $? != 0 ]; then
+      mount -o remount,ro / &> /dev/null
+      if [ $? != 0 ]; then
+         mount -o remount,ro /dev/block/bootdevice/by-name/system /system &> /dev/null
+      fi
    fi
 fi
 rm -rf $work_dir
