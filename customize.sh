@@ -148,11 +148,11 @@ chooseport() {
 work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
 
-if [ ! -d $work_dir ];then
+if [ ! -d $work_dir ]; then
    mkdir -p $work_dir
 fi
 #rm -rf $work_dir/Cron.ini
-if [ ! -e $work_dir/Cron.ini ];then
+if [ ! -e $work_dir/Cron.ini ]; then
    touch $work_dir/Cron.ini
    echo "# 定时更新配置文件" >> $work_dir/Cron.ini
    echo "# 开关定时更新on/off" >> $work_dir/Cron.ini
@@ -182,20 +182,20 @@ if [ ! -e $work_dir/Cron.ini ];then
    echo "# * 4 18 6-9 * 6-9月的每个18号的4:00点执行一次" >> $work_dir/Cron.ini
    echo "# * 4 * * 3-5 每周周3到周5的4:00点执行一次" >> $work_dir/Cron.ini
 fi
-if [ ! -e $work_dir/update.log ];then
+if [ ! -e $work_dir/update.log ]; then
    touch $work_dir/update.log
    echo "paceholder" >> $work_dir/update.log
    sed -i "G;G;G;G;G" $work_dir/update.log
    sed -i '1d' $work_dir/update.log
 fi
 rm -rf $work_dir/Regular_update.sh
-if [ ! -e $work_dir/Regular_update.sh ];then
+if [ ! -e $work_dir/Regular_update.sh ]; then
    touch $work_dir/Regular_update.sh
    echo "# 定时更新手动开关，开关状态请在Cron.ini中更改" >> $work_dir/Regular_update.sh
    echo "sh $NVBASE/modules/$MODID/script/cron.sh" >> $work_dir/Regular_update.sh
 fi
 rm -rf $work_dir/Start.sh
-if [ ! -e $work_dir/Start.sh ];then
+if [ ! -e $work_dir/Start.sh ]; then
    touch $work_dir/Start.sh
    echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
    echo "sh $NVBASE/modules/$MODID/script/functions.sh" >> $work_dir/Start.sh
@@ -244,6 +244,11 @@ else
      fi
   fi
   rm -rf $MODPATH/system
+fi
+if [ -e $NVBASE/modules/hosts/disable ]; then
+   ui_print "检测到你启用了systemless hosts模块"
+   touch $NVBASE/modules/hosts/disable
+   ui_print "已禁用"
 fi
 
 ui_print "是否启用开机自动更新"
