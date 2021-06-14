@@ -3990,7 +3990,7 @@
 127.0.0.1 a.hl.mi.com
 127.0.0.1 a.holagames.com
 127.0.0.1 a.horsered.com
-127.0.0.1 a.hpg.cn.miaozhen.com
+#127.0.0.1 a.hpg.cn.miaozhen.com
 127.0.0.1 a.hspvst.com
 127.0.0.1 a.htwisdom.com
 127.0.0.1 a.huluad.com
@@ -4151,7 +4151,7 @@
 127.0.0.1 a.tomshardware.com
 127.0.0.1 a.total-media.net
 127.0.0.1 a.totalgambler.com
-127.0.0.1 a.tpg.cn.miaozhen.com
+#127.0.0.1 a.tpg.cn.miaozhen.com
 127.0.0.1 a.track.sohu.com
 127.0.0.1 a.trgt.eu
 127.0.0.1 a.tribalfusion.com
@@ -34303,7 +34303,6 @@
 127.0.0.1 av.beap.bc.yahoo.com
 127.0.0.1 av.minnnano-fuzoku.com
 127.0.0.1 av0713.tk
-127.0.0.1 av1.xdrig.com
 127.0.0.1 av7df.voluumtrk.com
 127.0.0.1 ava-meader.us
 127.0.0.1 avads.co.uk
@@ -40339,7 +40338,6 @@
 127.0.0.1 c.rscxwmj.cn
 127.0.0.1 c.ru.msn.com
 127.0.0.1 c.sahcdn.com
-127.0.0.1 c.sayhi.360.cn
 127.0.0.1 c.scorecardresearch.com
 127.0.0.1 c.sdkclick.com
 127.0.0.1 c.se.msn.com
@@ -42021,7 +42019,6 @@
 127.0.0.1 cdn.ip.inpwrd.com
 127.0.0.1 cdn.ipromote.com
 127.0.0.1 cdn.iqcontentplatform.de
-127.0.0.1 cdn.isnssdk.com
 127.0.0.1 cdn.itrengia.com
 127.0.0.1 cdn.iubenda.com
 127.0.0.1 cdn.izooto.com
@@ -48477,7 +48474,6 @@
 127.0.0.1 d.thanksearch.com
 127.0.0.1 d.thelocal.com
 127.0.0.1 d.tjgxzs.com
-127.0.0.1 d.toutiao.com
 127.0.0.1 d.turn.com
 127.0.0.1 d.unanimis.co.uk
 127.0.0.1 d.union.ijinshan.com
@@ -50705,16 +50701,13 @@
 127.0.0.1 dm.519397.com
 127.0.0.1 dm.8800271.com.cn
 127.0.0.1 dm.aizhan.com
-127.0.0.1 dm.bytedance.com
 127.0.0.1 dm.demdex.net
 127.0.0.1 dm.fsyzcs.com
 127.0.0.1 dm.gbeik.com
-127.0.0.1 dm.isnssdk.com
 127.0.0.1 dm.jb51.net
 127.0.0.1 dm.jinshasi.cn
 127.0.0.1 dm.kingpolo.com.cn
 127.0.0.1 dm.mlstat.com
-127.0.0.1 dm.pstatp.com
 127.0.0.1 dm.shanghuitianxia.cn
 127.0.0.1 dm.travelocity.com
 127.0.0.1 dm.vmsn.de
@@ -57713,7 +57706,6 @@
 127.0.0.1 g.c.appier.net
 127.0.0.1 g.chinapxg.com
 127.0.0.1 g.click.taobao.com
-127.0.0.1 g.cn.miaozhen.com
 127.0.0.1 g.cnxad.com
 127.0.0.1 g.d.yoyi.tv
 127.0.0.1 g.d8360.com
@@ -64875,7 +64867,7 @@
 127.0.0.1 it.erosadv.com
 127.0.0.1 it.globalsweeps.info
 127.0.0.1 it.gmads.mookie1.com
-127.0.0.1 it.snssdk.com.edgekey.net
+#127.0.0.1 it.snssdk.com.edgekey.net
 127.0.0.1 it168-intel2.buzzopt.com
 127.0.0.1 it168.wrating.com
 127.0.0.1 itadnetwork.co.uk
@@ -75088,7 +75080,6 @@
 127.0.0.1 mon.cdnfarm18.com
 127.0.0.1 mon.isnssdk.com
 127.0.0.1 mon.majorserving.com
-#127.0.0.1 mon.snssdk.com
 127.0.0.1 mon.xtgreat.com
 127.0.0.1 mona-mono.blogspot.com
 127.0.0.1 monacoaces.com
@@ -80628,9 +80619,7 @@
 127.0.0.1 pagead.l.doubleclick.net
 127.0.0.1 pagead.l.google.com
 127.0.0.1 pagead.topobiavi.com
-127.0.0.1 pagead1.googlesyndication.com
 127.0.0.1 pagead2.googleadservices.com
-127.0.0.1 pagead2.googlesyndication.com
 127.0.0.1 pagead2.jujinw.com
 127.0.0.1 pagead2.vxiaoshuo8.com
 127.0.0.1 pagead3.googlesyndication.com
@@ -81117,7 +81106,6 @@
 127.0.0.1 pb.wang502.com
 127.0.0.1 pb1.qujishu.com
 127.0.0.1 pb2.qujishu.com
-127.0.0.1 pb3.pstatp.com
 127.0.0.1 pba.aws.lijit.com
 127.0.0.1 pba39.inethoster.org
 127.0.0.1 pbc7m.voluumtrk.com
@@ -84535,7 +84523,6 @@
 127.0.0.1 px.srvcs.tumblr.com
 127.0.0.1 px.steelhousemedia.com
 127.0.0.1 px.topspin.net
-127.0.0.1 px.ucweb.com
 127.0.0.1 px.wa.ui-portal.de
 127.0.0.1 px.za.zalo.me
 127.0.0.1 px.za.zaloapp.com
@@ -87738,7 +87725,6 @@
 127.0.0.1 s.tianyucangqiong1.com
 127.0.0.1 s.tjys88.com
 127.0.0.1 s.tkm.ink
-127.0.0.1 s.toutiao.com
 127.0.0.1 s.tpctrust.com
 127.0.0.1 s.trafficjam.cn
 127.0.0.1 s.tribalfusion.com
@@ -95518,7 +95504,7 @@
 127.0.0.1 t.p.mybuys.com
 127.0.0.1 t.parrable.com
 127.0.0.1 t.paypal.com
-127.0.0.1 t.pg.cn.miaozhen.com
+#127.0.0.1 t.pg.cn.miaozhen.com
 127.0.0.1 t.pingzei.com
 127.0.0.1 t.planvip.fr
 127.0.0.1 t.pointroll.com
@@ -97441,8 +97427,8 @@
 127.0.0.1 toals.co.uk
 127.0.0.1 toascik.pl
 127.0.0.1 tob-cms.bj.bcebos.com
-127.0.0.1 tobapplog.ctobsnssdk.com
-127.0.0.1 toblog.ctobsnssdk.com
+#127.0.0.1 tobapplog.ctobsnssdk.com
+#127.0.0.1 toblog.ctobsnssdk.com
 127.0.0.1 tocho.pl
 127.0.0.1 todacell.com
 127.0.0.1 todayads.com
@@ -124288,7 +124274,6 @@
 127.0.0.1 wx.sifakaoshi360.com
 127.0.0.1 wx.xwjqr.com
 127.0.0.1 wx.zx590.com
-127.0.0.1 wxa.wxs.qq.com
 127.0.0.1 wxa79ef55c1a84e284.wx.ckjr001.com
 127.0.0.1 wxas.ejwmc.cn
 127.0.0.1 wxb.wxbdfm.com
@@ -126231,7 +126216,6 @@
 ﻿127.0.0.1 adad.ir
 127.0.0.1 applog.uc.cn
 127.0.0.1 beacon-api.aliyuncs.com
-127.0.0.1 static.360buyimg.com
 127.0.0.1 images.pinduoduo.compgdt.ugdtimg.com
 
 # 广告奖励
