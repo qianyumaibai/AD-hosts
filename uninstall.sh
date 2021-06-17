@@ -2,18 +2,27 @@
 work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
 script_dir=${0%/*}/script
-. $script_dir/select.ini
-if [ $install_mod = "system" ]; then
-   mount -o remount,rw /system &> /dev/null
-   if [ $? != 0 ]; then
-      mount -o remount,rw / &> /dev/null
-      if [ $? != 0 ]; then
-         mount -o remount,rw /dev/block/bootdevice/by-name/system /system &> /dev/null
+
+sh ${script_dir}/select.ini
+
+for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
+   mount -o remount,rw ${mount_path} &> /dev/null
+   if [ -w ${mount_path} ]; then
+   break;
+   fi
+   if [ ${mount_path} = $MAGISKTMP/.magisk/block/system_root ]; then
+      if [ ! -w ${mount_path} ]; then
+         exit 0
       fi
    fi
-   if [ -e $work_dir/syshosts.bak ];then
-      mv -f $work_dir/syshosts.bak $syshosts
-   else
+done
+if [ -e $work_dir/syshosts.bak ];then
+   mv -f $work_dir/syshosts.bak $syshosts
+   chmod 644 $syshosts
+   chown 0:0 $syshosts
+   chcon u:object_r:system_file:s0 $syshosts
+else
+   if [ $install_mod = "system" ]; then
       rm -rf $syshosts
       touch $syshosts
       echo "# Localhost (DO NOT REMOVE)" >> $syshosts
@@ -23,12 +32,11 @@ if [ $install_mod = "system" ]; then
       chown 0:0 $syshosts
       chcon u:object_r:system_file:s0 $syshosts
    fi
-   mount -o remount,ro /system &> /dev/null
-   if [ $? != 0 ]; then
-      mount -o remount,ro / &> /dev/null
-      if [ $? != 0 ]; then
-         mount -o remount,ro /dev/block/bootdevice/by-name/system /system &> /dev/null
-      fi
-   fi
 fi
-rm -rf $work_dir
+mount -o remount,ro ${mount_path} &> /dev/null
+if [ -d $work_dir ]; then
+   rm -rf $work_dir
+fi
+if [ -e /data/adb/service.d/disable_ad_hosts.sh ];then
+   rm -rf /data/adb/service.d/disable_ad_hosts.sh
+fi

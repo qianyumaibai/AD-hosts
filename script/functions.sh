@@ -2,6 +2,8 @@
 work_dir=/sdcard/Android/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 script_dir=${0%/*}
+export MAGISKTMP=`magisk --path 2>/dev/null`
+[[ -z "$MAGISKTMP" ]] && export MAGISKTMP=/sbin
 
 . $script_dir/select.ini
 
@@ -62,10 +64,16 @@ if [ $install_mod = "systemless" ]; then
    if [ ! -d $hosts_dir ];then
       mkdir -p $hosts_dir
    fi
+   if [ -e /data/adb/service.d/disable_ad_hosts.sh ]; then
+      rm -rf /data/adb/service.d/disable_ad_hosts.sh
+   fi
 elif [ $install_mod = "system" ]; then
    hosts_dir=/system/etc
    if [ -d /data/adb/modules/AD-Hosts/system ];then
       rm -rf /data/adb/modules/AD-Hosts/system
+   fi
+   if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
+      cp /data/adb/modules/AD-Hosts/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
    fi
 else
    echo "Error: 没有变量请检查$script_dir/select.ini是否存在" >> $work_dir/update.log
@@ -123,31 +131,26 @@ if [ $Now == $New ]; then
    echo "没有更新: $curdate"
 else
    if [ $install_mod = "system" ]; then
-       mount -o remount,rw /system &> /dev/null
-       if [ $? != 0 ]; then
-           mount -o remount,rw / &> /dev/null
-           if [ $? != 0 ]; then
-              mount -o remount,rw /dev/block/bootdevice/by-name/system /system &> /dev/null
-              if [ $? != 0 ]; then
-                 echo "挂载失败请重新安装模块并选择systemless模式" >> $work_dir/update.log
-                 echo "挂载失败请重新安装模块并选择systemless模式"
-                 exit 0
-              fi
-           fi
-       fi
+      for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
+         mount -o remount,rw ${mount_path} &> /dev/null
+         if [ -w ${mount_path} ]; then
+         break;
+         fi
+         if [ ${mount_path} = $MAGISKTMP/.magisk/block/system_root ]; then
+            if [ ! -w ${mount_path} ]; then
+               echo "挂载失败请重新安装模块并选择systemless模式" >> $work_dir/update.log
+               echo "挂载失败请重新安装模块并选择systemless模式"
+               exit 0
+            fi
+        fi
+      done
    fi
    mv -f $work_dir/hosts $hosts_dir/hosts
    chmod 644 $hosts_dir/hosts
    chown 0:0 $hosts_dir/hosts
    chcon u:object_r:system_file:s0 $hosts_dir/hosts
    if [ $install_mod = "system" ]; then
-       mount -o remount,ro /system &> /dev/null
-       if [ $? != 0 ]; then
-           mount -o remount,ro / &> /dev/null
-           if [ $? != 0 ]; then
-              mount -o remount,ro /dev/block/bootdevice/by-name/system /system &> /dev/null
-           fi
-       fi
+      mount -o remount,ro ${mount_path} &> /dev/null
    fi
    echo -n "上次更新时间: $curdate" >> $work_dir/update.log
    echo "  hosts文件目录:$hosts_dir/hosts" >> $work_dir/update.log

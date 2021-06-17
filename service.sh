@@ -18,8 +18,8 @@ done
 
 sh $MODDIR/script/select.ini
 if [ $update_boot_start = "true" ]; then
-sh $MODDIR/script/functions.sh
+   sh $MODDIR/script/functions.sh
 fi
 if [ $regular_update_boot_start = "true" ]; then
-sh $MODDIR/script/cron.sh
+   sh $MODDIR/script/cron.sh
 fi

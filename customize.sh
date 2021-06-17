@@ -221,32 +221,30 @@ if chooseport; then
 else
   ui_print "已选择system模式"
   sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
+  if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
+     cp $MODPATH/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
+  fi
   if [ ! -e $work_dir/syshosts.bak ]; then
      ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
-  mount -o remount,rw /system &> /dev/null
-  if [ $? != 0 ]; then
-     mount -o remount,rw / &> /dev/null
-     if [ $? != 0 ]; then
-        mount -o remount,rw /dev/block/bootdevice/by-name/system /system &> /dev/null
-        if [ $? != 0 ]; then
+  for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
+     mount -o remount,rw ${mount_path} &> /dev/null
+     if [ -w ${mount_path} ]; then
+     break;
+     fi
+     if [ ${mount_path} = $MAGISKTMP/.magisk/block/system_root ]; then
+        if [ ! -w ${mount_path} ]; then
            abort "挂载失败请切换为systemless模式"
         fi
      fi
-  fi
+  done
   mv -f $MODPATH/system/etc/hosts $syshosts
-  mount -o remount,ro /system &> /dev/null
-  if [ $? != 0 ]; then
-     mount -o remount,ro / &> /dev/null
-     if [ $? != 0 ]; then
-        mount -o remount,ro /dev/block/bootdevice/by-name/system /system &> /dev/null
-     fi
-  fi
+  mount -o remount,ro ${mount_path} &> /dev/null
   rm -rf $MODPATH/system
 fi
-if [ -e $NVBASE/modules/hosts/disable ]; then
-   ui_print "检测到你启用了systemless hosts模块"
+if [ -e $NVBASE/modules/hosts ]; then
+   ui_print "检测到你安装了systemless hosts模块"
    touch $NVBASE/modules/hosts/disable
    ui_print "已禁用"
 fi
@@ -350,4 +348,5 @@ $MODPATH/*.md $MODPATH/.git* $MODPATH/LICENSE $MODPATH/tools 4>/dev/null
 # 默认权限请勿删除
 set_perm_recursive $MODPATH 0 0 0755 0644
 set_perm_recursive $MODPATH/script 0 0 0777 0777
+set_perm /data/adb/service.d/disable_ad_hosts.sh 0 0 777
 
