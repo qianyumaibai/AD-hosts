@@ -26,6 +26,7 @@
   - `Cron.ini`定时更新参数配置文件
   - `syshosts.bak`系统hosts文件备份仅在system模式下存在，请在不要对它做任何改动
   - `update.log`更新日志
+
 使用本模块请关闭其它带有hosts文件的模块，请关闭systemless hosts模块(如果有)。
 
 ### 链接
