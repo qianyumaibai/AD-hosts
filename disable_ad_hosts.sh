@@ -3,7 +3,7 @@
 work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
 
-sh /data/adb/modules/AD-Hosts/script/select.ini
+. /data/adb/modules/AD-Hosts/script/select.ini
 
 if [ $install_mod = "system" ]; then
    if [ -e /data/adb/modules/AD-Hosts/disable ]; then

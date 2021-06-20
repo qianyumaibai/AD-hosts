@@ -3,7 +3,7 @@ work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
 script_dir=${0%/*}/script
 
-sh ${script_dir}/select.ini
+. ${script_dir}/select.ini
 
 for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
    mount -o remount,rw ${mount_path} &> /dev/null

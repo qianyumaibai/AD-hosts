@@ -1,7 +1,7 @@
 work_dir=/sdcard/Android/ADhosts
 script_dir=${0%/*}
 
-sh $work_dir/Cron.ini
+. $work_dir/Cron.ini
 
 [ -f /data/adb/magisk/busybox ] && alias crond="/data/adb/magisk/busybox crond"
 
