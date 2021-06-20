@@ -147,6 +147,8 @@ chooseport() {
 
 work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
+export MAGISKTMP=`magisk --path 2>/dev/null`
+[[ -z "$MAGISKTMP" ]] && export MAGISKTMP=`mount | grep "/.magisk/mirror/system" | awk -F ' ' '{print $1}' | awk -F '/.magisk/block/system' '{print $1}' | head -n 1`
 
 if [ ! -d $work_dir ]; then
    mkdir -p $work_dir
