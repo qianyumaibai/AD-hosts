@@ -228,16 +228,19 @@ else
      ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
-  for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
-     mount -o remount,rw ${mount_path} &> /dev/null
-     if [ -w ${mount_path} ]; then
-     break;
-     fi
-     if [ ${mount_path} = $MAGISKTMP/.magisk/block/system_root ]; then
-        if [ ! -w ${mount_path} ]; then
-           abort "挂载失败请切换为systemless模式"
-        fi
-     fi
+  for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root; do
+      mount -o remount,rw ${mount_path} &> /dev/null
+      if [ -w ${mount_path} ]; then
+         if [ ${mount_path} = $MAGISKTMP/.magisk/mirror/system_root ]; then
+            if [ -w "${mount_path}/system" ]; then
+               mount_path=${mount_path}/system
+               break;
+            else
+               abort "挂载失败请重新安装模块并选择systemless模式"
+            fi
+         fi
+         break;
+      fi
   done
   mv -f $MODPATH/system/etc/hosts $syshosts
   mount -o remount,ro ${mount_path} &> /dev/null

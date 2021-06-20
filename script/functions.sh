@@ -3,7 +3,7 @@ work_dir=/sdcard/Android/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 script_dir=${0%/*}
 export MAGISKTMP=`magisk --path 2>/dev/null`
-[[ -z "$MAGISKTMP" ]] && export MAGISKTMP=/sbin
+[[ -z "$MAGISKTMP" ]] && export MAGISKTMP=`mount | grep "/.magisk/mirror/system" | awk -F ' ' '{print $1}' | awk -F '/.magisk/block/system' '{print $1}' | head -n 1`
 
 . $script_dir/select.ini
 
@@ -77,6 +77,7 @@ elif [ $install_mod = "system" ]; then
    fi
 else
    echo "Error: 没有变量请检查$script_dir/select.ini是否存在" >> $work_dir/update.log
+   sed -i '1d' $work_dir/update.log
    echo "Error: 没有变量请检查$script_dir/select.ini是否存在"
    exit 0
 fi
@@ -90,6 +91,7 @@ if $(curl -V > /dev/null 2>&1) ; then
     sleep 2
     if [[ $i == 20 ]]; then
     echo "curl连接失败,更新失败: $curdate" >> $work_dir/update.log
+    sed -i '1d' $work_dir/update.log
     echo "curl连接失败,更新失败: $curdate"
     rm -rf $work_dir/hosts
     exit 0
@@ -102,6 +104,7 @@ elif $(wget --help > /dev/null 2>&1) ; then
       fi
       if [[ $i == 5 ]]; then
       echo "wget连接,更新失败: $curdate" >> $work_dir/update.log
+      sed -i '1d' $work_dir/update.log
       echo "wget连接,更新失败: $curdate"
       rm -rf $work_dir/hosts
       exit 0
@@ -109,6 +112,7 @@ elif $(wget --help > /dev/null 2>&1) ; then
       done
 else
       echo "Error: 您没有下载所需要用到的指令文件，请安装Busybox for Android NDK模块" >> $work_dir/update.log
+      sed -i '1d' $work_dir/update.log
       echo "Error: 您没有下载所需要用到的指令文件，请安装Busybox for Android NDK模块"
       exit 0
 fi
@@ -128,21 +132,26 @@ New=$(md5sum  $work_dir/hosts | awk '{print $1}')
 if [ $Now == $New ]; then
    rm -rf $work_dir/hosts
    echo "没有更新: $curdate" >> $work_dir/update.log
+   sed -i '1d' $work_dir/update.log
    echo "没有更新: $curdate"
 else
    if [ $install_mod = "system" ]; then
-      for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
+      for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root; do
          mount -o remount,rw ${mount_path} &> /dev/null
          if [ -w ${mount_path} ]; then
+            if [ ${mount_path} = $MAGISKTMP/.magisk/mirror/system_root ]; then
+               if [ -w "${mount_path}/system" ]; then
+                  mount_path=${mount_path}/system
+               break;
+               else
+                  echo "挂载失败请重新安装模块并选择systemless模式" >> $work_dir/update.log
+                  sed -i '1d' $work_dir/update.log
+                  echo "挂载失败请重新安装模块并选择systemless模式"
+                  exit 0
+               fi
+            fi
          break;
          fi
-         if [ ${mount_path} = $MAGISKTMP/.magisk/block/system_root ]; then
-            if [ ! -w ${mount_path} ]; then
-               echo "挂载失败请重新安装模块并选择systemless模式" >> $work_dir/update.log
-               echo "挂载失败请重新安装模块并选择systemless模式"
-               exit 0
-            fi
-        fi
       done
    fi
    mv -f $work_dir/hosts $hosts_dir/hosts
@@ -160,8 +169,8 @@ fi
 
 # 彩蛋
 if (timeout 1 getevent -lc 1 2>&1 | grep EV_ABS > $script_dir/touch); then
-   ui_print "恭喜你触发了本模块的彩蛋"
-   . $script_dir/surprise.sh
+   echo "恭喜你触发了本模块的彩蛋"
+   sh $script_dir/surprise.sh
 fi
 if [ -e $script_dir/touch ]; then
    rm -rf $script_dir/touch
