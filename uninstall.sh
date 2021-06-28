@@ -5,13 +5,12 @@ script_dir=${0%/*}/script
 
 . ${script_dir}/select.ini
 
-for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root $MAGISKTMP/.magisk/block/system_root; do
+for mount_path in /system /; do
    mount -o remount,rw ${mount_path} &> /dev/null
    if [ -w ${mount_path} ]; then
    break;
-   fi
-   if [ ${mount_path} = $MAGISKTMP/.magisk/block/system_root ]; then
-      if [ ! -w ${mount_path} ]; then
+   else
+      if [ ${mount_path} = / ]; then
          exit 0
       fi
    fi

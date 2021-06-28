@@ -147,8 +147,6 @@ chooseport() {
 
 work_dir=/sdcard/Android/ADhosts
 syshosts=/system/etc/hosts
-export MAGISKTMP=`magisk --path 2>/dev/null`
-[[ -z "$MAGISKTMP" ]] && export MAGISKTMP=`mount | grep "/.magisk/mirror/system" | awk -F ' ' '{print $1}' | awk -F '/.magisk/block/system' '{print $1}' | head -n 1`
 
 if [ ! -d $work_dir ]; then
    mkdir -p $work_dir
@@ -223,6 +221,7 @@ if chooseport; then
 else
   ui_print "已选择system模式"
   sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
+  rm -rf /data/adb/service.d/disable_ad_hosts.sh
   if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
      cp $MODPATH/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
   fi
@@ -230,28 +229,29 @@ else
      ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
      cp $syshosts $work_dir/syshosts.bak
   fi
-  for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root; do
+  for mount_path in /system /; do
       mount -o remount,rw ${mount_path} &> /dev/null
       if [ -w ${mount_path} ]; then
-         if [ ${mount_path} = $MAGISKTMP/.magisk/mirror/system_root ]; then
-            if [ -w "${mount_path}/system" ]; then
-               mount_path=${mount_path}/system
-               break;
-            else
-               abort "挂载失败请重新安装模块并选择systemless模式"
-            fi
+      break;
+      else
+         if [ ${mount_path} = / ]; then
+            abort "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式"
          fi
-         break;
       fi
   done
   mv -f $MODPATH/system/etc/hosts $syshosts
+  chmod 644 $syshosts
+  chown 0:0 $syshosts
+  chcon u:object_r:system_file:s0 $syshosts
   mount -o remount,ro ${mount_path} &> /dev/null
   rm -rf $MODPATH/system
 fi
 if [ -e $NVBASE/modules/hosts ]; then
-   ui_print "检测到你安装了systemless hosts模块"
-   touch $NVBASE/modules/hosts/disable
-   ui_print "已禁用"
+   ui_print "检测到你开启了Systemless hosts模块"
+   if [ ! -d $NVBASE/modules/hosts/disable ]; then
+      touch $NVBASE/modules/hosts/disable
+      ui_print "已禁用"
+   fi
 fi
 
 ui_print "是否启用开机自动更新"

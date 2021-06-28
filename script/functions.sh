@@ -2,8 +2,6 @@
 work_dir=/sdcard/Android/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 script_dir=${0%/*}
-export MAGISKTMP=`magisk --path 2>/dev/null`
-[[ -z "$MAGISKTMP" ]] && export MAGISKTMP=`mount | grep "/.magisk/mirror/system" | awk -F ' ' '{print $1}' | awk -F '/.magisk/block/system' '{print $1}' | head -n 1`
 
 . $script_dir/select.ini
 
@@ -136,21 +134,16 @@ if [ $Now == $New ]; then
    echo "没有更新: $curdate"
 else
    if [ $install_mod = "system" ]; then
-      for mount_path in /system / $MAGISKTMP/.magisk/mirror/system $MAGISKTMP/.magisk/mirror/system_root; do
+      for mount_path in /system /; do
          mount -o remount,rw ${mount_path} &> /dev/null
          if [ -w ${mount_path} ]; then
-            if [ ${mount_path} = $MAGISKTMP/.magisk/mirror/system_root ]; then
-               if [ -w "${mount_path}/system" ]; then
-                  mount_path=${mount_path}/system
-               break;
-               else
-                  echo "挂载失败请重新安装模块并选择systemless模式" >> $work_dir/update.log
-                  sed -i '1d' $work_dir/update.log
-                  echo "挂载失败请重新安装模块并选择systemless模式"
-                  exit 0
-               fi
-            fi
          break;
+         else
+           if [ ${mount_path} = / ]; then
+              echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式" >> $work_dir/update.log
+              sed -i '1d' $work_dir/update.log
+              echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式""
+           fi
          fi
       done
    fi
