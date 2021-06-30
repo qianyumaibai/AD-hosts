@@ -87790,7 +87790,6 @@
 127.0.0.1 s.yjtag.jp
 127.0.0.1 s.yomob.com.cn
 127.0.0.1 s.youmi.net
-127.0.0.1 s.youtube.com
 127.0.0.1 s.youzhuanhua.com
 127.0.0.1 s.yunpifu.cn
 127.0.0.1 s.yy58ju.com
@@ -126226,7 +126225,26 @@
 127.0.0.1 dspimg.adsame.com
 127.0.0.1 app-tj.adinall.com
 127.0.0.1 ads.privacy.qq.com
-127.0.0.1 ulogs.umeng.com
+127.0.0.1 ads-ap.adaptv.advertising.com
+127.0.0.1 ads-ec.adaptv.advertising.com
+127.0.0.1 ads-eu.adaptv.advertising.com
+127.0.0.1 ads-wc.adaptv.advertising.com
+127.0.0.1 adserver-as.adtech.advertising.com
+127.0.0.1 adserver-eu.adtech.advertising.com
+127.0.0.1 adserver-us.adtech.advertising.com
+127.0.0.1 adserver.adtech.advertising.com
+127.0.0.1 eu.event .cmp.advertising.com
+127.0.0.1 guce.advertising.com
+127.0.0.1 hb-as.adtech.advertising.com
+127.0.0.1 log-nj.adaptv.advertising.com
+127.0.0.1 log-sj-eq.advertising.com .com
+127.0.0.1 log-sj.adaptv.advertising.com
+127.0.0.1 log.adaptv.advertising.com
+127.0.0.1 mads.advertising.com
+127.0.0.1 mobileapi.advertising.com
+127.0.0.1 tag-dev.sp.advertising.com
+127.0.0.1 us.event.cmp.advertising.com
+
 
 # 广告奖励
 127.0.0.1 gw.365you.com
