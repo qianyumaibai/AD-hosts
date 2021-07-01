@@ -71,7 +71,7 @@ elif [ $install_mod = "system" ]; then
       rm -rf /data/adb/modules/AD-Hosts/system
    fi
    if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
-      cp /data/adb/modules/AD-Hosts/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
+      cp $script_dir/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
    fi
 else
    echo "Error: 没有变量请检查$script_dir/select.ini是否存在" >> $work_dir/update.log

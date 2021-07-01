@@ -223,7 +223,7 @@ else
   sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
   rm -rf /data/adb/service.d/disable_ad_hosts.sh
   if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
-     cp $MODPATH/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
+     cp $MODPATH/script/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
   fi
   if [ ! -e $work_dir/syshosts.bak ]; then
      ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
@@ -246,12 +246,10 @@ else
   mount -o remount,ro ${mount_path} &> /dev/null
   rm -rf $MODPATH/system
 fi
-if [ -e $NVBASE/modules/hosts ]; then
+if [ ! -d $NVBASE/modules/hosts/disable ]; then
    ui_print "检测到你开启了Systemless hosts模块"
-   if [ ! -d $NVBASE/modules/hosts/disable ]; then
-      touch $NVBASE/modules/hosts/disable
-      ui_print "已禁用"
-   fi
+   touch $NVBASE/modules/hosts/disable
+   ui_print "已禁用"
 fi
 
 ui_print "是否启用开机自动更新"
