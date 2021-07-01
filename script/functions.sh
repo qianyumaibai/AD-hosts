@@ -142,7 +142,7 @@ else
            if [ ${mount_path} = / ]; then
               echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式" >> $work_dir/update.log
               sed -i '1d' $work_dir/update.log
-              echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式""
+              echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式"
            fi
          fi
       done

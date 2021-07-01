@@ -246,7 +246,7 @@ else
   mount -o remount,ro ${mount_path} &> /dev/null
   rm -rf $MODPATH/system
 fi
-if [ ! -d $NVBASE/modules/hosts/disable ]; then
+if [ ! -e $NVBASE/modules/hosts/disable ]; then
    ui_print "检测到你开启了Systemless hosts模块"
    touch $NVBASE/modules/hosts/disable
    ui_print "已禁用"
