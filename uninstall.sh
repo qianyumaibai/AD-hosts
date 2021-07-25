@@ -9,10 +9,6 @@ for mount_path in /system /; do
    mount -o remount,rw ${mount_path} &> /dev/null
    if [ -w ${mount_path} ]; then
    break;
-   else
-      if [ ${mount_path} = / ]; then
-         exit 0
-      fi
    fi
 done
 if [ -e $work_dir/syshosts.bak ];then
