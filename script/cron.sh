@@ -15,21 +15,38 @@ if [ $regular_update = "on" ]; then
    if [[ $time_format = "24" || $time_format = "AM" ]]; then
       H="$(echo $time | awk -F ':' '{print $1}')"
       M="$(echo $time | awk -F ':' '{print $2}')"
+      if [ $H = "24" ]; then
+         export H="0"
+      fi
       if [ $M = "00" ]; then
          export M="0"
+      elif [ $M = "60" ]; then
+           H=$(($H + 1))
+           export M="0"
       elif $(echo "$M" | grep -q '^0'); then
          export M="$(echo $time | awk -F ':' '{print $2}' | awk -F '0' '{print $2}')"
       fi
+       if [[ $H -gt "23" || $M -gt "59" ]]; then
+         echo "错误: 请正确填写时间"
+         exit 1
+      fi
    elif [ $time_format = "PM" ]; then
       H="$(($(echo $time | awk -F ':' '{print $1}') + 12))"
-      M="$(echo $time | awk -F ':' '{print $2}')
+      M="$(echo $time | awk -F ':' '{print $2}')"
       if $(echo "$H" | grep -q '^0'); then
          export H="$(echo $time | awk -F ':' '{print $1}' | awk -F '0' '{print $2}')"
       fi
       if [ $M = "00" ]; then
          export M="0"
+      elif [ $M = "60" ]; then
+         H=$(($H + 1))
+         export M="0"
       elif $(echo "$M" | grep -q '^0'); then
          export M="$(echo $time | awk -F ':' '{print $2}' | awk -F '0' '{print $2}')"
+      fi
+      if [[ $H -gt "23" || $M -gt "59" ]]; then
+         echo "错误: 请正确填写时间"
+         exit 1
       fi
    fi
    if [ $wupdate = "y" ]; then
