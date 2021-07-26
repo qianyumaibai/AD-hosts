@@ -11,12 +11,12 @@
 ### 安装模式区别
 - systemless模式:使用Magisk目录不修改系统文件，卸载还原原文件，重启生效重启前的文件。
 
-- system模式:使用系统目录直接修改原文件，模块刷入时备份系统hosts至`/sdcard/Android/ADhosts`，卸载还原备份，文件实时应用。
+- system模式(仅支持system解锁设备):使用系统目录直接修改原文件，模块刷入时备份系统hosts至`/sdcard/Android/ADhosts`，卸载还原备份，文件实时应用。
 
 ### 定时更新(默认关闭)
 - 控制开启与关闭，将`Cron.ini`中的`regular_update`参数修改为`on/off`，然后执行`Regular_update.sh`便可切换工作状态
 
-- 修改`/sdcard/Android/ADhosts/Cron.ini`中的参数后执行`Regular_update.sh`以应用，更新时间的填写规则请参考[crontabs命令教程](https://m.runoob.com/linux/linux-comm-crontab.html)
+- 修改`/sdcard/Android/ADhosts/Cron.ini`中的参数后执行`Regular_update.sh`以应用，更新时间的填写规则请参考`Cron.ini`内描述
 
 ### 注意
 本模块的工作目录为`/sdcard/Android/ADhosts`

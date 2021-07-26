@@ -151,36 +151,28 @@ syshosts=/system/etc/hosts
 if [ ! -d $work_dir ]; then
    mkdir -p $work_dir
 fi
-#rm -rf $work_dir/Cron.ini
+rm -rf $work_dir/Cron.ini
 if [ ! -e $work_dir/Cron.ini ]; then
    touch $work_dir/Cron.ini
    echo "# 定时更新配置文件" >> $work_dir/Cron.ini
-   echo "# 开关定时更新on/off" >> $work_dir/Cron.ini
+   echo "# 开关定时更新 on/off" >> $work_dir/Cron.ini
    echo "regular_update=off" >> $work_dir/Cron.ini
-   echo "M='0' && H='4' && DOM='*' && MO='*' && DOW='4'" >> $work_dir/Cron.ini
-   echo "# *        *        *        *            *" >> $work_dir/Cron.ini
-   echo "# -        -        -         -            -" >> $work_dir/Cron.ini
-   echo "# |        |        |         |            |" >> $work_dir/Cron.ini
-   echo "# |        |        |         |            +----- DOW=星期(0 - 7) (0和7都代表星期天)" >> $work_dir/Cron.ini
-   echo "# |        |        |         +---------- MO=月份(1 - 12)" >> $work_dir/Cron.ini
-   echo "# |        |        +--------------- DOM=日期(1 - 31)" >> $work_dir/Cron.ini
-   echo "# |        +-------------------- H=小时(0 - 23)" >> $work_dir/Cron.ini
-   echo "# +------------------------- M=分钟(0 - 59)" >> $work_dir/Cron.ini
-   echo "# 例:" >> $work_dir/Cron.ini
-   echo "# * * * * * 每分钟执行一次" >> $work_dir/Cron.ini
-   echo "# * 4 * * * 每天的4:00执行一次" >> $work_dir/Cron.ini
-   echo "# 每个时间(/4)" >> $work_dir/Cron.ini
-   echo "# */4 * * * * 每4分钟执行一次" >> $work_dir/Cron.ini
-   echo "# * */4 * * * 每4个小时执行一次" >> $work_dir/Cron.ini
-   echo "# * * */4 * * 每4天执行一次" >> $work_dir/Cron.ini
-   echo "# * * * */4 * 每4个月执行一次" >> $work_dir/Cron.ini
-   echo "# * * * * */4 每4周执行一次" >> $work_dir/Cron.ini
-   echo "# 一个时间到一个时间(0-59)" >> $work_dir/Cron.ini
-   echo "# 25 8-11 * * * 每天8:00到11:00的第25分钟执行一次" >> $work_dir/Cron.ini
-   echo "# 0 6-12/3 * * * 每天6:00到12:00每3小时0分钟执行一次" >> $work_dir/Cron.ini
-   echo "# * 4 6-9 * * 每个月6-9号的4:00点执行一次" >> $work_dir/Cron.ini
-   echo "# * 4 18 6-9 * 6-9月的每个18号的4:00点执行一次" >> $work_dir/Cron.ini
-   echo "# * 4 * * 3-5 每周周3到周5的4:00点执行一次" >> $work_dir/Cron.ini
+   echo "" >> $work_dir/Cron.ini
+   echo "# 时间格式 24/AM/PM" >> $work_dir/Cron.ini
+   echo "time_format=24" >> $work_dir/Cron.ini
+   echo "# 时间" >> $work_dir/Cron.ini
+   echo "time=4:00" >> $work_dir/Cron.ini
+   echo "" >> $work_dir/Cron.ini
+   echo "# 每周更新与每月更新关闭则为每日更新" >> $work_dir/Cron.ini
+   echo "# 每周更新 y/n" >> $work_dir/Cron.ini
+   echo "wupdate=n" >> $work_dir/Cron.ini
+   echo "# 星期几更新(必填) wupdate=y 时启用 (0 - 7) (0和7都代表星期天)" >> $work_dir/Cron.ini
+   echo "wday=4" >> $work_dir/Cron.ini
+   echo "" >> $work_dir/Cron.ini
+   echo "# 每月更新 y/n" >> $work_dir/Cron.ini
+   echo "mupdate=n" >> $work_dir/Cron.ini
+   echo "# 几号更新(必填) mupdate=y 时启用 (1 - 31)" >> $work_dir/Cron.ini
+   echo "wdate=9" >> $work_dir/Cron.ini
 fi
 if [ ! -e $work_dir/update.log ]; then
    touch $work_dir/update.log
@@ -219,15 +211,11 @@ if chooseport; then
   ui_print "已选择systemless模式"
   sed -i "s/<mod>/systemless/g" $MODPATH/script/select.ini
 else
-  ui_print "已选择system模式"
+  ui_print "已选择system模式(仅支持解锁了system的设备)"
   sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
-  rm -rf /data/adb/service.d/disable_ad_hosts.sh
-  if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
-     cp $MODPATH/script/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
-  fi
-  if [ ! -e $work_dir/syshosts.bak ]; then
-     ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
-     cp $syshosts $work_dir/syshosts.bak
+  rm -rf $NVBASE/service.d/disable_ad_hosts.sh
+  if [ ! -e $NVBASE/service.d/disable_ad_hosts.sh ]; then
+     cp $MODPATH/script/disable_ad_hosts.sh $NVBASE/service.d/disable_ad_hosts.sh
   fi
   for mount_path in /system /; do
       mount -o remount,rw ${mount_path} &> /dev/null
@@ -239,6 +227,10 @@ else
          fi
       fi
   done
+  if [ ! -e $work_dir/syshosts.bak ]; then
+     ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
+     cp $syshosts $work_dir/syshosts.bak
+  fi
   mv -f $MODPATH/system/etc/hosts $syshosts
   chmod 644 $syshosts
   chown 0:0 $syshosts
@@ -246,10 +238,12 @@ else
   mount -o remount,ro ${mount_path} &> /dev/null
   rm -rf $MODPATH/system
 fi
-if [ ! -e $NVBASE/modules/hosts/disable ]; then
-   ui_print "检测到你开启了Systemless hosts模块"
-   touch $NVBASE/modules/hosts/disable
-   ui_print "已禁用"
+if [ -d $NVBASE/modules/hosts ]; then
+   if [ ! -e $NVBASE/modules/hosts/disable ]; then
+      ui_print "检测到你开启了Systemless hosts模块"
+      touch $NVBASE/modules/hosts/disable
+      ui_print "已禁用"
+   fi
 fi
 
 ui_print "是否启用开机自动更新"
