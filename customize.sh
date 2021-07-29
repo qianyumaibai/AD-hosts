@@ -164,6 +164,7 @@ if [ ! -e $work_dir/Cron.ini ]; then
    echo "time=4:00" >> $work_dir/Cron.ini
    echo "" >> $work_dir/Cron.ini
    echo "# 每周更新与每月更新关闭则为每日更新" >> $work_dir/Cron.ini
+   echo "# 每周更新与每月更新不可同时开启" >> $work_dir/Cron.ini
    echo "# 每周更新 y/n" >> $work_dir/Cron.ini
    echo "wupdate=n" >> $work_dir/Cron.ini
    echo "# 星期几更新(必填) wupdate=y 时启用 (0 - 7) (0和7都代表星期天)" >> $work_dir/Cron.ini

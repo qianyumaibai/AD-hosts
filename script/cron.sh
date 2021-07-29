@@ -10,8 +10,6 @@ if [ $regular_update = "on" ]; then
    for pid in ${pid_text[*]}; do
       kill -9 $pid &> /dev/null
    done
-   rm -rf $script_dir/crontabs/root
-   touch $script_dir/crontabs/root
    if [[ $time_format = "24" || $time_format = "AM" ]]; then
       H="$(echo $time | awk -F ':' '{print $1}')"
       M="$(echo $time | awk -F ':' '{print $2}')"
@@ -26,7 +24,7 @@ if [ $regular_update = "on" ]; then
       elif $(echo "$M" | grep -q '^0'); then
          export M="$(echo $time | awk -F ':' '{print $2}' | awk -F '0' '{print $2}')"
       fi
-       if [[ $H -gt "23" || $M -gt "59" ]]; then
+      if [[ $H -gt "23" || $M -gt "59" ]]; then
          echo "错误: 请正确填写时间"
          exit 1
       fi
@@ -50,6 +48,10 @@ if [ $regular_update = "on" ]; then
       fi
    fi
    if [ $wupdate = "y" ]; then
+      if [ $mupdate = "y" ]; then
+         echo "错误: 每周更新不可与每月更新同时开启"
+         exit 1
+      fi
       DOW="$wday"
    elif [ $wupdate = "n" ]; then
       DOW="*"
@@ -67,6 +69,8 @@ if [ $regular_update = "on" ]; then
       echo "请输入 y/n"
       exit 1
    fi
+   rm -rf $script_dir/crontabs/root
+   touch $script_dir/crontabs/root
    echo "$M $H $DOM * $DOW  sh $script_dir/functions.sh" >> $script_dir/crontabs/root
    chmod 777 $script_dir/crontabs/root
    crond -b -c $script_dir/crontabs

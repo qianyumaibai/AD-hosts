@@ -3477,7 +3477,7 @@
 127.0.0.1 9470.engine.mobileapptracking.com
 127.0.0.1 9489.302br.net
 127.0.0.1 94982c5b634975e50103ce96082d2827.adsk2.co
-127.0.0.1 94cdn.com
+#127.0.0.1 94cdn.com
 127.0.0.1 94uyvwwh.com
 127.0.0.1 95.6.87.194.dynamic.dol.ru
 127.0.0.1 95126.hittail.com
@@ -4095,7 +4095,7 @@
 127.0.0.1 a.spolecznosci.net
 127.0.0.1 a.srchtop.com
 127.0.0.1 a.ss34.on9mail.com
-127.0.0.1 a.ssl.msdk.qq.com
+#127.0.0.1 a.ssl.msdk.qq.com
 127.0.0.1 a.stanzapub.com
 127.0.0.1 a.starstar19999.com
 127.0.0.1 a.startui19999.com
@@ -28465,7 +28465,6 @@
 127.0.0.1 adt.com.vn
 127.0.0.1 adt.cpatrk.net
 127.0.0.1 adt.m7z.net
-127.0.0.1 adt.xdrig.com
 127.0.0.1 adtackmedia.go2cloud.org
 127.0.0.1 adtactics.com
 127.0.0.1 adtag.ad-stir.com
@@ -50171,7 +50170,7 @@
 127.0.0.1 di.mmhhjt.com
 127.0.0.1 di.nend.net
 127.0.0.1 di.rlcdn.com
-127.0.0.1 di.ssl.msdk.qq.com
+#127.0.0.1 di.ssl.msdk.qq.com
 127.0.0.1 di.xalongli.cn
 127.0.0.1 di.zymro.com
 127.0.0.1 di1.shopping.com
@@ -64822,7 +64821,6 @@
 127.0.0.1 istrefa.net
 127.0.0.1 isub-tb.isnssdk.com
 127.0.0.1 isub.isnssdk.com
-127.0.0.1 isub.snssdk.com.bytedns.net
 127.0.0.1 isupreme.ir
 127.0.0.1 isuzi.com
 127.0.0.1 iswwwup.com
@@ -64837,7 +64835,7 @@
 127.0.0.1 it.erosadv.com
 127.0.0.1 it.globalsweeps.info
 127.0.0.1 it.gmads.mookie1.com
-#127.0.0.1 it.snssdk.com.edgekey.net
+127.0.0.1 it.snssdk.com.edgekey.net
 127.0.0.1 it168-intel2.buzzopt.com
 127.0.0.1 it168.wrating.com
 127.0.0.1 itadnetwork.co.uk
@@ -66354,7 +66352,6 @@
 127.0.0.1 jssdk.cnzz.com
 127.0.0.1 jssdk.mparticle.com
 127.0.0.1 jssdk.rayjump.com
-127.0.0.1 jssdkcdns.mparticle.com
 127.0.0.1 jssdks.mparticle.com
 127.0.0.1 jstaikos.com
 127.0.0.1 jstv.allyes.com
@@ -75488,7 +75485,6 @@
 127.0.0.1 msg.shouji.360.cn
 127.0.0.1 msg.simeji.baidu.jp
 127.0.0.1 msg.ua.56.com
-127.0.0.1 msg.umengcloud.com
 127.0.0.1 msg.video.ptqy.gitv.tv
 127.0.0.1 msg.video.qiyi.com
 127.0.0.1 msg.xageek.com
@@ -81441,7 +81437,6 @@
 127.0.0.1 pg-mobileservice.us-east-1.elasticbeanstalk.com
 127.0.0.1 pg.aty.sohu.com
 127.0.0.1 pg.buzzfeed.com
-127.0.0.1 pg.xdrig.com
 127.0.0.1 pg2.solution.weborama.fr
 127.0.0.1 pg308-zmbra.ads.tremorhub.com
 127.0.0.1 pgalvaoteles.pt
@@ -86280,7 +86275,6 @@
 127.0.0.1 resolutekey.com
 127.0.0.1 resolve.gimbal.com
 127.0.0.1 resolver.gslb.mi-idc.com
-127.0.0.1 resolver.msg.xiaomi.net
 127.0.0.1 resolvethem.com
 127.0.0.1 resolvingserver.com
 127.0.0.1 resonantbrush.com
@@ -87467,7 +87461,6 @@
 127.0.0.1 s.chebse.com
 127.0.0.1 s.ciouwap.com
 127.0.0.1 s.click.alimama.com
-127.0.0.1 s.click.taobao.com
 127.0.0.1 s.clickability.com
 127.0.0.1 s.clicktale.net
 127.0.0.1 s.clk.baidu.com
@@ -92681,7 +92674,7 @@
 127.0.0.1 ssl.luckyorange.com
 127.0.0.1 ssl.mmtgo.me
 127.0.0.1 ssl.mousestats.com
-127.0.0.1 ssl.msdk.qq.com
+#127.0.0.1 ssl.msdk.qq.com
 127.0.0.1 ssl.newsofnp.com
 127.0.0.1 ssl.quantserve.com
 127.0.0.1 ssl.siteimprove.com
@@ -97395,8 +97388,8 @@
 127.0.0.1 toals.co.uk
 127.0.0.1 toascik.pl
 127.0.0.1 tob-cms.bj.bcebos.com
-#127.0.0.1 tobapplog.ctobsnssdk.com
-#127.0.0.1 toblog.ctobsnssdk.com
+127.0.0.1 tobapplog.ctobsnssdk.com
+127.0.0.1 toblog.ctobsnssdk.com
 127.0.0.1 tocho.pl
 127.0.0.1 todacell.com
 127.0.0.1 todayads.com
@@ -106457,7 +106450,6 @@
 127.0.0.1 vsee.tk
 127.0.0.1 vseobuch.ru
 127.0.0.1 vseprogroshi.justclick.ru
-127.0.0.1 vserv.bc.cdn.bitgravity.com
 127.0.0.1 vserv.mobi
 127.0.0.1 vsevjednom.cz
 127.0.0.1 vsii.spinbox.net
@@ -124521,7 +124513,6 @@
 127.0.0.1 xdadevelopers.browsi.mobi
 127.0.0.1 xdcs-collector.ximalaya.com
 127.0.0.1 xdomain.engage.co
-127.0.0.1 xdrig.com
 127.0.0.1 xdssp.mediav.com
 127.0.0.1 xeanon.com
 127.0.0.1 xed.pl
