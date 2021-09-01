@@ -29448,7 +29448,7 @@
 127.0.0.1 aetnaaetnaprod2018.112.2o7.net
 127.0.0.1 aetrk.com
 127.0.0.1 aetv.112.2o7.net
-127.0.0.1 aeventlog.beacon.qq.com
+#127.0.0.1 aeventlog.beacon.qq.com
 127.0.0.1 aexception.bugly.qq.com
 127.0.0.1 aexp.demdex.net
 127.0.0.1 aexz.rm.fhxiaoshuo.com
@@ -30780,7 +30780,7 @@
 127.0.0.1 amconf.videoegg.com
 127.0.0.1 amd.alibuf.com
 127.0.0.1 amdc.m.taobao.com
-127.0.0.1 amdcopen.m.taobao.com
+#127.0.0.1 amdcopen.m.taobao.com
 127.0.0.1 amdvtest.112.2o7.net
 127.0.0.1 amdzone.us.intellitxt.com
 127.0.0.1 ameba.d.ad-cloud.jp
@@ -32819,7 +32819,6 @@
 127.0.0.1 app.activetrail.com
 127.0.0.1 app.adapt.io
 127.0.0.1 app.adbszs.com
-127.0.0.1 app.adjust.com
 127.0.0.1 app.adjust.io
 127.0.0.1 app.adnovo.com
 127.0.0.1 app.adroll.com
@@ -36572,8 +36571,7 @@
 127.0.0.1 bdsmcompany.com
 127.0.0.1 bdsmpichunter.com
 127.0.0.1 bdsmtours.com
-127.0.0.1 bdsp. 
-127.0.0.1 bdsp.x.jd.com
+#127.0.0.1 bdsp.x.jd.com
 127.0.0.1 bdtg.37wan.com
 127.0.0.1 bdtv.tianlangkm.com
 127.0.0.1 bduserlog.eastmoney.com
@@ -49060,7 +49058,7 @@
 127.0.0.1 data.ero-advertising.com
 127.0.0.1 data.eroadvertising.com
 127.0.0.1 data.fanfinityapp.com
-127.0.0.1 data.flurry.com
+#127.0.0.1 data.flurry.com
 127.0.0.1 data.gametree.tw
 127.0.0.1 data.gosquared.com
 127.0.0.1 data.haoma.sogou.com
@@ -62406,7 +62404,7 @@
 127.0.0.1 id451295.com
 127.0.0.1 id5-sync.com
 127.0.0.1 id5576.al21.luxup.ru
-127.0.0.1 id6.me
+#127.0.0.1 id6.me
 127.0.0.1 id6589.com
 127.0.0.1 ida.cnool.net
 127.0.0.1 idas-sex-story.gocunt.com
@@ -70311,7 +70309,6 @@
 127.0.0.1 m.bh100.com.cn
 127.0.0.1 m.bhkhkm.cn
 127.0.0.1 m.bififd.cn
-127.0.0.1 m.biquge5200.cc
 127.0.0.1 m.biquzi.com
 127.0.0.1 m.bjaoyou.cn
 127.0.0.1 m.bjvvqu.cn
@@ -76574,7 +76571,7 @@
 127.0.0.1 nbriskerry.com
 127.0.0.1 nbrtrack.com
 127.0.0.1 nbryb.com
-127.0.0.1 nbsdk-baichuan.alicdn.com
+#127.0.0.1 nbsdk-baichuan.alicdn.com
 127.0.0.1 nbsdk-baichuan.taobao.com
 127.0.0.1 nbsmr.voluumtrk.com
 127.0.0.1 nbtg3.youyou234.com
@@ -80629,7 +80626,6 @@
 127.0.0.1 pagetracking.popmarker.com
 127.0.0.1 pageurl-brx.btrll.com
 127.0.0.1 pageurl.btrll.com
-127.0.0.1 pageviewp.icbc.com.cn
 127.0.0.1 pagevisit.net
 127.0.0.1 pagvl.voluumtrk.com
 127.0.0.1 paid-work-at-home.com
@@ -92752,7 +92748,7 @@
 127.0.0.1 ssp.imedia.cz
 127.0.0.1 ssp.jtxh.net
 127.0.0.1 ssp.kjwx8.com
-127.0.0.1 ssp.kss.ksyun.com
+#127.0.0.1 ssp.kss.ksyun.com
 127.0.0.1 ssp.kxly360.com
 127.0.0.1 ssp.lkqd.net
 127.0.0.1 ssp.pro.cn
@@ -99846,7 +99842,7 @@
 127.0.0.1 tunele-rozsaczajace.pl
 127.0.0.1 tunga.homedns.org
 127.0.0.1 tuniaf.com
-127.0.0.1 tunion-api.m.taobao.com
+#127.0.0.1 tunion-api.m.taobao.com
 127.0.0.1 tunmedia.tns-cs.net
 127.0.0.1 tunnabelly.ug
 127.0.0.1 tuno.nuggad.net
@@ -100730,7 +100726,7 @@
 127.0.0.1 umeng.com
 127.0.0.1 umengacs.m.taobao.com
 127.0.0.1 umengcloud.com
-127.0.0.1 umengjmacs.m.taobao.com
+#127.0.0.1 umengjmacs.m.taobao.com
 127.0.0.1 ummetciftligi.com
 127.0.0.1 ums.adtech.de
 127.0.0.1 ums.adtechjp.com
@@ -126204,6 +126200,8 @@
 127.0.0.1 mobileapi.advertising.com
 127.0.0.1 tag-dev.sp.advertising.com
 127.0.0.1 us.event.cmp.advertising.com
+127.0.0.1 staticsns.cdn.bcebos.com
+
 
 
 # 广告奖励
