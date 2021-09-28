@@ -63473,7 +63473,6 @@
 127.0.0.1 img1.g.pptv.com
 127.0.0.1 img1.gogle.cn
 127.0.0.1 img1.googlesyndcation.com
-127.0.0.1 img1.gtimg.com
 127.0.0.1 img1.ientry.net
 127.0.0.1 img1.igou.cn
 127.0.0.1 img1.km.com
@@ -100547,7 +100546,6 @@
 127.0.0.1 udncoeln.com
 127.0.0.1 udns1.newdotnet.net
 127.0.0.1 udp.push.mob.com
-127.0.0.1 udpolimenew.baidu.com
 127.0.0.1 udziele-pozyczki-prywatnie.pl
 127.0.0.1 ue.flipboard.com
 127.0.0.1 ue.ueadlian.com
@@ -126201,7 +126199,9 @@
 127.0.0.1 tag-dev.sp.advertising.com
 127.0.0.1 us.event.cmp.advertising.com
 127.0.0.1 staticsns.cdn.bcebos.com
-
+127.0.0.1 errlog.umeng.com
+127.0.0.1 api.fd.mob.com
+127.0.0.1 mj.weimob.net
 
 
 # 广告奖励
@@ -126222,5 +126222,4 @@
 127.0.0.1 rpt.gdt.qq.com
 127.0.0.1 win.gdt.qq.com
 127.0.0.1 ipv4.gdt.qq.com
-#127.0.0.1 canvas.gdt.qq.com
 127.0.0.1 x.adnet.qq.com
