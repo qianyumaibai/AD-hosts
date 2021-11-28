@@ -42,7 +42,7 @@
 
 * [捐赠](https://docs.qq.com/doc/DWVJKWVVDWURQZUZK?disableReturnList=1&_from=1)
 
-* [免责声明](https://github.com/E7KMbb/AD-hosts/master/DISCKAIMER)
+* [免责声明](https://github.com/E7KMbb/AD-hosts/blob/master/DISCKAIMER.md)
 
 ### 黑名单
 [无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/blob/master/black.md)
