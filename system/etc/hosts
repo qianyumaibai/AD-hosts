@@ -43776,7 +43776,6 @@
 127.0.0.1 clickcash.webpower.com
 127.0.0.1 clickcashmoney.com
 127.0.0.1 clickcdn.shareaholic.com
-127.0.0.1 clickcdn.xda-developers.com
 127.0.0.1 clickcertain.com
 127.0.0.1 clickchatsold.com
 127.0.0.1 clickcompare.co.uk
@@ -45007,7 +45006,6 @@
 127.0.0.1 collector-428.tvsquared.com
 127.0.0.1 collector-6271.tvsquared.com
 127.0.0.1 collector-a.perimeterx.net
-127.0.0.1 collector-cdn.github.com
 127.0.0.1 collector-hpn.cliqz.com
 127.0.0.1 collector-medium.lightstep.com
 127.0.0.1 collector-pool.newrelic.com
@@ -45784,7 +45782,6 @@
 127.0.0.1 coronabreath.com
 127.0.0.1 coronadisco.co.uk
 127.0.0.1 coronavirustestkit.co.za
-127.0.0.1 corp-github.com
 127.0.0.1 corp.163.com
 127.0.0.1 corp.hunantv.com
 127.0.0.1 corp.kaltura.com
@@ -124503,7 +124500,6 @@
 127.0.0.1 xd-q.mediav.com
 127.0.0.1 xd.code.tanwanyx.com
 127.0.0.1 xd.mediav.com
-127.0.0.1 xda-developers.us
 127.0.0.1 xdadevelopers.browsi.mobi
 127.0.0.1 xdcs-collector.ximalaya.com
 127.0.0.1 xdomain.engage.co
@@ -126217,6 +126213,18 @@
 127.0.0.1 ncisancvv.com
 127.0.0.1 bbdrt4ew33c.com
 127.0.0.1 gsiaufhbs.com
+
+#穿山甲
+127.0.0.1 toblog.ctobsnssdk.com
+127.0.0.1 vas-hl-x.snssdk.com
+127.0.0.1 v3-be-pack.pglstatp-toutiao.com
+127.0.0.1 sf3-be-pack.pglstatp-toutiao.com
+127.0.0.1 tobapplog.ctobsnssdk.com
+127.0.0.1 novel.pangolin-sdk-toutiao.com
+127.0.0.1 api-access.pangolin-sdk-toutiao.com
+127.0.0.1 tnc3-bjlgy.snssdk.com
+127.0.0.1 sf3-fe-tos.pglstatp-toutiao.com
+127.0.0.1 dm.toutiao.com
 
 
 # 广告奖励
