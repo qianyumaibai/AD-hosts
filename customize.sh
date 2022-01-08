@@ -94,6 +94,27 @@ if (timeout 1 getevent -lc 1 2>&1 | grep EV_ABS > $TMPDIR/touch); then
 fi
 
 chmod -R 0755 $MODPATH/tools
+chooseportold() {
+  # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
+  # Calling it first time detects previous input. Calling it second time will do what we want
+  while true; do
+    $MODPATH/tools/$ARCH32/keycheck
+    $MODPATH/tools/$ARCH32/keycheck
+    local SEL=$?
+    if [ "$1" == "UP" ]; then
+      UP=$SEL
+      break
+    elif [ "$1" == "DOWN" ]; then
+      DOWN=$SEL
+      break
+    elif [ $SEL -eq $UP ]; then
+      return 0
+    elif [ $SEL -eq $DOWN ]; then
+      return 1
+    fi
+  done
+}
+
 chooseport_legacy() {
   # Keycheck binary by someone755 @Github, idea for code below by Zappo @xda-developers
   # Calling it first time detects previous input. Calling it second time will do what we want
@@ -108,7 +129,14 @@ chooseport_legacy() {
     elif [ $sel -eq 41 ]; then
       return 1
     elif $error; then
-      abort "未检测到音量键!"
+      ui_print "未检测到音量键!尝试使用旧的keycheck方案"
+      export chooseport=chooseportold
+      ui_print " "
+      ui_print "- 音量键录入 -"
+      ui_print "  请按音量+键:"
+      chooseport "UP"
+      ui_print "  请按音量–键"
+      chooseport "DOWN"
     else
       error=true
       echo "- 未检测到音量键。再试一次。"
@@ -145,8 +173,8 @@ chooseport() {
   done
 }
 
+
 work_dir=/sdcard/Android/ADhosts
-syshosts=/system/etc/hosts
 
 if [ ! -d $work_dir ]; then
    mkdir -p $work_dir
@@ -205,40 +233,6 @@ else
   sed -i "s/<link>/https:\/\/aisauce.coding.net\/p\/ad-hosts\/d\/ad-hosts\/git\/raw\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
 fi
 
-ui_print "选择hosts安装模式"
-ui_print "  音量+ = systemless"
-ui_print "  音量– = system"
-if chooseport; then
-  ui_print "已选择systemless模式"
-  sed -i "s/<mod>/systemless/g" $MODPATH/script/select.ini
-else
-  ui_print "已选择system模式(仅支持解锁了system的设备)"
-  sed -i "s/<mod>/system/g" $MODPATH/script/select.ini
-  rm -rf $NVBASE/service.d/disable_ad_hosts.sh
-  if [ ! -e $NVBASE/service.d/disable_ad_hosts.sh ]; then
-     cp $MODPATH/script/disable_ad_hosts.sh $NVBASE/service.d/disable_ad_hosts.sh
-  fi
-  for mount_path in /system /; do
-      mount -o remount,rw ${mount_path} &> /dev/null
-      if [ -w ${mount_path} ]; then
-      break;
-      else
-         if [ ${mount_path} = / ]; then
-            abort "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式"
-         fi
-      fi
-  done
-  if [ ! -e $work_dir/syshosts.bak ]; then
-     ui_print "备份系统hosts文件至$work_dir/syshosts.bak"
-     cp $syshosts $work_dir/syshosts.bak
-  fi
-  mv -f $MODPATH/system/etc/hosts $syshosts
-  chmod 644 $syshosts
-  chown 0:0 $syshosts
-  chcon u:object_r:system_file:s0 $syshosts
-  mount -o remount,ro ${mount_path} &> /dev/null
-  rm -rf $MODPATH/system
-fi
 if [ -d $NVBASE/modules/hosts ]; then
    if [ ! -e $NVBASE/modules/hosts/disable ]; then
       ui_print "检测到你开启了Systemless hosts模块"
@@ -320,6 +314,9 @@ if [ -d /data/data/com.coolapk.market ]; then
 fi
 
 # 删除多余文件
+if [ -e $SERVICED/disable_ad_hosts.sh ]; then
+   rm -rf $SERVICED/disable_ad_hosts.sh
+fi
 rm -rf \
 $MODPATH/system/placeholder $MODPATH/customize.sh \
 $MODPATH/*.md $MODPATH/.git* $MODPATH/LICENSE $MODPATH/tools 4>/dev/null

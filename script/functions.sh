@@ -2,6 +2,8 @@
 work_dir=/sdcard/Android/ADhosts
 curdate="`date +%Y-%m-%d,%H:%M:%S`"
 script_dir=${0%/*}
+modules_dir=$(dirname ${script_dir})
+hosts_dir=${modules_dir}/system/etc
 
 . $script_dir/select.ini
 
@@ -47,30 +49,6 @@ if [ ! -e $work_dir/Start.sh ];then
    touch $work_dir/Start.sh
    echo "# 手动更新，请使用root权限执行" >> $work_dir/Start.sh
    echo "sh $script_dir/functions.sh" >> $work_dir/Start.sh
-fi
-
-# 判断安装模式
-if [ $install_mod = "systemless" ]; then
-   hosts_dir=/data/adb/modules/AD-Hosts/system/etc
-   if [ ! -d $hosts_dir ];then
-      mkdir -p $hosts_dir
-   fi
-   if [ -e /data/adb/service.d/disable_ad_hosts.sh ]; then
-      rm -rf /data/adb/service.d/disable_ad_hosts.sh
-   fi
-elif [ $install_mod = "system" ]; then
-   hosts_dir=/system/etc
-   if [ -d /data/adb/modules/AD-Hosts/system ];then
-      rm -rf /data/adb/modules/AD-Hosts/system
-   fi
-   if [ ! -e /data/adb/service.d/disable_ad_hosts.sh ]; then
-      cp $script_dir/disable_ad_hosts.sh /data/adb/service.d/disable_ad_hosts.sh
-   fi
-else
-   echo "Error: 没有变量请检查$script_dir/select.ini是否存在" >> $work_dir/update.log
-   sed -i '1d' $work_dir/update.log
-   echo "Error: 没有变量请检查$script_dir/select.ini是否存在"
-   exit 0
 fi
 
 # 下载hosts文件
@@ -126,27 +104,10 @@ if [ $Now == $New ]; then
    sed -i '1d' $work_dir/update.log
    echo "没有更新: $curdate"
 else
-   if [ $install_mod = "system" ]; then
-      for mount_path in /system /; do
-         mount -o remount,rw ${mount_path} &> /dev/null
-         if [ -w ${mount_path} ]; then
-         break;
-         else
-           if [ ${mount_path} = / ]; then
-              echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式" >> $work_dir/update.log
-              sed -i '1d' $work_dir/update.log
-              echo "你的设备未解锁system导致挂载失败，请重新安装模块并选择systemless模式"
-           fi
-         fi
-      done
-   fi
    mv -f $work_dir/hosts $hosts_dir/hosts
    chmod 644 $hosts_dir/hosts
    chown 0:0 $hosts_dir/hosts
    chcon u:object_r:system_file:s0 $hosts_dir/hosts
-   if [ $install_mod = "system" ]; then
-      mount -o remount,ro ${mount_path} &> /dev/null
-   fi
    echo -n "上次更新时间: $curdate" >> $work_dir/update.log
    echo "  hosts文件目录:$hosts_dir/hosts" >> $work_dir/update.log
    sed -i '1d' $work_dir/update.log

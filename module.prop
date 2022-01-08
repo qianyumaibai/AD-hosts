@@ -1,6 +1,6 @@
 id=AD-Hosts
 name=AD Hosts
-version=v6.3.0
-versionCode=6300
+version=v6.3.2
+versionCode=6320
 author=依然的爱
 description=屏蔽大部分广告,请记住hosts不是万能的具有局限性,不能全部屏蔽。hosts规则均来自于网络搜索,github,人工抓取及酷友提供,使用时请关闭其它带有hosts文件的模块,例如:systemless hosts模块。
