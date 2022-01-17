@@ -74411,7 +74411,6 @@
 127.0.0.1 miv2dc.oneapm.com
 127.0.0.1 miva.com
 127.0.0.1 mivideo.g.mi.com
-127.0.0.1 miwifi.com
 127.0.0.1 mix-parkiet.pl
 127.0.0.1 mix-test.uts.ngdata.com
 127.0.0.1 mix.adsame.com
@@ -126211,6 +126210,18 @@
 127.0.0.1 ncisancvv.com
 127.0.0.1 bbdrt4ew33c.com
 127.0.0.1 gsiaufhbs.com
+
+127.0.0.1 owl.chelun.com
+127.0.0.1 fp.tongdun.net
+127.0.0.1 mcs.ctobsnssdk.com
+127.0.0.1 verify.snssdk.com
+127.0.0.1 mcs.snssdk.com
+127.0.0.1 toblog.ctobsnssdk.com
+127.0.0.1 vcs.snssdk.com
+127.0.0.1 mssdk-bu.snssdk.com
+127.0.0.1 tnc3-bjlgy.snssdk.
+127.0.0.1 pangolin.snssdk.com
+127.0.0.1 extlog.snssdk.com
 
 #穿山甲
 127.0.0.1 toblog.ctobsnssdk.com
