@@ -225,13 +225,10 @@ fi
 ui_print "选择自动更新的地址"
 ui_print "  音量+ = GitHub链接(国外推荐)"
 ui_print "  音量– = Coding镜像链接(国内推荐)"
-if chooseport; then
-  ui_print "已选择GitHub链接"
-  sed -i "s/<link>/https:\/\/raw.githubusercontent.com\/E7KMbb\/AD-hosts\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
-else
-  ui_print "已选择Coding镜像链接"
-  sed -i "s/<link>/https:\/\/aisauce.coding.net\/p\/ad-hosts\/d\/ad-hosts\/git\/raw\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
-fi
+
+ui_print "已选择GitHub链接"
+sed -i "s/<link>/https:\/\/raw.githubusercontent.com\/qianyumaibai\/AD-hosts\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
+
 
 if [ -d $NVBASE/modules/hosts ]; then
    if [ ! -e $NVBASE/modules/hosts/disable ]; then
