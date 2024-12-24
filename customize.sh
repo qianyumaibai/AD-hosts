@@ -88,10 +88,6 @@ REPLACE="
 ui_print "- 解压模块文件"
 unzip -o "$ZIPFILE" -x 'META-INF/*' -d $MODPATH >&2
 
-if (timeout 1 getevent -lc 1 2>&1 | grep EV_ABS > $TMPDIR/touch); then
-   ui_print "恭喜你触发了本模块的彩蛋"
-   . $MODPATH/script/surprise.sh
-fi
 
 chmod -R 0755 $MODPATH/tools
 chooseportold() {
@@ -223,8 +219,6 @@ if [ ! -e $work_dir/Start.sh ]; then
 fi
 
 ui_print "选择自动更新的地址"
-ui_print "  音量+ = GitHub链接(国外推荐)"
-ui_print "  音量– = Coding镜像链接(国内推荐)"
 
 ui_print "已选择GitHub链接"
 sed -i "s/<link>/https:\/\/raw.githubusercontent.com\/qianyumaibai\/AD-hosts\/master\/system\/etc\/hosts/g" $MODPATH/script/select.ini
@@ -238,77 +232,15 @@ if [ -d $NVBASE/modules/hosts ]; then
    fi
 fi
 
-ui_print "是否启用开机自动更新"
-ui_print "  音量+ = 启用"
-ui_print "  音量– = 关闭"
-if chooseport; then
-  ui_print "已选择启用"
-  sed -i "s/<update_boot>/true/g" $MODPATH/script/select.ini
-else
-  ui_print "已选择关闭"
-  sed -i "s/<update_boot>/false/g" $MODPATH/script/select.ini
-fi
 
-ui_print "是否启用开机启动自动更新服务(是否启动根据Cron.ini参数判断)"
-ui_print "  音量+ = 启用"
-ui_print "  音量– = 关闭"
-if chooseport; then
-  ui_print "已选择启用"
-  sed -i "s/<regular_update_boot>/true/g" $MODPATH/script/select.ini
-else
-  ui_print "已选择关闭"
-  sed -i "s/<regular_update_boot>/false/g" $MODPATH/script/select.ini
-fi
 
-var_miui="`grep_prop ro.miui.ui.version.*`"
-if [ $var_miui ]; then
-  ui_print " "
-  ui_print "是否加入api.ad.xiaomi.com"
-  ui_print "加入会教导致小米应用商城里的积分商城与红包功能无法使用"
-  ui_print "但会屏蔽掉更多的来自小米的广告"
-  ui_print "  音量+ = 加入"
-  ui_print "  音量– = 不加入"
-  if chooseport; then
-    ui_print "已选择加入"
-    ui_print "正在写入中....."
-    sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODPATH/system/etc/hosts
-    sed -i "s/<xiaomi>/true/g" $MODPATH/script/select.ini
-  else
-    ui_print "已选择不加入"
-    sed -i "s/<xiaomi>/false/g" $MODPATH/script/select.ini
-  fi
-else
-  sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $MODPATH/system/etc/hosts
-  sed -i "s/<xiaomi>/true/g" $MODPATH/script/select.ini
-fi
 
-ui_print " "
-ui_print "是否加入去除腾讯QQ微信小程序广告"
-ui_print "加入会导致小程序无法看广告得奖励"
-ui_print "  音量+ = 加入"
-ui_print "  音量– = 不加入"
-if chooseport; then
-  ui_print "已选择加入"
-  ui_print "正在写入中....."
-  sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $MODPATH/system/etc/hosts
-  sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $MODPATH/system/etc/hosts
-  sed -i "s/<QQ>/true/g" $MODPATH/script/select.ini
-else
-  ui_print "已选择不加入"
-  sed -i "s/<QQ>/false/g" $MODPATH/script/select.ini
-fi
 
-if [ -d /data/data/com.coolapk.market ]; then
-   ui_print " "
-   ui_print "检测到你安装了酷安"
-   ui_print "即将跳转到开发者主页(可选)"
-   ui_print "  音量+ = 吼呀"
-   ui_print "  音量– = 不吼"
-   if chooseport; then
-     ui_print "正在跳转....."
-     am start -d 'coolmarket://u/999689' >/dev/null 2>&1
-   fi
-fi
+
+
+
+
+
 
 # 删除多余文件
 if [ -e $SERVICED/disable_ad_hosts.sh ]; then

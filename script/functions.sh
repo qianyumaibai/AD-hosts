@@ -86,14 +86,7 @@ else
       exit 0
 fi
 
-# 判断用户选择
-if [ $MIUI = "true" ]; then
-   sed -i "s/<adxiaomi>/api.ad.xiaomi.com/g" $work_dir/hosts
-fi
-if [ $Tencent = "true" ]; then
-   sed -i "s/<Tencentgamead1>/adsmind.gdtimg.com/g" $work_dir/hosts
-   sed -i "s/<Tencentgamead2>/pgdt.gtimg.cn/g" $work_dir/hosts
-fi
+
 
 # 安装hosts文件
 Now=$(md5sum $hosts_dir/hosts | awk '{print $1}')

@@ -30,22 +30,22 @@
 使用本模块请关闭其它带有hosts文件的模块，请关闭systemless hosts模块(如果有)。
 
 ### 链接
-* [GitHub](https://github.com/E7KMbb/AD-hosts)
+* [GitHub](https://github.com/qianyumaibai/AD-hosts)
 
-* [Gitee 镜像](https://gitee.com/e7kmbb/AD-hosts)
+* [Gitee 镜像](https://gitee.com/qianyumaibai/AD-hosts)
 
 * [Coding 镜像](https://aisauce.coding.net/public/ad-hosts/ad-hosts/git/files)
 
-* [订阅源直链 GitHub](https://raw.githubusercontent.com/E7KMbb/AD-hosts/master/system/etc/hosts)
+* [订阅源直链 GitHub](https://raw.githubusercontent.com/qianyumaibai/AD-hosts/master/system/etc/hosts)
 
 * [订阅源直链 Coding](https://aisauce.coding.net/p/ad-hosts/d/ad-hosts/git/raw/master/system/etc/hosts)
 
 * [捐赠](https://docs.qq.com/doc/DWVJKWVVDWURQZUZK?disableReturnList=1&_from=1)
 
-* [免责声明](https://github.com/E7KMbb/AD-hosts/blob/master/DISCKAIMER.md)
+* [免责声明](https://github.com/qianyumaibai/AD-hosts/blob/master/DISCKAIMER.md)
 
 ### 黑名单
-[无法再用hosts屏蔽广告的名单](https://github.com/E7KMbb/AD-hosts/blob/master/black.md)
+[无法再用hosts屏蔽广告的名单](https://github.com/qianyumaibai/AD-hosts/blob/master/black.md)
 
 ### 捐赠名单
-捐赠后请在酷安私信我并附上截图我会将你的ID加入[捐赠名单](https://github.com/E7KMbb/AD-hosts/blob/master/thanks.md)中。
+捐赠后请在酷安私信我并附上截图我会将你的ID加入[捐赠名单](https://github.com/qianyumaibai/AD-hosts/blob/master/thanks.md)中。
